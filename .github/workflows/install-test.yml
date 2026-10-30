@@ -115,6 +115,8 @@ jobs:
         run: |
           winget validate --manifest (Join-Path $env:RUNNER_TEMP 'manifest') --disable-interactivity
           if ($LASTEXITCODE -ne 0 -and $LASTEXITCODE -ne -1978335192) { throw "winget validate exit $LASTEXITCODE" }
+          # pwsh returns the last native exit code as the step code: warnings-only validate must not fail the step
+          $global:LASTEXITCODE = 0
       - name: winget install --manifest
         run: |
           . "$env:GITHUB_WORKSPACE\.github\scripts\install-check.ps1"
