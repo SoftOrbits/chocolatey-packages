@@ -1,0 +1,157 @@
+name: install-test
+
+# Manual check of a SoftOrbits / GRTSoft Inno Setup installer on a clean Windows runner:
+# silent install, ARP entry, no browser or window, silent uninstall; then the same through
+# winget (local manifest) and Chocolatey (package folder of this repo).
+
+on:
+  workflow_dispatch:
+    inputs:
+      sku:
+        description: 'Product code, for the log only (DUP, PSR, ...)'
+        required: true
+      url:
+        description: 'Installer URL (versioned: https://download.softorbits.com/filesNew/v/<Name>-<version>.exe)'
+        required: true
+      sha256:
+        description: 'SHA256 of the installer'
+        required: true
+      product_code:
+        description: 'ARP key, Inno: "<AppName>_is1"'
+        required: true
+      version:
+        description: 'Expected ARP DisplayVersion = PackageVersion'
+        required: true
+      package_id:
+        description: 'winget PackageIdentifier (SoftOrbits.Name); empty = skip the winget job'
+        required: false
+        default: ''
+      choco_id:
+        description: 'Chocolatey package folder in this repo; empty = skip the Chocolatey job'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: pwsh
+
+# Inputs go to scripts only through env (no ${{ }} inside run: - no script injection).
+env:
+  IN_SKU: ${{ inputs.sku }}
+  IN_URL: ${{ inputs.url }}
+  IN_SHA256: ${{ inputs.sha256 }}
+  IN_PRODUCT_CODE: ${{ inputs.product_code }}
+  IN_VERSION: ${{ inputs.version }}
+  IN_PACKAGE_ID: ${{ inputs.package_id }}
+  IN_CHOCO_ID: ${{ inputs.choco_id }}
+
+jobs:
+  direct:
+    name: Silent install / uninstall (${{ inputs.sku }})
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and verify SHA256
+        run: |
+          $out = Join-Path $env:RUNNER_TEMP 'setup.exe'
+          Invoke-WebRequest -Uri $env:IN_URL -OutFile $out -UseBasicParsing
+          $hash = (Get-FileHash $out -Algorithm SHA256).Hash
+          if ($hash -ne $env:IN_SHA256.ToUpper()) { throw "SHA256 mismatch: $hash" }
+          (Get-AuthenticodeSignature $out) | Format-List Status, SignerCertificate | Out-String | Write-Host
+      - name: Silent install
+        run: |
+          . "$env:GITHUB_WORKSPACE\.github\scripts\install-check.ps1"
+          $before = Get-ProcessSnapshot
+          $p = Start-Process -FilePath (Join-Path $env:RUNNER_TEMP 'setup.exe') -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-' -PassThru
+          $p | Wait-Process -Timeout 600
+          Write-Host "Installer exit code: $($p.ExitCode)"
+          if ($p.ExitCode -ne 0) { throw "Installer exit code $($p.ExitCode)" }
+          Start-Sleep -Seconds 10
+          Assert-NoNewWindows $before 'Install'
+          Assert-Arp $env:IN_PRODUCT_CODE $env:IN_VERSION | Out-Null
+      - name: Silent uninstall
+        run: |
+          . "$env:GITHUB_WORKSPACE\.github\scripts\install-check.ps1"
+          $before = Get-ProcessSnapshot
+          Invoke-InnoUninstall $env:IN_PRODUCT_CODE
+          Start-Sleep -Seconds 5
+          Assert-NoNewWindows $before 'Uninstall'
+
+  winget:
+    name: winget validate + install --manifest (${{ inputs.sku }})
+    if: ${{ inputs.package_id != '' }}
+    runs-on: windows-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ensure winget
+        run: |
+          if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
+            Install-PackageProvider -Name NuGet -Force | Out-Null
+            Install-Module -Name Microsoft.WinGet.Client -Force -Repository PSGallery -Scope AllUsers
+            Repair-WinGetPackageManager -AllUsers -Latest -Force
+            $dir = Get-ChildItem "$env:ProgramFiles\WindowsApps" -Directory -Filter 'Microsoft.DesktopAppInstaller_*_x64__8wekyb3d8bbwe' |
+              Sort-Object Name -Descending | Select-Object -First 1
+            if ($dir) { "$($dir.FullName)" | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8 }
+          }
+      - name: winget info
+        run: |
+          winget --version
+          winget settings --enable LocalManifestFiles
+      - name: Write manifest
+        run: |
+          $id = $env:IN_PACKAGE_ID; $ver = $env:IN_VERSION
+          $dir = Join-Path $env:RUNNER_TEMP 'manifest'; New-Item -ItemType Directory -Force $dir | Out-Null
+          $common = "PackageIdentifier: $id`nPackageVersion: '$ver'`n"
+          Set-Content "$dir\$id.yaml" -Encoding utf8 -Value ($common + "DefaultLocale: en-US`nManifestType: version`nManifestVersion: 1.12.0`n")
+          Set-Content "$dir\$id.locale.en-US.yaml" -Encoding utf8 -Value ($common + "PackageLocale: en-US`nPublisher: SoftOrbits`nPackageName: '$($env:IN_SKU) install test'`nLicense: Proprietary`nShortDescription: Install test of the $($env:IN_SKU) installer`nManifestType: defaultLocale`nManifestVersion: 1.12.0`n")
+          Set-Content "$dir\$id.installer.yaml" -Encoding utf8 -Value ($common + "InstallerType: inno`nProductCode: '$($env:IN_PRODUCT_CODE)'`nInstallers:`n- Architecture: x86`n  InstallerUrl: $env:IN_URL`n  InstallerSha256: $($env:IN_SHA256)`nManifestType: installer`nManifestVersion: 1.12.0`n")
+          Get-ChildItem $dir | ForEach-Object { Write-Host "== $($_.Name)"; Get-Content $_.FullName | Write-Host }
+      - name: winget validate
+        run: |
+          winget validate --manifest (Join-Path $env:RUNNER_TEMP 'manifest') --disable-interactivity
+          if ($LASTEXITCODE -ne 0 -and $LASTEXITCODE -ne -1978335192) { throw "winget validate exit $LASTEXITCODE" }
+      - name: winget install --manifest
+        run: |
+          . "$env:GITHUB_WORKSPACE\.github\scripts\install-check.ps1"
+          $before = Get-ProcessSnapshot
+          winget install --manifest (Join-Path $env:RUNNER_TEMP 'manifest') --silent --accept-package-agreements --accept-source-agreements --disable-interactivity
+          if ($LASTEXITCODE -ne 0) { throw "winget install exit $LASTEXITCODE" }
+          Start-Sleep -Seconds 10
+          Assert-NoNewWindows $before 'winget install'
+          Assert-Arp $env:IN_PRODUCT_CODE $env:IN_VERSION | Out-Null
+          Invoke-InnoUninstall $env:IN_PRODUCT_CODE
+
+  chocolatey:
+    name: choco pack + install + uninstall (${{ inputs.choco_id }})
+    if: ${{ inputs.choco_id != '' }}
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: choco pack
+        run: |
+          choco --version
+          if ($env:IN_CHOCO_ID -notmatch '^[a-z0-9-]+$') { throw "bad choco_id" }
+          Set-Location (Join-Path $env:GITHUB_WORKSPACE $env:IN_CHOCO_ID)
+          choco pack --out "$env:RUNNER_TEMP\nupkg"
+          if ($LASTEXITCODE -ne 0) { throw "choco pack exit $LASTEXITCODE" }
+      - name: choco install
+        run: |
+          . "$env:GITHUB_WORKSPACE\.github\scripts\install-check.ps1"
+          $before = Get-ProcessSnapshot
+          choco install $env:IN_CHOCO_ID --source "$env:RUNNER_TEMP\nupkg" -y --no-progress
+          if ($LASTEXITCODE -ne 0) { throw "choco install exit $LASTEXITCODE" }
+          Start-Sleep -Seconds 10
+          Assert-NoNewWindows $before 'choco install'
+          Assert-Arp $env:IN_PRODUCT_CODE $env:IN_VERSION | Out-Null
+      - name: choco uninstall
+        run: |
+          . "$env:GITHUB_WORKSPACE\.github\scripts\install-check.ps1"
+          choco uninstall $env:IN_CHOCO_ID -y --no-progress
+          if ($LASTEXITCODE -ne 0) { throw "choco uninstall exit $LASTEXITCODE" }
+          Wait-ArpGone $env:IN_PRODUCT_CODE
