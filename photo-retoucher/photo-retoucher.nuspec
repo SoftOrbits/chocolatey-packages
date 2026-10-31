@@ -5,7 +5,7 @@
     <version>14.2</version>
     <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/photo-retoucher</packageSourceUrl>
     <owners>softorbits</owners>
-    <title>Photo Retoucher</title>
+    <title>Photo Retoucher - Old Photo Restoration Software</title>
     <authors>SoftOrbits</authors>
     <projectUrl>https://www.softorbits.net/old-photo-restoration-software/</projectUrl>
     <iconUrl>https://www.softorbits.net/assets/img/icons/ret.png</iconUrl>
@@ -13,7 +13,7 @@
     <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://www.softorbits.net/how-to/best-photo-restoration-software.html</docsUrl>
-    <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9mwtl7zfks0v?hl=en-US&amp;gl=US</bugTrackerUrl>
     <tags>photo-restoration old-photo-restoration restore-old-photos scratch-removal photo-colorization colorize-black-and-white face-restoration photo-retouching scanned-photos image-upscaling batch-image-processing trial license</tags>
     <summary>Cleans damage from scanned prints, reconstructs faces and colorizes monochrome images offline, a local photo restoration software with batch mode and an 8x enlarger.</summary>
     <description>SoftOrbits Photo Retoucher is photo restoration software for Windows that cleans and repairs scanned old photographs on the local machine. The package is meant for libraries, local history archives and photo studios where several digitizing stations process donated or customer prints without sending them to an online service.
@@ -26,7 +26,7 @@ On first launch the program asks to download its AI models. Approve it on each w
 
 The same install also serves as photo retouching software for newer pictures, with manual brightness, contrast and saturation controls and an AI enlarger that scales small scans up to 8x before they go to print.
 
-## How to use it
+## How to use the photo restoration software
 
 1. Load a scan in TIFF, PNG, JPEG or a RAW format.
 2. Start the AI restoration with one click. It retouches faces and repairs blur, grain and surface damage.
@@ -34,14 +34,14 @@ The same install also serves as photo retouching software for newer pictures, wi
 4. Erase handwritten dates, stamps or stray objects with the Object Remover.
 5. For a full box of prints, set up batch mode with only the steps you need and process them in one run.
 
-&gt; Trial note: the free trial lets staff run every restoration step and inspect the output, but the unregistered version cannot save images. A license unlocks saving.
+Trial note: staff can test every repair step in the free trial and compare before and after, yet an unregistered copy will not write the restored picture to a file. Activating a license allows saving.
 
 ![Photo Retoucher screenshot 2](https://download.softorbits.com/files/pkg-img/ret/ret-v1-ai.png)
 
 ## Who it is for
 
 - Archives and libraries digitizing donated photo collections.
-- Photo studios offering repair of customer prints.
+- Photo studios that use photo restoration software to repair customer prints.
 - Genealogy volunteers preparing portraits for family trees.
 - Anyone who wants to remove scratches from photos without retouching each one by hand.
 
@@ -49,7 +49,7 @@ The same install also serves as photo retouching software for newer pictures, wi
 
 ## Trial and license
 
-This package installs the free trial of Photo Retoucher, commercial photo restoration software by SoftOrbits. Full use, including saving restored images, requires a paid license. Plans, including a business license: [old photo restoration software](https://www.softorbits.net/old-photo-restoration-software/?utm_source=chocolatey&amp;utm_medium=package).
+This package installs the free trial of Photo Retoucher, commercial photo restoration software by SoftOrbits. Full use, including saving restored images, requires a paid license. Plans, including a business license: [old photo restoration](https://www.softorbits.net/old-photo-restoration-software/?utm_source=chocolatey&amp;utm_medium=package).
 
 [SoftOrbits Photo Retoucher on Windows Store](https://apps.microsoft.com/detail/9MWTL7ZFKS0V)
 

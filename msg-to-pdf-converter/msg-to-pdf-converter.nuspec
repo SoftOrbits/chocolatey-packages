@@ -13,14 +13,14 @@
     <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://www.softorbits.net/how-to/save-outlook-email-as-pdf.html</docsUrl>
-    <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9p93nqp4hjnq?hl=en-US&amp;gl=US</bugTrackerUrl>
     <tags>msg-to-pdf msg-to-html msg-converter email-to-pdf email-archive msg-files email-converter batch-pdf-converter pdf merge-emails trial license</tags>
     <summary>Batch MSG to PDF converter that renders folders of saved Outlook messages as PDF or HTML documents locally, with an option to merge a whole list into one file.</summary>
     <description>This package installs MSG to PDF Converter Software, an MSG to PDF converter for Windows 10 and 11 that turns saved .msg email files into PDF or HTML on the computer where it runs. Conversion needs neither Outlook nor an internet connection, which suits PCs that handle confidential mail.
 
 ![MSG to PDF Converter screenshot 1](https://download.softorbits.com/files/pkg-img/msg/msg-v1-main.png)
 
-## How to use it
+## How to use MSG to PDF Converter Software
 
 1. Start the app and add messages through Add File(s), Add Folder or drag and drop.
 2. Open the Convert tab and select PDF or HTML.
@@ -29,7 +29,7 @@
 5. If needed, add a prefix or suffix to file names with Rename on the Tools tab.
 6. Pick the destination and press Start.
 
-&gt; Trial note: the free trial converts up to 3 emails a day. A license lifts that daily cap.
+Trial note: the free trial converts up to 3 emails a day. A license lifts that daily cap.
 
 ![MSG to PDF Converter screenshot 2](https://download.softorbits.com/files/pkg-img/msg/msg-v1-format.png)
 
@@ -57,13 +57,13 @@ The input is .msg only. EML, PST and MBOX files are handled by separate products
 
 ## Trial and license
 
-The package installs the free trial of MSG to PDF Converter Software, which is commercial software. Unlimited conversion requires a lifetime or a 1-year license. See the [MSG to PDF conversion](https://www.softorbits.net/msg-to-pdf-converter/?utm_source=chocolatey&amp;utm_medium=package) page for license terms.
+The package installs a free trial, and the program itself is commercial software. Unlimited conversion requires a lifetime or a 1-year license. See the [MSG to PDF conversion](https://www.softorbits.net/msg-to-pdf-converter/?utm_source=chocolatey&amp;utm_medium=package) page for license terms.
 
 [MSG to PDF Converter Software on Windows Store](https://apps.microsoft.com/detail/9P93NQP4HJNQ)
 
 ## FAQ
 
-### Can I combine multiple MSG files into one PDF?
+### Can I save several email messages as one PDF?
 
 Yes. Choose the combined mode and enter a file name. Every email in the list goes into that document in list order.
 

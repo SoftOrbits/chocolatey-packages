@@ -5,7 +5,7 @@
     <version>2.15</version>
     <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/pdf-to-csv-converter</packageSourceUrl>
     <owners>softorbits</owners>
-    <title>PDF to CSV Converter</title>
+    <title>PDF to CSV Converter - Bank Statement Converter</title>
     <authors>SoftOrbits</authors>
     <projectUrl>https://www.softorbits.net/pdf-to-csv-converter/</projectUrl>
     <iconUrl>https://www.softorbits.net/assets/img/icons/pdfcsv.png</iconUrl>
@@ -25,7 +25,7 @@
 4. Set the delimiter and decide between one CSV per PDF, one per table, or a single combined file.
 5. Check the text preview and start the conversion.
 
-&gt; Trial note: in the unregistered version each table stops after its first 10 data rows (the header does not count) and a nag screen appears. Registering a license key removes the row cap and the screen.
+Trial note: in the unregistered version each table stops after its first 10 data rows (the header does not count) and a nag screen appears. Registering a license key removes the row cap and the screen.
 
 ## What lands in the CSV
 
@@ -47,7 +47,7 @@ Tables in a PDF follow no common specification, so the program reconstructs them
 
 ## Trial and license
 
-The package installs the free trial of PDF to CSV Converter, a commercial program. Converting PDF files to CSV with every row of every table and no reminder screen needs a paid license, available as lifetime, 1-year or business. You can compare the plans on the [PDF table to CSV conversion](https://www.softorbits.net/pdf-to-csv-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+This is a commercial program, and the package puts its free trial on the PC. Converting PDF files to CSV with every row of every table and no reminder screen needs a paid license, available as lifetime, 1-year or business. You can compare the plans on the [PDF table to CSV conversion](https://www.softorbits.net/pdf-to-csv-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
 
 [PDF to CSV Converter on Windows Store](https://apps.microsoft.com/detail/9MVGSZSVPFFG)
 
