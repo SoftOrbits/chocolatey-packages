@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>msg-to-pdf-converter</id>
+    <version>1.3</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/msg-to-pdf-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>MSG to PDF Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/msg-to-pdf-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/msg.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.softorbits.net/how-to/save-outlook-email-as-pdf.html</docsUrl>
+    <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
+    <tags>msg-to-pdf msg-to-html msg-converter email-to-pdf email-archive msg-files email-converter batch-pdf-converter pdf merge-emails trial license</tags>
+    <summary>Batch MSG to PDF converter that renders folders of saved Outlook messages as PDF or HTML documents locally, with an option to merge a whole list into one file.</summary>
+    <description>This package installs MSG to PDF Converter Software, an MSG to PDF converter for Windows 10 and 11 that turns saved .msg email files into PDF or HTML on the computer where it runs. Conversion needs neither Outlook nor an internet connection, which suits PCs that handle confidential mail.
+
+![MSG to PDF Converter screenshot 1](https://download.softorbits.com/files/pkg-img/msg/msg-v1-main.png)
+
+## How to use it
+
+1. Start the app and add messages through Add File(s), Add Folder or drag and drop.
+2. Open the Convert tab and select PDF or HTML.
+3. Choose one output file per email, or a combined file under a name you enter. Combined output keeps the order of the list.
+4. Turn Include images in output on to keep inline pictures, or off for a text-only archive.
+5. If needed, add a prefix or suffix to file names with Rename on the Tools tab.
+6. Pick the destination and press Start.
+
+&gt; Trial note: the free trial converts up to 3 emails a day. A license lifts that daily cap.
+
+![MSG to PDF Converter screenshot 2](https://download.softorbits.com/files/pkg-img/msg/msg-v1-format.png)
+
+## What each document contains
+
+- From, Date, To, Cc and Subject at the top, with the date taken from the message.
+- The body with its HTML layout and, if you chose so, its inline images.
+- Hyperlinks that still work.
+
+## Who it is for
+
+- Law firms and HR departments building case or personnel files.
+- Support desks that store customer email outside the mail server.
+- IT teams that need to convert MSG to PDF on many workstations with one Chocolatey command.
+
+## Working with large folders
+
+Add Folder takes in the .msg files of a directory, and Use folder structure in output folder recreates its subfolders at the destination. One batch can hold hundreds of messages, each with its status in the list. Some files carry the .msg extension but contain plain RFC 822 email, and the program recognizes and converts those as well. A PDF engine comes bundled, so nothing else has to be installed, and the interface is available in 17 languages.
+
+![MSG to PDF Converter screenshot 3](https://download.softorbits.com/files/pkg-img/msg/msg-v1-merged.png)
+
+## Limits
+
+The input is .msg only. EML, PST and MBOX files are handled by separate products, attachments are not converted, and there is no command line mode. The program does not connect to Exchange or IMAP.
+
+## Trial and license
+
+The package installs the free trial of MSG to PDF Converter Software, which is commercial software. Unlimited conversion requires a lifetime or a 1-year license. See the [MSG to PDF conversion](https://www.softorbits.net/msg-to-pdf-converter/?utm_source=chocolatey&amp;utm_medium=package) page for license terms.
+
+[MSG to PDF Converter Software on Windows Store](https://apps.microsoft.com/detail/9P93NQP4HJNQ)
+
+## FAQ
+
+### Can I combine multiple MSG files into one PDF?
+
+Yes. Choose the combined mode and enter a file name. Every email in the list goes into that document in list order.
+
+### Does it turn email attachments into PDF?
+
+No. Inline images can stay in the document, but attached files are not converted.
+
+### Is it safe to convert MSG to PDF online?
+
+That depends on the service, because the mail has to be uploaded first. This program converts on your own PC, so the messages stay there.
+    </description>
+    <releaseNotes>https://www.softorbits.net/msg-to-pdf-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

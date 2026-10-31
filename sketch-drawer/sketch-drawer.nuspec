@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sketch-drawer</id>
+    <version>13.1</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/sketch-drawer</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Sketch Drawer</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/photo-to-sketch-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/skt.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.softorbits.net/how-to/how-to-convert-picture-into-a-drawing.html</docsUrl>
+    <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
+    <tags>photo-to-sketch sketch-converter pencil-sketch line-art photo-to-drawing image-to-sketch photo-effects anime-style color-sketch batch-image-processing raw trial license</tags>
+    <summary>Turns JPEG, PNG, TIFF or RAW pictures into hatched pencil or colored drawings saved as JPEG, an offline photo to sketch converter with batch and command line modes.</summary>
+    <description>Sketch Drawer - Photo to Sketch Converter is a photo to sketch converter for Windows PCs that turns ordinary pictures into pencil drawings, colored sketches and line art. The package suits art classes, hobby clubs and print counters where several computers need the same drawing tool, one that processes images locally and needs no online account.
+
+![Sketch Drawer screenshot 1](https://download.softorbits.com/files/pkg-img/skt/skt-v1-source.png)
+
+## How to use it
+
+1. Drop a photo into the window or open it from disk.
+2. Crop, rotate or brighten it first if the subject is too dark or tilted.
+3. Select a style (Realistic, Detailed, Classic or Anime) and one of the 30+ presets.
+4. Fine-tune outlines, shading density, stroke width and direction, then press Run.
+5. Paint with the Undo brush to return the eyes or another area to the source photo when needed.
+6. Save as JPEG, print, or repeat the job for a folder in batch mode.
+
+&gt; Trial note: the free trial draws every sketch so you can judge it on screen, but the unregistered version cannot save images. Entering a license turns saving on.
+
+![Sketch Drawer screenshot 2](https://download.softorbits.com/files/pkg-img/skt/skt-v1-line.png)
+
+## Running it on shared machines
+
+Rendering happens on the local processor, and pictures never leave the disk they were opened from. The command line lets a teacher or an operator convert photo to sketch output for a prepared folder without touching the interface, which is handy when one station handles orders for the others.
+
+Settings chosen for one photo to sketch job carry over to the whole batch, so a class set of portraits comes out in a matching style. The program accepts JPEG, PNG, TIFF and RAW files and writes a high resolution JPEG that is ready for printing on paper or card stock.
+
+## Who it is for
+
+- Art teachers who hand out line drawings made from class photos.
+- Hobby painters who want a traced outline to color by hand.
+- Print shops making sketch portraits for gifts and frames.
+- Families turning a pet or grandparent photo into a drawing.
+
+![Sketch Drawer screenshot 3](https://download.softorbits.com/files/pkg-img/skt/skt-v1-batch.png)
+
+## Trial and license
+
+This package installs the free trial of Sketch Drawer, a commercial program from SoftOrbits. Full use, which includes saving finished drawings, requires a paid license. Plans for home and business use are listed on the [photo to sketch converter](https://www.softorbits.net/photo-to-sketch-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+[Sketch Drawer - Photo to Sketch Converter on Windows Store](https://apps.microsoft.com/detail/9N0J8520C5GP)
+
+## FAQ
+
+### Can I turn a photo into a sketch on my iPhone?
+
+Not with this package, since it is a Windows program. Copy the pictures from the phone to the PC as JPEG or PNG and process them there.
+
+### Is it legal to turn a photo to a sketch?
+
+Converting photos you took yourself is fine. For pictures made by someone else, their copyright may still cover the drawing, so ask for permission before you publish or sell it.
+
+### Does a picture-to-drawing tool need an online AI service?
+
+This one does not. A stroke engine renders the drawing on your PC, so photos stay on the local disk and no web service is involved.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

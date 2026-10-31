@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>heic-to-jpg-converter</id>
+    <version>14.2</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/heic-to-jpg-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Heic to Jpg Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/convert-heic-to-jpeg/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/heic.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.softorbits.net/how-to-convert-heic-to-jpg-windows/</docsUrl>
+    <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
+    <tags>heic-to-jpg heic-converter heic-to-png heif convert-heic image-converter batch-image-converter photo-converter jpg hdr-photos color-profiles trial license</tags>
+    <summary>Bulk HEIC to JPG converter that re-encodes Apple HEIC and HEIF images as JPEG or PNG with color profiles intact, plus a command line mode for scripted runs.</summary>
+    <description>This package installs SoftOrbits HEIC to JPG Converter, a HEIC to JPG converter for Windows that processes large batches of Apple HEIC and HEIF images on the local computer. Rolled out through Chocolatey, it gives each workstation a way to open and convert phone pictures without sending them to a website.
+
+![Heic to Jpg Converter screenshot 1](https://download.softorbits.com/files/pkg-img/heic/heic-v1-empty.png)
+
+## Formats and color
+
+Besides JPEG and PNG output, the heic converter reads more than 40 image formats, WebP, TIFF, PSD and RAW among them, so one install also covers camera files. HDR data, wide-gamut color and embedded color profiles are preserved, which matters when HEIC files on Windows have to open in editors that expect plain JPEG.
+
+## How to use it
+
+1. Bring the pictures in by dragging them onto the window or through Add files and Add folder.
+2. Set an output folder, or keep results next to the sources with Same as original.
+3. Confirm JPEG as the target, which is the default, or switch to PNG.
+4. Shrink the images first if you want to save disk space. This step is optional.
+5. Click Start, then review the converted copies in the target folder.
+
+&gt; Trial note: before buying, you can run the free trial on your own HEIC files, and a license key opens the full version.
+
+![Heic to Jpg Converter screenshot 2](https://download.softorbits.com/files/pkg-img/heic/heic-v1-main.png)
+
+## What the package gives each PC
+
+- Right-click conversion from Windows Explorer.
+- A command line mode for scheduled or scripted jobs, for example a PowerShell task that watches a folder.
+- Support for animated HEIC with a video stream and for tiled HEIC.
+- Batch rename with the date a photo was taken in the file name.
+- Processing on all CPU cores that keeps going past files with errors.
+- No limit on how many files one batch may hold.
+
+## Who it is for
+
+- Help desks that are asked how to convert HEIC to JPG on office PCs.
+- Marketing staff who post phone photos to websites and social networks from a desktop.
+- Families and photographers who print pictures or edit them in desktop software.
+- Anyone who sometimes needs a heic to png converter instead of JPEG output.
+
+![Heic to Jpg Converter screenshot 3](https://download.softorbits.com/files/pkg-img/heic/heic-v1-folder.png)
+
+## Trial and license
+
+The package installs the free trial of SoftOrbits HEIC to JPG Converter, a commercial program. You need a license for full use, sold as lifetime, yearly, monthly or business. Entering the key turns the trial into the full version. Details are on the [HEIC to JPG conversion](https://www.softorbits.net/convert-heic-to-jpeg/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+[SoftOrbits HEIC to JPG Converter on Windows Store](https://apps.microsoft.com/detail/9N6525BR0F77)
+
+## FAQ
+
+### How do I convert iPhone photos to JPEG?
+
+Copy the photos from the phone into a PC folder, add that folder here and press Start with JPEG selected. Color profiles and metadata travel with each picture.
+
+### Can I convert HEIC to JPG on Windows?
+
+Yes. The program runs on Windows 10 and 11 and does the work on the computer itself, with no upload step.
+
+### What should I look for in a HEIC to JPG converter for Windows?
+
+Check that it handles HDR and wide color, keeps metadata and copes with big folders. This one covers those points and also offers a viewer, resizing and cropping in the same pass.
+    </description>
+    <releaseNotes>https://www.softorbits.net/convert-heic-to-jpeg/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
