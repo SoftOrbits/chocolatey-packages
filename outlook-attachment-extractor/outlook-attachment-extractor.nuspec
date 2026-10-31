@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>outlook-attachment-extractor</id>
+    <version>1.3</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/outlook-attachment-extractor</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Outlook Attachment Extractor</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/outlook-attachment-extractor/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/oae.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
+    <tags>outlook-attachment-extractor extract-attachments save-attachments pst-attachments ost-attachments outlook-pst email-attachments pst-file outlook-tools attachment-downloader trial license</tags>
+    <summary>Reads an Outlook PST or OST archive offline and saves the files attached to its messages to disk, sorted and deduplicated, as a basic outlook attachment extractor.</summary>
+    <description>This package installs Outlook Attachment Extractor Software, an Outlook attachment extractor that takes the files out of email messages stored in a .pst or .ost archive and places them in a folder on the same PC. You can extract attachments from Outlook archives with nothing set up in Outlook, as the program reads the information in the data file itself and runs offline.
+
+![Outlook Attachment Extractor screenshot 1](https://download.softorbits.com/files/pkg-img/oae/oae-v1-main.png)
+
+## How to use Outlook Attachment Extractor Software
+
+1. Launch the program and load one .pst or .ost file.
+2. Check folders in the tree or select specific emails. A column counts the files in each email.
+3. Point the source at checked folders or at selected messages, so attachments from multiple emails go out in one job.
+4. Keep every file extension, or limit the run to chosen types such as PDF and XLSX.
+5. Pick a folder structure, a naming rule (original or Date_Subject_Name) and the options below, then click Start.
+
+Trial note: an unregistered copy extracts all attachments of a selection up to 20 files, and beyond that one in ten of them, never more than 100. Registering a license lifts this limit.
+
+![Outlook Attachment Extractor screenshot 2](https://download.softorbits.com/files/pkg-img/oae/oae-v1-filter.png)
+
+## Features to download all attachments from Outlook
+
+- Inline images from the email body are off unless you switch them on.
+- Files below a set size, 20 KB by default, are skipped, which keeps email signature logos away.
+- Duplicates can be skipped by content, not by name.
+- Existing files get numbered copies, or are overwritten if you tick that box.
+- A CSV report is written by default.
+
+## Who it is for
+
+- Accounting staff who want to save all attachments from Outlook email as one folder of invoices and statements.
+- IT staff who hand over the Outlook email attachments of a departed colleague without restoring a whole mailbox.
+- Teams that need software to extract attachments from Outlook archives on several workstations, with the package pushed to each of them through Chocolatey.
+
+![Outlook Attachment Extractor screenshot 3](https://download.softorbits.com/files/pkg-img/oae/oae-v1-run.png)
+
+## Limitations when you save all attachments from Outlook
+
+The current version has no date filter, leaves ZIP attachments packed and does not open IMAP or Office 365 profiles. OLM, BAK and OFT files are not supported, and one archive is loaded per session, so you extract attachments from PST files one after another.
+
+## Trial and license
+
+The package installs the free trial of a commercial email attachment extractor, and full use requires a license. A lifetime license, a 1-year license, a monthly plan and a business license are offered, and any of them removes the trial cap. Terms are on the [Outlook Attachment Extractor](https://www.softorbits.net/outlook-attachment-extractor/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+[Outlook Attachment Extractor Software on Windows Store](https://apps.microsoft.com/detail/9NKTS8N3XJLS)
+
+## FAQ
+
+### Is there a way to save all attachments at once in Outlook?
+
+Yes, when the email sits in a .pst or .ost file. Tick the folders, press Start, and the program downloads attachments from every message in them in one run.
+
+### How do I save all attachments in Outlook to a folder?
+
+Set the destination before you start and choose between the PST folder hierarchy and a single flat folder. The program fills it with attachments of your Outlook emails and adds a CSV report.
+
+### How can I automatically extract email attachments from Outlook?
+
+Check the folders once, set the filters, and the program walks through every message to extract Outlook attachments on its own. A real time rule that watches new mail is not part of it, so you download all attachments from Outlook archives when you run a job.
+    </description>
+    <releaseNotes>https://www.softorbits.net/outlook-attachment-extractor/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pst-and-ost-viewer-for-outlook</id>
+    <version>3.2</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/pst-and-ost-viewer-for-outlook</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>PST Viewer - PST and OST Viewer for Outlook</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/pst-viewer/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/psv.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
+    <tags>pst-viewer ost-viewer pst-file-viewer outlook-pst ost-file email-viewer read-pst outlook-data-file mail-archive pst-reader trial license</tags>
+    <summary>A PST viewer that opens Outlook .pst and .ost archives for reading on a PC without Outlook, with folder tree, filters and a full-window message pane.</summary>
+    <description>This package installs a PST viewer for Windows 10 and 11 that reads Outlook .pst and .ost data files from disk and presents their folder tree, message lists and complete messages. Files are opened for reading only, and no internet connection is used.
+
+![PST and OST Viewer for Outlook screenshot 1](https://download.softorbits.com/files/pkg-img/psv/psv-v1-read.png)
+
+## How to use the viewer to open a PST file without Outlook
+
+1. Start the program and choose an Outlook data file, either PST or OST.
+2. Let the folder tree appear. Messages in large folders arrive in portions.
+3. Pick a folder, then narrow the list by Subject, From, To, body text or dates.
+4. Click a message to read it in the full window.
+5. Save attachments, print, or keep the message as PDF, HTML, EML or MSG through the context menu.
+
+Trial note: without registration each folder lists its first 20 messages, and the counters keep showing how many exist. With a license every message becomes visible.
+
+![PST and OST Viewer for Outlook screenshot 2](https://download.softorbits.com/files/pkg-img/psv/psv-v1-search.png)
+
+## OST viewer for orphaned .ost files
+
+An .ost is a cache that Outlook rebuilds from the server and will not move to another computer. After a reinstall or an account removal the file remains on disk, and the program opens it like any other data file. Archives copied from retired laptops open the same way.
+
+## Finding one message with the Outlook PST viewer
+
+Filters apply to the folder you are in. Type a sender into From, a phrase into the body search or a word from the subject, and add a date range to cut the list down further. The selected email then fills the window with its headers, layout and inline images. From there it can go to a printer, become a PDF for a ticket or a dispute, or be saved as EML or MSG when the original message itself is needed.
+
+## Who needs a PST file viewer
+
+- Help desk staff who need a PST file viewer to check an archive before it is migrated, split or deleted.
+- HR, legal and medical offices where mail has to stay on a local PC.
+- Admins who roll this Outlook PST viewer out to many workstations with Chocolatey.
+
+![PST and OST Viewer for Outlook screenshot 3](https://download.softorbits.com/files/pkg-img/psv/psv-v1-menu.png)
+
+## Limits
+
+The program only reads. It does not export folders in batch, repair damaged files or open password-protected ones, and one message at a time can be saved.
+
+## Trial and license
+
+What Chocolatey puts on the machine is a free trial of commercial software. Reading every message needs a paid license, sold as lifetime, 1-year, monthly or business, and any of these opens all folders in full. Terms are listed on the [PST viewer](https://www.softorbits.net/pst-viewer/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+[PST and OST Viewer for Outlook on Windows Store](https://apps.microsoft.com/detail/9P9J9SWZC8B8)
+
+## FAQ
+
+### Can I view .PST files without Outlook?
+
+Yes. The program parses the data file itself, so you can open a PST file without Outlook, Office or a mail account.
+
+### Is PST Viewer safe?
+
+Yes, it opens files read-only and sends nothing over the network. Read flags and timestamps in the file remain unchanged.
+
+### What software opens PST files?
+
+Outlook does once the file is attached to a profile, and this program does it without that step. It shows folders, messages and attachments straight from the file.
+    </description>
+    <releaseNotes>https://www.softorbits.net/pst-viewer/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
