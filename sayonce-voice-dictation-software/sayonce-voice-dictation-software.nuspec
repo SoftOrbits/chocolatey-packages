@@ -5,7 +5,7 @@
     <version>1.3.0</version>
     <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/sayonce-voice-dictation-software</packageSourceUrl>
     <owners>softorbits</owners>
-    <title>SayOnce - Voice to Text Dictation Software</title>
+    <title>SayOnce - Voice to Text Software</title>
     <authors>SoftOrbits</authors>
     <projectUrl>https://www.softorbits.net/voice-dictation-software/</projectUrl>
     <iconUrl>https://www.softorbits.net/assets/img/icons/vds.png</iconUrl>
@@ -15,31 +15,31 @@
     <docsUrl>https://www.softorbits.net/how-to/best-dictation-software.html</docsUrl>
     <bugTrackerUrl>https://apps.microsoft.com/detail/9plmh8g96xlr?hl=en-US&amp;gl=US</bugTrackerUrl>
     <tags>voice-to-text speech-to-text dictation voice-typing speech-recognition transcription audio-to-text video-to-text offline-dictation hotkey productivity trial license</tags>
-    <summary>Local voice to text software that types speech at the cursor of any Windows app and turns audio or video recordings into .txt files without sending them to a server.</summary>
-    <description>SayOnce - Voice to Text Software is voice to text software that lets staff dictate into any Windows application instead of typing, with recognition done on the PC itself. For IT teams deploying it with Chocolatey across an office, a clinic or a support desk, the main point is that recorded speech is not uploaded anywhere for transcription.
+    <summary>Voice to text software with local speech recognition that types at the cursor of any Windows app. As speech to text software for recordings, it turns audio or video files into .txt without sending them to a server.</summary>
+    <description>SayOnce - Voice to Text Software lets staff dictate into any Windows application instead of typing, with speech recognition done on the PC itself. For IT teams deploying it with Chocolatey across an office, a clinic or a support desk, the main point is that recorded speech is not uploaded to any cloud service for transcription.
 
 ![SayOnce - Voice Dictation Software screenshot 1](https://download.softorbits.com/files/pkg-img/vds/vds-v1-dictate.png)
 
 ## How to use SayOnce - Voice to Text Software
 
 1. Install the package and start the program once on each PC so it can download its speech model (about 478 MB).
-2. Click into an email, a form, a document or a chat.
+2. Click into an email, a form, a Microsoft Word file, a Google Docs page or a chat.
 3. Press and hold Ctrl+Win, say the text, then let go.
-4. The words are pasted at the cursor. Choose Prose, Code or Email on the main screen to change formatting.
-5. To turn meetings or interviews into notes, add audio or video files on the Files tab.
+4. The words are pasted at the cursor. Choose Prose, Code or Email on the main screen to set formatting, and Prose adds punctuation and capital letters.
+5. To transcribe meetings or interviews into notes, add audio or video files on the Files tab.
 
 Trial note: the free trial runs without a day limit but caps the number of dictations per day, after which the hotkey is blocked. A license lifts the cap.
 
 ![SayOnce - Voice Dictation Software screenshot 2](https://download.softorbits.com/files/pkg-img/vds/vds-v1-presets.png)
 
-## What the package puts on a PC
+## What this speech to text software puts on a PC
 
 - The desktop app with a tray icon and an overlay that shows listening and processing states.
 - Settings for the microphone, hotkey, push-to-talk, paste method, autostart and app language.
-- A speech model stored on the PC after the first download, which can be unloaded from memory after a set idle time.
+- A speech model stored on the PC after the first download, so recognition works offline. It can be unloaded from memory after a set idle time.
 - Batch transcription to .txt, saved next to each source file or in one output folder.
 
-Snippets replace a short spoken phrase with a stored block of text, such as an address or a sign-off, and the personal dictionary helps it get names and terms used in your team right.
+Snippets replace a short spoken phrase with a stored block of text, such as an address or a sign-off, and the personal dictionary keeps a custom vocabulary list, which improves accuracy on names and terms used in your team.
 
 ## Who it is for
 
@@ -50,23 +50,23 @@ Snippets replace a short spoken phrase with a stored block of text, such as an a
 
 ![SayOnce - Voice Dictation Software screenshot 3](https://download.softorbits.com/files/pkg-img/vds/vds-v1-settings.png)
 
-## Trial and license
+## Windows voice to text software: trial and license
 
-This package installs the free trial of SayOnce, commercial voice to text software by SoftOrbits. Full use without the daily dictation limit requires a paid license, and activating it may need an internet connection. Plans and volume discounts: [voice dictation software for Windows](https://www.softorbits.net/voice-dictation-software/?utm_source=chocolatey&amp;utm_medium=package).
+This package installs the free trial of SayOnce, commercial Windows voice to text software by SoftOrbits. Full use without the daily dictation limit requires a paid license, and activating it may need an internet connection. Plans, including a business license, and volume discounts: [voice dictation software for Windows](https://www.softorbits.net/voice-dictation-software/?utm_source=chocolatey&amp;utm_medium=package).
 
 [SayOnce - Voice to Text Software on Windows Store](https://apps.microsoft.com/detail/9PLMH8G96XLR)
 
 ## FAQ
 
-### Is there a free speech-to-text?
+### Is there free voice dictation software?
 
 The free trial of this speech to text software keeps every feature but has a daily dictation limit. A license removes that limit.
 
-### What makes a dictation program for PC worth installing?
+### What is good voice to text software for Windows?
 
 It should work in the programs you already use, respond quickly and keep audio private. SayOnce pastes into any active window and runs recognition locally, and a graphics card is not required.
 
-### Which tool should I use for converting speech to text?
+### Which dictation software for Windows should I use for converting speech?
 
 For live typing, a hotkey tool that pastes at the cursor fits best. For recordings, you need a file transcriber that outputs text. This voice typing software covers both, through dictation and the Files tab.
     </description>

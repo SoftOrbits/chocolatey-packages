@@ -5,7 +5,7 @@
     <version>2.15</version>
     <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/pdf-to-csv-converter</packageSourceUrl>
     <owners>softorbits</owners>
-    <title>PDF to CSV Converter - Bank Statement Converter</title>
+    <title>Convert PDF to CSV - Bank Statement Converter</title>
     <authors>SoftOrbits</authors>
     <projectUrl>https://www.softorbits.net/pdf-to-csv-converter/</projectUrl>
     <iconUrl>https://www.softorbits.net/assets/img/icons/pdfcsv.png</iconUrl>
@@ -14,46 +14,46 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
     <tags>pdf-to-csv pdf-converter csv pdf-table-extractor extract-table-from-pdf bank-statement-converter qbo ocr scanned-pdf spreadsheet data-extraction tabular-data trial license</tags>
-    <summary>Turns tables in text and scanned PDF files into UTF-8 CSV for spreadsheets, a whole folder per run and fully offline, so you can convert PDF to CSV without uploading documents.</summary>
-    <description>This package installs PDF to CSV Converter, a Windows desktop program that lets you convert PDF to CSV in batches on machines where documents must stay local. It processes a folder per run, recovers tables from both digital PDFs and scans, and writes the results as spreadsheet files while the source documents remain on the disk.
+    <summary>Bank statement converter that turns tables in text and scanned PDF files into UTF-8 CSV files, a whole folder per run and fully offline, so you can convert PDF to CSV without uploading documents.</summary>
+    <description>This package installs PDF to CSV Converter, a Windows program that lets you convert PDF to CSV in batches on machines where documents must stay local. It also serves as a bank statement converter: it processes a folder per run, recovers tables from digital PDF documents and scanned PDF pages, invoices included, and writes CSV files while the originals stay on the disk.
 
-## How to use it
+## How to use the PDF to CSV converter
 
-1. Launch the program once the package is installed.
+1. Launch the program after installation.
 2. Load the PDF files or select a folder that holds them.
-3. Leave OCR enabled for scanned statements. The OCR route is chosen page by page, so digital pages are not slowed down by it.
+3. Leave OCR enabled for scanned statements. It is chosen page by page, so digital pages skip it.
 4. Set the delimiter and decide between one CSV per PDF, one per table, or a single combined file.
 5. Check the text preview and start the conversion.
 
 Trial note: in the unregistered version each table stops after its first 10 data rows (the header does not count) and a nag screen appears. Registering a license key removes the row cap and the screen.
 
-## What lands in the CSV
+## What the PDF table extractor writes out
 
-- Files that follow RFC 4180, saved as UTF-8 with a BOM, so accented and Cyrillic characters survive the trip into a spreadsheet.
-- Multi-page tables merged into one block, without the headers that repeat on each page.
-- A leading apostrophe on cells beginning with =, +, - or @, so a spreadsheet will not run them as formulas. Numbers are left alone, and this guard is active by default.
+- RFC 4180 files in UTF-8 with a BOM, so accented and Cyrillic characters survive the trip into a spreadsheet.
+- Multi-page tables inside one PDF merged into one block, without the repeated headers.
+- A leading apostrophe on cells beginning with =, +, - or @, so a spreadsheet will not run them as formulas. Numbers are left alone, and the guard is on by default.
 - Optional normalization of numbers, dates to ISO 8601 and currencies, off until you switch it on. Amounts in brackets always turn into negative numbers.
 - A QBO file for QuickBooks as a second output from digital PDFs, once the bank's FI ORG and FID are filled in.
 
-## Who it is for
+## Who needs this bank statement converter
 
 - Accounting teams that need a bank statement converter on office PCs and cannot send client files to the cloud.
-- IT staff who push a PDF table extractor to several office machines through Chocolatey.
-- Analysts who convert PDF reports to CSV every week.
+- IT staff who push a PDF table extractor for offline data extraction to several office machines through Chocolatey.
+- Analysts who convert PDF reports to CSV every week and import them into a spreadsheet.
 
-## Accuracy
+## Accuracy when you extract tables from PDF files
 
-Tables in a PDF follow no common specification, so the program reconstructs them from coordinates, grid lines and spacing. Native PDFs give better results than scans, and scan quality sets the ceiling for OCR. When you extract tables from PDF files of a new kind, test a sample of real documents during the trial first.
+Tables in a PDF follow no common specification, so the program reconstructs every row and column from coordinates, grid lines and spacing. Native PDFs give better results than scans, and scan quality sets the ceiling for OCR. Before you rely on it for a new kind of file, test a sample of real documents during the trial.
 
 ## Trial and license
 
-This is a commercial program, and the package puts its free trial on the PC. Converting PDF files to CSV with every row of every table and no reminder screen needs a paid license, available as lifetime, 1-year or business. You can compare the plans on the [PDF table to CSV conversion](https://www.softorbits.net/pdf-to-csv-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+This commercial program is installed as a free trial. Converting PDF files to CSV with every row of every table and no reminder screen needs a paid license, available as lifetime, 1-year or business. You can compare the plans on the [PDF table to CSV conversion](https://www.softorbits.net/pdf-to-csv-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
 
 [PDF to CSV Converter on Windows Store](https://apps.microsoft.com/detail/9MVGSZSVPFFG)
 
 ## FAQ
 
-### Is a bank statement converter legit?
+### Is it legit to run bank statements through a converter?
 
 A converter like this only changes the format of data you already have. It converts PDF statements to CSV on your own PC, sends nothing to a server and does not alter the original file.
 
@@ -63,7 +63,7 @@ Online services exist, but each one needs the statement uploaded first. This pro
 
 ### How can I convert a PDF file to CSV?
 
-For a single document the default settings are enough: one CSV comes out for that PDF. Switch to the per-table mode if each table should get a file of its own.
+For a single document the default settings are enough: they turn that PDF into one CSV. Switch to the per-table mode if each table should get a file of its own.
     </description>
     <releaseNotes>https://www.softorbits.net/pdf-to-csv-converter/ver.html</releaseNotes>
   </metadata>

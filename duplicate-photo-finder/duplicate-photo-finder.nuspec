@@ -5,7 +5,7 @@
     <version>1.1</version>
     <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/duplicate-photo-finder</packageSourceUrl>
     <owners>softorbits</owners>
-    <title>Duplicate Photo Finder</title>
+    <title>Duplicate Photo Finder - Find Duplicate Photos</title>
     <authors>SoftOrbits</authors>
     <projectUrl>https://www.softorbits.net/duplicate-photo-finder/</projectUrl>
     <iconUrl>https://www.softorbits.net/assets/img/icons/dup.png</iconUrl>
@@ -15,27 +15,27 @@
     <docsUrl>https://www.softorbits.net/how-to/find-and-delete-duplicate-photos-windows.html</docsUrl>
     <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
     <tags>duplicate-photo-finder duplicate-photos duplicate-image-finder similar-photos photo-cleanup blurry-photos raw-photos heic image-deduplication disk-space photo-organizer trial license</tags>
-    <summary>Scans Windows folders and drives for identical and look-alike images, ranks each group by resolution and sharpness, and clears the extras to the Recycle Bin with this duplicate photo finder.</summary>
-    <description>This package installs SoftOrbits Duplicate Photo Finder, a duplicate photo finder for 64-bit Windows 10 and 11 that sorts repeated and near-identical pictures into groups and proposes one frame to keep in each. Detection runs on the CPU with perceptual hashing, so the machines you deploy it to need no graphics card, and pictures stay on the local disk during a scan.
+    <summary>Find duplicate photos in Windows folders and drives: this duplicate photo finder groups identical and look-alike images, ranks each group by resolution and sharpness, and clears the extras to the Recycle Bin.</summary>
+    <description>This package installs SoftOrbits Duplicate Photo Finder, a Windows duplicate photo finder for 64-bit versions 10 and 11 that sorts repeated and near-identical pictures into groups and proposes one frame to keep in each. Detection runs on the CPU with perceptual hashing, so the machines you deploy it to need no graphics card, and pictures stay on the local hard drive during a scan.
 
 ![Duplicate Photo Finder screenshot 1](https://download.softorbits.com/files/pkg-img/dup/dup-v1-sources.png)
 
-## How to use it
+## How to use the duplicate photo finder
 
 1. Launch the program. The first screen collects sources: drag folders in, use Add Folder or Add Photos, or run Scan Computer across all drives (system folders are excluded).
 2. In the right panel, set Comparison Method to Exact or Similar, then tune Accuracy and Matching Level. Turn on Include Rotated/Flipped if the archive holds turned copies.
 3. Press Scan. Results arrive group by group, and you can start removing files before the scan completes.
-4. On the results screen, browse groups as large icons, small icons or a table, and check the Preview and Metadata panel.
-5. Adjust marks with Auto Mark or UnMark All, then press Delete Marked.
+4. On the results screen, the top bar shows how much storage space the marked files take. Browse the list of groups as large icons, small icons or a table, and check the Preview and Metadata panel.
+5. Adjust marks with Auto Mark or UnMark All, then press Delete Marked to remove duplicate photos.
 
-&gt; Trial note: the free trial runs every scan and shows all groups, while the unregistered version caps how many files it deletes per session. Entering a license lifts the cap.
+Trial note: the free trial runs every scan and shows all groups, while the unregistered version caps how many files it deletes per session. Entering a license lifts the cap.
 
 ![Duplicate Photo Finder screenshot 2](https://download.softorbits.com/files/pkg-img/dup/dup-v1-results.png)
 
-## Who it is for
+## Who needs a duplicate photo cleaner
 
 - Help desk staff who tidy user profiles and shared picture folders before a disk migration.
-- Families who need to find duplicate photos after copying phone backups to the PC more than once.
+- Families who need to find duplicate photos in a photo collection built from phone backups copied more than once.
 - Photographers with burst series and re-saved exports, who want a similar photo finder that also weighs sharpness.
 - Small offices that need a duplicate photo cleaner without sending files to an online service.
 
@@ -43,7 +43,7 @@
 
 As a duplicate image finder it reads content as well as bytes:
 
-- Exact copies by size and SHA-256 for photos, videos and any other file type.
+- Exact copies by size and SHA-256 for any file type, so with All Files it also works as a duplicate file finder.
 - Look-alike pictures by perceptual hash, including resized or converted ones.
 - RAW camera formats and HEIC images from phones.
 - Blur level, both in the keeper choice and in a separate Find Blurry Photos mode.
@@ -62,13 +62,13 @@ The package installs the free trial of SoftOrbits Duplicate Photo Finder, which 
 
 Mostly what happens after the scan. This tool ranks each group by resolution, sharpness, size and date before it proposes a keeper, and it never removes the last copy in a group.
 
-### How can I search for an image I saved several times?
+### How can I search for an image?
 
-Add the folders where copies might sit and choose Exact. Every byte-identical copy of that picture shows up in one group with its path, so you can see where each one is stored.
+To find every saved copy of one picture, add the folders where copies might sit and choose Exact. Each exact duplicate shows up in one group with its path, so you can see where each one is stored.
 
-### Why does a scan show fewer duplicates than I expected?
+### Is there an easy way to find duplicate photos?
 
-Matching Level or Accuracy may be too strict, or a folder was added without Include Sub Folder. Loosen the settings, switch to Similar if the copies were resized, and scan again. System folders are skipped on purpose.
+Yes. Add your folders to the duplicate photo finder and press Scan, and groups arrive with every copy except the keeper marked. If fewer show up than expected, loosen Matching Level or Accuracy, or turn on Include Sub Folder.
     </description>
     <releaseNotes>https://www.softorbits.net/duplicate-photo-finder/ver.html</releaseNotes>
   </metadata>

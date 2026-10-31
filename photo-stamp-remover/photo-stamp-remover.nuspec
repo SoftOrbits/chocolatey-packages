@@ -5,7 +5,7 @@
     <version>19.1</version>
     <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/photo-stamp-remover</packageSourceUrl>
     <owners>softorbits</owners>
-    <title>Photo Stamp Remover</title>
+    <title>Photo Watermark Remover - Photo Stamp Remover</title>
     <authors>SoftOrbits</authors>
     <projectUrl>https://www.softorbits.net/watermark-remover/</projectUrl>
     <iconUrl>https://www.softorbits.net/assets/img/icons/psr.png</iconUrl>
@@ -14,33 +14,33 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://www.softorbits.net/how-to/remove-watermark.html</docsUrl>
     <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
-    <tags>watermark-remover remove-watermark date-stamp-remover logo-remover object-remover photo-editing inpainting batch-image-processing remove-text-from-image image-cleanup heic trial license</tags>
-    <summary>Detects and erases date imprints, in-house logos and caption text on photos you own, working offline on the PC as a local watermark remover with batch and console modes.</summary>
-    <description>Photo Stamp Remover is a watermark remover for Windows PCs that detects date stamps, logos and captions on your own photos and fills the area from the surrounding image. The package fits teams where several workstations, for example in marketing or a records office, need the same local photo cleanup tool without an online service.
+    <tags>photo-watermark-remover watermark-remover remove-watermark date-stamp-remover logo-remover object-remover photo-editing inpainting batch-image-processing remove-text-from-image image-cleanup heic trial license</tags>
+    <summary>Photo watermark remover to remove a date stamp from photos you own, along with in-house logos and caption text, working offline on the PC as a local tool with batch and console modes.</summary>
+    <description>Photo Stamp Remover is a photo watermark remover for Windows PCs that detects date stamps, logos and captions on your own photos and fills the area from the surrounding image. The package fits teams where several workstations, for example in marketing or a records office, need the same local tool to remove watermarks from photos without an online service.
 
 ![Photo Stamp Remover screenshot 1](https://download.softorbits.com/files/pkg-img/psr/psr-v1-main.png)
 
 ## Before the first run
 
-The program downloads its AI detection models when it starts for the first time, which takes about 5 to 10 minutes. After that the watermark remover works offline, so the download can be done once on each machine while you check the install.
+The program downloads its AI detection models when it starts for the first time, which takes about 5 to 10 minutes. After that the photo watermark remover works offline, so the download can be done once on each machine while you check the install.
 
-## How to use it
+## How to use it to remove a watermark from a photo
 
-1. Add pictures by dragging them into the window or through Add files.
+1. Add pictures with drag and drop into the program interface or through Add files.
 2. Press Remove Watermark for automatic detection and fill, or Find watermark to only mark the region.
-3. Where the result is not clean, select the area manually and use Remove, Concealer or Clone Stamp.
-4. Try another fill method (Inpainting, Hole filling, Texture generation or quick Remove) if the background looks uneven.
-5. Save the picture, or run batch mode to remove a logo from images in a full folder.
+3. Where the result is not clean, make a manual selection of the area and use Remove, Concealer or Clone Stamp.
+4. Try another fill method (Inpainting, Hole filling, Texture generation or quick Remove) if the background looks uneven after watermark removal.
+5. Save the picture, or run batch mode to remove a logo watermark from photos in a full folder.
 
-&gt; Trial note: the free trial lets you run every tool and judge the output, but the unregistered version cannot save images and stops after its trial days. A license enables saving.
+Trial note: the free trial lets you run every tool and judge the output, but the unregistered version cannot save images and stops after its trial days. A license enables saving.
 
 ![Photo Stamp Remover screenshot 2](https://download.softorbits.com/files/pkg-img/psr/psr-v1-find.png)
 
-## Who it is for
+## Who needs this photo watermark remover
 
-- Families with digital photos that carry a camera date in the corner.
-- Online sellers who want an outdated shop logo gone before relisting their own product photos.
-- Office staff who clear captions and on-screen text from screenshots.
+- Families who want to remove a date stamp from photos where the camera printed it in the corner.
+- Online sellers who need a logo remover for an outdated shop logo before relisting their own product photos.
+- Office staff who remove unwanted captions and on-screen text from screenshots.
 - Admins who want a photo watermark remover they can drive through the console mode.
 
 ![Photo Stamp Remover screenshot 3](https://download.softorbits.com/files/pkg-img/psr/psr-v1-select.png)
@@ -53,17 +53,17 @@ This package installs the free trial of Photo Stamp Remover, commercial watermar
 
 ## FAQ
 
-### Can it clean a repeated grid pattern spread over the image?
+### Can it remove a grid watermark from a photo?
 
-Partly. Automatic detection relies on text and object recognition, and a semi-transparent grid that blends into the background can slip past it. Select the affected areas yourself, use Texture generation or Inpainting, and check the result at full zoom.
+Partly. Automatic detection relies on text and object recognition, and a semi-transparent grid that blends into the background can slip past it. Select the affected areas yourself, use Texture generation or Inpainting, and check the watermark removal at full zoom.
 
-### Can I use it for photos taken on an iPhone?
+### Can I remove a watermark from a photo taken on an iPhone?
 
-Yes, once the files are on the PC. The watermark remover opens HEIC pictures directly, so there is no need to convert them first. It runs on Windows only, not on the phone.
+Yes, once the files are on the PC. The photo watermark remover opens HEIC pictures directly, so there is no need to convert them first. It runs on Windows only, not on the phone.
 
-### How long does one photo take?
+### How fast is the watermark remover on one photo?
 
-With a CUDA-capable graphics card the watermark remover usually finishes a picture in seconds. On the processor alone it can take several minutes, depending on image size, and batch mode handles a folder in one go.
+With a CUDA-capable graphics card the program usually finishes a picture in seconds. On the processor alone it can take several minutes, depending on image size, and batch mode handles a folder in one go.
     </description>
     <releaseNotes>https://www.softorbits.net/watermark-remover/ver.html</releaseNotes>
   </metadata>
