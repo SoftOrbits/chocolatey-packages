@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>batch-picture-resizer</id>
+    <version>14.2</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/batch-picture-resizer</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Batch Picture Resize Software - Batch Picture Resizer</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/batch_picture_resize/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/bpr.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9nfs43x2pjfl?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>batch-picture-resize bulk-image-resizer resize-multiple-images image-resizer photo-resizer resize-photos reduce-image-size image-size-in-kb smart-crop batch-image-processing exif-rotation watermark trial license</tags>
+    <summary>Resizes, crops and rotates whole folders of pictures on a PC, with a KB target for JPEG uploads, so one batch picture resize prepares a full photo set.</summary>
+    <description>This package installs Batch Picture Resizer, a Windows program that runs a batch picture resize over whole folders of photos on the local disk. Deployed with Chocolatey, it gives each office or shop PC the same way to bring product shots, staff photos and scans down to the size a website or a form accepts.
+
+![Batch Picture Resizer screenshot 1](https://download.softorbits.com/files/pkg-img/bpr/bpr-v1-main.png)
+
+## How to use Batch Picture Resizer
+
+1. Drop files or folders onto the main window, or use Add Files and Add Folder.
+2. Set the target: pixels, percent, or KB for JPEG output.
+3. Decide whether the aspect ratio is kept or smart crop trims each picture to an exact frame.
+4. Pick the destination. Results can go next to the originals and mirror the source folder tree.
+5. Press Start, then check the output folder.
+
+Trial note: the free trial needs no sign-up and runs on your real files. A license key switches it to the full version.
+
+![Batch Picture Resizer screenshot 2](https://download.softorbits.com/files/pkg-img/bpr/bpr-v1-convert.png)
+
+## Batch picture resize by file weight
+
+When a portal rejects anything over 200 KB, choose KB and type the limit or pick a preset between 20 KB and 5 MB. The program searches for a JPEG quality that lands at or under the number and shrinks the dimensions only when quality cannot get there. Test encodes happen in memory, so the saved file is compressed once. Sizing by weight works only for JPEG output.
+
+## Resize multiple images at once on each PC
+
+- A right-click entry in Windows Explorer.
+- A command line mode, so a scheduled task can resize multiple images at once from a shared folder.
+- Processing spread over all CPU cores.
+- Resize only if larger, DPI, JPEG quality and a choice of algorithms such as Lanczos.
+- Automatic EXIF rotation, flipping, mirroring, renaming and watermarks.
+
+## Who needs a bulk image resizer
+
+It pays off wherever the same size rule applies to many files:
+
+- Shops that publish product photos and need every image at one size.
+- Offices where staff attach pictures to portals with a weight cap.
+- Web teams that cut page weight before an upload.
+- Photographers sending a client lighter copies of a shoot.
+- IT staff who want a batch picture resize available on every desk without a cloud service.
+
+![Batch Picture Resizer screenshot 3](https://download.softorbits.com/files/pkg-img/bpr/bpr-v1-done.png)
+
+## Trial and license
+
+The package installs the free trial of this commercial program. Full use requires a license: lifetime, 1-year, business, lite or a monthly plan. Entering the key removes the trial status.
+
+Feature details and license options are on the [bulk photo resizing](https://www.softorbits.net/batch_picture_resize/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### What should a tool for batch resizing photos be able to do?
+
+It should apply one rule to a whole folder in a single batch picture resize, keep the aspect ratio and leave originals untouched. This program does that and adds a KB target, smart crop and a command line.
+
+### Can I resize a hundred photos at once?
+
+Yes. Add the folder that holds them and press Start, and the batch picture resize handles all hundred in a single run.
+
+### How can I reduce image file size in bulk for an upload limit?
+
+Pick KB as the unit and enter the portal's limit. Each JPEG comes out at or below it.
+    </description>
+    <releaseNotes>https://www.softorbits.net/batch_picture_resize/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

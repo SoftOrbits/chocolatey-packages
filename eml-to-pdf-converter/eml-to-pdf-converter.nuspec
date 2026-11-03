@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>eml-to-pdf-converter</id>
+    <version>1.7</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/eml-to-pdf-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>EML to PDF Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/eml-to-pdf-converter-software/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/eml.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9nd1lgtc7371?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>eml-to-pdf eml-to-html eml-viewer eml-converter email-to-pdf eml-files thunderbird-eml email-archive batch-pdf-converter merge-emails trial license</tags>
+    <summary>Handles EML to PDF work for saved .eml email files on the local PC: an EML viewer preview, PDF or HTML output, separate documents or one combined file, inline pictures on or off.</summary>
+    <description>This package installs a Windows program for EML to PDF work that takes .eml email files saved on disk and makes PDF or HTML documents from them in batch on Windows 10 and 11. The whole job runs on the local machine, and no Thunderbird or Outlook session is needed to process messages that are already exported.
+
+![EML to PDF Converter screenshot 1](https://download.softorbits.com/files/pkg-img/eml/eml-v1-list.png)
+
+## How to use EML to PDF Converter Software
+
+1. Launch it and load messages through Add files and Add Folder, or by dragging them in.
+2. Preview any message in the list and delete the ones you want to leave out.
+3. On the Convert tab pick PDF or HTML.
+4. Choose one document per email or a single combined file, and set the image option.
+5. Select the destination folder and click Start.
+
+Trial note: an unregistered copy runs as a limited trial, enough to check the layout on your own mail. A license lifts the limit.
+
+![EML to PDF Converter screenshot 2](https://download.softorbits.com/files/pkg-img/eml/eml-v1-read.png)
+
+## Batch EML to PDF: one file for a case, or one per message
+
+The combined mode collects the whole list into one document, which is handy when a case folder or a handover needs a single file. Separate mode writes one document per message and names it after the subject, with a prefix or suffix from the Tools tab. For EML to PDF printing you can leave inline pictures out and save ink.
+
+## What ends up in each document
+
+- Sender, recipient, subject and message body, with the names of attachments.
+- Fonts, colors and images of HTML email.
+- Clickable hyperlinks.
+- Text in KOI8-R, Windows-1251 or Unicode decoded correctly.
+
+![EML to PDF Converter screenshot 3](https://download.softorbits.com/files/pkg-img/eml/eml-v1-format.png)
+
+## Who it is for
+
+- Legal teams that assemble evidence and court bundles from exported correspondence and need each message as a fixed, printable page.
+- People who left a mail client and want an EML viewer for old exports, or want to transfer EML to PDF for safekeeping.
+- Admins who deploy it to several PCs with Chocolatey so staff can open EML file folders offline.
+
+## What this EML viewer and converter does not do
+
+Input is .eml only, so Outlook .msg, PST and MBOX need other tools. Command line use, Bates numbering and a Mac build are not offered. Large files of 500 MB and up are accepted but decode slowly.
+
+## Trial and license
+
+This is commercial software, and the Chocolatey package delivers its free trial, so full use requires a license. Either license type, lifetime or 1-year, removes the trial limit. Prices and terms are on the [EML to PDF conversion](https://www.softorbits.net/eml-to-pdf-converter-software/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Which program opens an EML file?
+
+This one does on Windows, with a preview pane that shows the message as it was formatted. No mail client has to be installed for that.
+
+### Can I open an EML file in Gmail?
+
+Not through this program, which never connects to Gmail or any other mailbox. It opens the .eml locally and can save it as PDF or HTML that you attach anywhere.
+
+### How do I convert an EML file to a PDF?
+
+Add it to the list, select PDF on the Convert tab and click Start. The document appears in the output folder with links that still work.
+    </description>
+    <releaseNotes>https://www.softorbits.net/eml-to-pdf-converter-software/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

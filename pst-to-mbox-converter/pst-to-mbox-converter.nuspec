@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pst-to-mbox-converter</id>
+    <version>1.6</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/pst-to-mbox-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>PST to MBOX Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/pst-to-mbox-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/pst2mbox.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9n855fm863x0?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>pst-to-mbox convert-pst-to-mbox pst-to-eml ost-to-mbox thunderbird-import outlook-to-thunderbird mbox email-migration apple-mail pst-converter trial license</tags>
+    <summary>Converts an Outlook PST file to MBOX format with the folder structure kept, so you can import PST to Thunderbird, or to single .eml messages, working as a local pst to mbox converter.</summary>
+    <description>This package installs a PST to MBOX converter that moves mail from an Outlook PST file or an .ost file into mailboxes in the MBOX format, or into separate .eml files, on the local Windows PC. Use it to import PST to Thunderbird or to another email client that reads mbox. Outlook does not need to be present on the system, and no message is uploaded anywhere.
+
+![PST to MBOX Converter screenshot 1](https://download.softorbits.com/files/pkg-img/p2mb/p2mb-v1-main.png)
+
+## How to use PST to MBOX Converter for Thunderbird
+
+1. Run the program and load the archive with Open PST or by dragging it in.
+2. Check the folders you want in the tree.
+3. On the Convert tab pick the file format, MBOX or EML, and choose the .sbd layout or flat files.
+4. Set filters and the rule for existing files if needed, choose the destination and click Start.
+5. Read the text report, then import PST to Thunderbird by pointing its import wizard at the output folder as a profile directory.
+
+Trial note: an unregistered copy opens with a reminder and exports only a portion of a large selection. A license lets the whole selection through.
+
+![PST to MBOX Converter screenshot 2](https://download.softorbits.com/files/pkg-img/p2mb/p2mb-v1-append.png)
+
+## Import PST to Thunderbird with the folder tree
+
+An mbox file has no place for nesting. Thunderbird rebuilds subfolders only when a directory with the mailbox name plus .sbd sits beside the mailbox file. When you convert the PST file to MBOX, the program writes that arrangement under a Mail folder, so the built-in import wizard accepts the result and the ImportExportTools NG add-on remains optional. This is how the whole folder structure reaches Thunderbird. Apple Mail and other clients that read the mbox format can get flat files instead.
+
+## Message details kept when you convert PST to MBOX
+
+- Header blocks of SMTP mail copied word for word, including DKIM signatures.
+- To, Cc and Bcc as actual addresses.
+- Unread and read marks that Thunderbird understands.
+- Message bodies that are never split at a line starting with "From ".
+- Attachments, and inline images linked by Content-ID.
+- Folder names and subjects in non-Latin scripts.
+
+## Who it is for
+
+- Office managers who need to convert PST to MBOX before a team switches mail clients.
+- Users of Apple Mail on a Mac, Postbox or Eudora who convert Outlook PST archives on a Windows PC first.
+- Admins who migrate a team and deploy the pst to mbox converter tool with Chocolatey on several PCs.
+
+![PST to MBOX Converter screenshot 3](https://download.softorbits.com/files/pkg-img/p2mb/p2mb-v1-done.png)
+
+## PST to MBOX converter tool limits
+
+Only mail is exported; contact, calendar and task items stay in the .pst. The program loads one archive per session, does not repair damaged files and skips encrypted ones. The only supported system is Windows, tested on Windows 10 and Windows 11.
+
+## Trial and license
+
+The program is commercial, and this package sets up its free trial. Exporting complete selections requires a lifetime or a 1-year license. The terms are on the [PST to MBOX converter](https://www.softorbits.net/pst-to-mbox-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Is there a free PST to MBOX converter available?
+
+This one is free to try: the software converts part of a large selection before you register, and complete exports need a paid license.
+
+### Can a PST file be imported to Thunderbird?
+
+Yes, after conversion. Thunderbird reads the MBOX tree this program writes, though it cannot open the .pst itself.
+
+### How do I import a PST file into Microsoft 365?
+
+Not with this program. It writes MBOX or EML files on the local disk and never connects to Microsoft 365, Exchange or any other live mailbox.
+    </description>
+    <releaseNotes>https://www.softorbits.net/pst-to-mbox-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

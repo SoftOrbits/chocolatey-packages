@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>auto-video-redaction-software</id>
+    <version>1.14</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/auto-video-redaction-software</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Blur Faces in Video - Auto Video Redaction Software</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/video-redaction-software/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/avr.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9pm0wgs1t84k?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>blur-faces-in-video video-redaction redact-video face-blur video-blur blur-license-plates body-cam dashcam cctv foia pixelate-video anonymize-video trial license</tags>
+    <summary>Covers faces, bodies and license plates in recorded footage on a local PC, letting records and security teams blur faces in video and mute audio before release.</summary>
+    <description>This package installs a Windows program used to blur faces in video from body cams, dashcams and CCTV on the machine itself. Through Chocolatey a police unit, a security office or a clinic can put the same offline face blur software on every workstation that handles footage.
+
+![Auto Video Redaction Software screenshot 1](https://download.softorbits.com/files/pkg-img/avr/avr-v1-faces.png)
+
+## How to use it to find and hide faces automatically
+
+1. Drag recordings in or open them through Add Files.
+2. Mark heads, whole bodies, plates or a custom region as targets.
+3. Set the hide mode to smooth blur, pixelation or black squares.
+4. Tune the confidence sliders and the Detect every Nth frame value.
+5. Add beep or mute intervals for spoken details.
+6. Run the batch and open the destination folder.
+
+Trial note: the free trial exports a shortened file, with no watermark and no cap on file count. Registering restores full-length output.
+
+![Auto Video Redaction Software screenshot 2](https://download.softorbits.com/files/pkg-img/avr/avr-v1-styles.png)
+
+## Video blur software deployment and format support
+
+- Runs offline. Detection and rendering stay on the workstation, nothing is uploaded.
+- CPU by default, no GPU required. Detection can go frame by frame, but checking every 2nd or 3rd frame suits most footage.
+- As video blur software it changes only the covered regions and keeps the original resolution, bitrate and frame rate.
+- MP4 with H.264 and AAC as the default output.
+- Batch mode across all CPU cores.
+
+## Audio and custom areas
+
+Spoken names, addresses or phone numbers can be cut from the audio track by marking intervals that are muted or covered with a 1 kHz beep effect. For a logo, a sign in the background or a tattoo the detector does not pick up, tick Custom on the panel and outline it manually with the rectangle or the free-form tool. License plates from street and dashcam footage have their own confidence slider, separate from the one for heads.
+
+## Who needs face blur software
+
+The package suits staff on a locked-down network who must hide a face before a clip goes to a court, an insurer or social media.
+
+- Police departments that redact video from body cams and interview rooms.
+- Legal and compliance teams answering FOIA and DSAR (data subject access) requests.
+- Security teams sharing parking lot or store CCTV.
+- Clinics hiding patients and witnesses before footage goes to a court or an insurer.
+
+![Auto Video Redaction Software screenshot 3](https://download.softorbits.com/files/pkg-img/avr/avr-v1-custom.png)
+
+## Video redaction software trial and license
+
+The package installs the free trial of a commercial program, and full use requires a license, sold as lifetime, 1-year, business or a monthly plan. A license removes the length cut on exports. Automatic detection can miss a face, so a person should review each output. Feature details are on the [video face blurring](https://www.softorbits.net/video-redaction-software/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Can I blur faces in a video for free?
+
+Yes, within the trial. It lets you blur faces in video files of your own, but it shortens what it exports.
+
+### Can I blur a face in a video recorded on an iPhone?
+
+Yes, once the clip is copied to the PC. iPhone recordings are MOV files with H.264 or HEVC video, and the program reads both, as well as MP4 and 3GP clips from other mobile phones.
+
+### How can I redact a video?
+
+Open the clip through Add Files, mark heads, plates or a custom area, choose the cover style and run the batch to blur faces in the footage. Then watch the output, since detection can miss a face.
+    </description>
+    <releaseNotes>https://www.softorbits.net/video-redaction-software/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

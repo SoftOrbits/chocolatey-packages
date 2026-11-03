@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>qbo-to-pdf-converter</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/qbo-to-pdf-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>QBO to PDF Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/qbo-to-pdf-converter-software/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/qbopdf.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9pgh6pkkb34z?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>qbo-to-pdf qbo-to-csv ofx-to-pdf open-qbo-file qbo ofx bank-download statement-to-pdf statement-to-csv quickbooks-download trial license</tags>
+    <summary>A QBO to PDF converter that reads .qbo and .ofx bank downloads without QuickBooks and saves them as paged PDF statements or Excel-ready CSV on the local PC.</summary>
+    <description>This package installs a QBO to PDF converter for Windows PCs in offices that receive .qbo and .ofx bank downloads by email but run no accounting software. Staff get a printable PDF statement or a CSV sheet from each download, and the original file stays unchanged for a later import.
+
+![QBO to PDF Converter screenshot 1](https://download.softorbits.com/files/pkg-img/b2p/b2p-v4-list.png)
+
+## How to use QBO to PDF Converter Tool
+
+1. Add downloads with Add Files or Add Folder, or drag them in.
+2. Select an entry to see which accounts it covers and how its first rows read.
+3. Choose PDF for paper or CSV for Excel.
+4. Set the date style, then tick the columns you want.
+5. Turn on Merge to combine the queue into one result, or leave it off for a file per download.
+6. Pick a destination and press Start.
+
+Trial note: an unregistered copy outputs up to 20 transactions from each download and marks the page as a partial result. Registering removes the cap and the mark.
+
+![QBO to PDF Converter screenshot 2](https://download.softorbits.com/files/pkg-img/b2p/b2p-v4-options.png)
+
+## Convert QBO to PDF or CSV
+
+PDF output follows a statement layout with Date, Check, Payee, Memo and Amount by default, and four extra columns can be ticked. Each account in a download gets its own table, and the footer names the source file and the date the page was produced. CSV output is written in UTF-8 with a BOM and a fixed English header, and formula-like cells are escaped so a spreadsheet does not execute them. When a download holds more than one statement, an Account column is added automatically.
+
+## What stays the same
+
+- A QBO to PDF run only reads the .qbo or .ofx and never rewrites it, so the same copy can still be imported later.
+- Bank, card and investment statements are taken from the same file.
+- Dates are printed in the style you choose on the Convert page, whatever the bank used.
+
+![QBO to PDF Converter screenshot 3](https://download.softorbits.com/files/pkg-img/b2p/b2p-v4-done.png)
+
+## Who needs a QBO to PDF converter
+
+- Front offices and property managers that receive bank downloads from clients or tenants.
+- Small firms that keep paper binders of statements.
+- Bookkeepers who convert QBO to PDF and review client downloads on paper before anything is imported.
+- Admins who install the tool across several PCs with Chocolatey.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and a license is required for full use. Lifetime, 1-year and business licenses each remove the 20-transaction cap and the partial-result line. See the [QBO to PDF Converter Tool](https://www.softorbits.net/qbo-to-pdf-converter-software/?utm_source=chocolatey&amp;utm_medium=package) page for details.
+
+## FAQ
+
+### How do I convert a QuickBooks download to PDF?
+
+Add the .qbo file, keep PDF selected and click Start. The statement lands in the folder you chose, readable in any PDF viewer.
+
+### What stops QuickBooks from saving files to PDF?
+
+Usually a damaged PDF component that QuickBooks installs for its own printing. This program has no such dependency, since it writes the PDF from the bank file directly.
+
+### Can I turn an online bank document into a PDF?
+
+Yes, if your online banking offers the statement as a .qbo or .ofx download. Save that file and convert it here.
+    </description>
+    <releaseNotes>https://www.softorbits.net/qbo-to-pdf-converter-software/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

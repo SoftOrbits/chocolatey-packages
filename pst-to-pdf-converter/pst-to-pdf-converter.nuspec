@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pst-to-pdf-converter</id>
+    <version>1.3</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/pst-to-pdf-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>PST to PDF Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/pst-to-pdf-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/pst.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9p03xjbp99s6?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>pst-to-pdf pst-converter ost-to-pdf outlook-to-pdf outlook-archive email-to-pdf save-emails-as-pdf pst-to-html pst-to-txt mail-export trial license</tags>
+    <summary>Exports chosen folders or individual messages from one Outlook data file (.pst or .ost) to PDF, HTML or TXT on the local PC, a PST to PDF converter that runs without Outlook.</summary>
+    <description>This package installs a PST to PDF converter for Windows that turns messages from a saved Outlook archive into PDF, HTML or TXT files. It suits an admin who keeps .pst and .ost exports from departed staff on a file server and has to produce readable copies on request, without setting up Outlook profiles for people who no longer work there.
+
+![PST to PDF Converter screenshot 1](https://download.softorbits.com/files/pkg-img/pst/pst-v1-open.png)
+
+## How to use PST to PDF Converter Software
+
+1. Load one archive with Open PST, or drop a .pst or .ost file on the window.
+2. Expand the folder tree and tick what should be exported.
+3. Open a folder to see its messages, and select one to read it in the preview pane.
+4. When you need specific mail, filter by From, To, Subject or Body and run Search inside the current folder.
+5. Go to the Convert tab, pick the output format and the inline images option, and switch between checked folders and selected messages.
+6. Set the destination and click Start.
+
+Trial note: an unregistered copy works as a limited free trial for testing on real mail. A license lifts those limits.
+
+![PST to PDF Converter screenshot 2](https://download.softorbits.com/files/pkg-img/pst/pst-v1-read.png)
+
+## Convert PST to PDF by folder or by message
+
+Two export modes cover most requests. Checked folders sends everything under the ticked branches, which fits a request such as all mail from Sent Items. Selected messages takes only the rows highlighted in the list, which fits a filtered search result. Before a PST to PDF run starts, a counter states how many messages will be written.
+
+## Save Outlook emails as PDF: what each file contains
+
+- From, Date, To and Subject placed ahead of the body, for HTML mail too.
+- The message body rendered from HTML, or plain text when that is all the message has.
+- Inline images when that checkbox is on.
+- Dates in UTC, since the archive keeps no sender offset.
+
+![PST to PDF Converter screenshot 3](https://download.softorbits.com/files/pkg-img/pst/pst-v1-pick.png)
+
+## Who it is for
+
+- IT staff who hold mailbox exports of former employees and answer legal or HR requests.
+- Records teams that need to save Outlook emails as PDF before a mailbox is retired.
+- Offices that roll the tool out to several PCs with Chocolatey and process archives where Outlook is not installed.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use of this PST to PDF converter requires a license. Lifetime, 1-year and business licenses are offered, and any of them removes the trial limits. Details are on the [PST to PDF Converter Software](https://www.softorbits.net/pst-to-pdf-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do I convert a PST file to PDF?
+
+Open the archive, tick folders or select messages, choose PDF on the Convert tab and click Start. The files appear in the destination folder you set.
+
+### Is a PST file the same kind of file as a PDF?
+
+No. A PST is an Outlook data store that holds many messages and folders, while a PDF is a page document meant for reading and printing.
+
+### Can PST files be converted to formats other than PDF?
+
+Yes, this program also writes HTML and TXT. Pick the format on the Convert tab before you press Start.
+    </description>
+    <releaseNotes>https://www.softorbits.net/pst-to-pdf-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

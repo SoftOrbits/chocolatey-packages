@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>qfx-to-pdf-converter</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/qfx-to-pdf-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>QFX to PDF Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/qfx-to-pdf-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/qfxpdf.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9nz6dvjxjt2l?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>qfx-to-pdf qfx-file-viewer open-qfx-file ofx-to-pdf qfx ofx bank-statement statement-to-pdf finance-converter pdf-report trial license</tags>
+    <summary>Converts .qfx and .ofx bank downloads into printable PDF statements with paged tables, offline on Windows, as a QFX to PDF step that needs no Quicken install.</summary>
+    <description>This package installs QFX to PDF Converter Tool, a Windows program that prints bank .qfx and .ofx downloads as paginated PDF statements. Pushed through Chocolatey, it lets an accounts office read statements on any desk without buying Quicken for each seat and without uploading bank data to a converter site.
+
+![QFX to PDF Converter screenshot 1](https://download.softorbits.com/files/pkg-img/x2p/x2p-v4-list.png)
+
+## How to use the program to convert QFX to PDF
+
+1. Load .qfx or .ofx files with Add Files, Add Folder or drag and drop.
+2. Click an entry to use the text preview as a quick QFX file viewer. It shows the transaction count and first rows.
+3. Pick paper size (A4 or Letter) and orientation, or let the table width decide.
+4. Select a print form for dates.
+5. Enable extra columns for memo, type or running total when needed.
+6. Choose where PDFs are saved and start the run.
+
+Trial note: the free trial outputs up to 20 transactions from every statement and labels the PDF as partial. Buying a license lifts the cap.
+
+![QFX to PDF Converter screenshot 2](https://download.softorbits.com/files/pkg-img/x2p/x2p-v4-options.png)
+
+## What ends up on the page
+
+- A header row that repeats at the top of each page.
+- Rows that never split across a page break.
+- Page numbers in the footer.
+- Negative amounts in color and in parentheses, readable on black and white printers.
+- Investment lines with share quantities kept in place.
+- Dates printed in the form you pick, since OFX always stores them as YYYYMMDD.
+- Portrait or landscape picked from the width of the table, on A4 or Letter paper.
+- Memos in Cyrillic, CJK or Latin-1 printed as written.
+
+## Optional columns
+
+Memo, transaction type and running total can be added to the table, and the running total starts unticked. It is a sum of the rows shown in the PDF, not the balance reported by the bank, so it helps when checking a period and does not prove an account balance. Wide tables switch the page to landscape on their own.
+
+## Who uses it to open QFX files
+
+Bookkeeping offices whose clients ask them to convert QFX to PDF, small firms that keep bank statements on paper, and help desks asked to open QFX file attachments on machines without finance software.
+
+![QFX to PDF Converter screenshot 3](https://download.softorbits.com/files/pkg-img/x2p/x2p-v4-done.png)
+
+## Trial and license
+
+The package installs the free trial of a commercial program. Full use needs a license, available as lifetime, 1-year or business. Once registered, a QFX to PDF run puts every transaction of a statement into the PDF. More details are on the [bank QFX statement conversion](https://www.softorbits.net/qfx-to-pdf-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## Frequently asked questions: QFX file viewer, CSV, Quicken
+
+### Can I open a QFX file online for free?
+
+You can, but that means handing a bank statement to a website. This program reads the file offline, and its free trial covers the first 20 transactions.
+
+### Can it convert QFX to CSV?
+
+No. It writes PDF only, a format for reading and filing. Pick a CSV tool when the numbers need sorting in a spreadsheet.
+
+### Does it work as a Quicken file viewer?
+
+Only for bank downloads in .qfx or .ofx form. A Quicken data file (.qdf) is a different format and is not read here.
+    </description>
+    <releaseNotes>https://www.softorbits.net/qfx-to-pdf-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

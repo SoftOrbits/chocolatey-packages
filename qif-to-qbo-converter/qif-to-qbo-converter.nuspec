@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>qif-to-qbo-converter</id>
+    <version>1.1</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/qif-to-qbo-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>QIF to QBO Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/qif-to-qbo-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/qifqbo.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9plzq268vd1l?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>qif-to-qbo qif-converter iif-to-qbo quicken-to-quickbooks qbo web-connect qif-to-csv qif-to-pdf bank-file-converter finance-migration trial license</tags>
+    <summary>A QIF to QBO converter that rewrites each QIF file or .iif money export as a .qbo QuickBooks imports, with a built-in bank directory and FID check, working offline.</summary>
+    <description>This package installs a QIF to QBO converter for Windows that bookkeeping offices can deploy to each workstation used for client migrations from Quicken to QuickBooks. It takes .qif and .iif exports for each bank or credit card account, matches them to a bank from a directory built into the program, and writes .qbo files that QuickBooks accepts through Web Connect. Client data stays on the local disk.
+
+![QIF to QBO Converter screenshot 1](https://download.softorbits.com/files/pkg-img/q2b/q2b-v4-done.png)
+
+## How to use QIF to QBO Converter Software
+
+1. Drop each QIF file from the client on the window, or add the whole export folder.
+2. Open a file in the preview to confirm the transaction count and the encoding before writing.
+3. Find the client's bank with Lookup, searching by bank name or by number.
+4. Type the FID yourself, or accept the suggested fallback when the bank is not listed.
+5. Leave the output set to QBO, choose a destination and click Start.
+6. Import each .qbo in QuickBooks as a Web Connect file.
+
+Trial note: unregistered, it writes 20 transactions per document into a file QuickBooks can import, so a test run on one QIF file gives real results. A license removes that count.
+
+![QIF to QBO Converter screenshot 2](https://download.softorbits.com/files/pkg-img/q2b/q2b-v4-lookup.png)
+
+## Bank identifiers when you convert QIF to QBO
+
+QuickBooks ties every imported QBO file to a bank through its FID, the bank ID written in the file header. This QIF to QBO converter ships with a list of 6839 financial institutions and marks the 5790 that need no edits. When the FID is missing or wrong, nothing is written and the exact error appears, so a broken file never reaches the client's books.
+
+## QIF file and IIF file details for bookkeepers
+
+- An IIF file saved as .txt is detected by what is inside it.
+- In CSV output a split transaction stays on one row, so column totals do not double.
+- Investment records and files with several accounts come through.
+- Non-Latin text is transliterated or encoded for the CP1252 code page that QBO relies on.
+- Transaction IDs are built so that inserting a line does not trigger a duplicate import.
+
+## How to import a QIF file into QuickBooks
+
+QuickBooks has no direct way to import QIF data, so you convert QIF to QBO first. Back up the QuickBooks Desktop company file, then run the QuickBooks import for each .qbo through Web Connect. A first file import shows how QuickBooks names the account, so test one QIF file before the rest.
+
+![QIF to QBO Converter screenshot 3](https://download.softorbits.com/files/pkg-img/q2b/q2b-v4-preview.png)
+
+## Who needs to import QIF into QuickBooks
+
+- Bookkeeping and accounting firms moving client books from Quicken to QuickBooks.
+
+## Trial and license
+
+The package installs the free trial of a commercial program. Full use needs a license (lifetime, 1-year or business), which lifts the 20-transaction cap. QuickBooks releases older than three years do not import .qbo at all, so check that before buying. More on the [QIF to QBO conversion](https://www.softorbits.net/qif-to-qbo-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Do I need a QIF to QBO converter online, or will a desktop one do?
+
+A desktop program does the same job, and here the QIF file never leaves your PC. No account, upload or connection is involved.
+
+### Does the free trial work as an Excel to QBO converter?
+
+No. Neither the trial nor the licensed version reads Excel or CSV, because the input must be a .qif or .iif export.
+
+### Does it work as a general QBO file converter?
+
+It writes a QBO file from QIF and IIF input, and it can also produce CSV or PDF from the same files. Reading an existing .qbo is a different task that it does not cover.
+    </description>
+    <releaseNotes>https://www.softorbits.net/qif-to-qbo-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

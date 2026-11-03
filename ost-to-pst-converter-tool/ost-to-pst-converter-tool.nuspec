@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ost-to-pst-converter-tool</id>
+    <version>1.4</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/ost-to-pst-converter-tool</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Convert OST to PST - OST to PST Converter Tool</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/ost-to-pst-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/ost2pst.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9nlckxv2r4h0?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>ost-to-pst convert-ost orphaned-ost ost-converter outlook-ost outlook-pst outlook-data-file mailbox-recovery exchange-cache outlook-migration trial license</tags>
+    <summary>Turns an orphaned or offline Outlook .ost cache into a portable Unicode .pst with the folder tree intact, so you can convert OST to PST with no Exchange server or live profile.</summary>
+    <description>How do I convert OST to PST when a PC is being retired or a user account is switched and the old Outlook cache is the only copy of the mail? This package installs a Windows tool for that job. Deployed with Chocolatey, it lets a help desk recover that mailbox on the machine where the file sits, with no Outlook profile, no Exchange connection and no upload.
+
+![OST to PST Converter Tool screenshot 1](https://download.softorbits.com/files/pkg-img/o2p/o2p-v1-empty.png)
+
+## How to use Convert OST to PST Software
+
+1. Launch the program and load the .ost from the old profile folder or a backup.
+2. Let the mailbox tree appear, with checkboxes beside each folder.
+3. Clear the folders you do not need.
+4. Set the location and file name for the new .pst.
+5. Start the conversion and wait for it to finish.
+6. Attach the .pst in Outlook on the new machine or account.
+
+Trial note: an unregistered copy is a limited free trial meant for a test on real data. A license lifts the limits.
+
+![OST to PST Converter Tool screenshot 2](https://download.softorbits.com/files/pkg-img/o2p/o2p-v1-open.png)
+
+## What the OST to PST converter writes
+
+The output is a Unicode PST that keeps the mailbox structure. Inbox, Sent Items and every user folder appear where they were, and empty system folders are skipped. Each message keeps its subject, sender, dates, HTML or plain body, read status and attachments, and the result has been checked to open in Outlook 2016.
+
+## OST vs PST: why you convert OST to PST files
+
+- An OST is a cache bound to one profile and one Exchange or Microsoft 365 account.
+- Remove the profile and the cache becomes orphaned, so Outlook cannot attach it again.
+- Outlook imports only PST files, never OST.
+- A PST is portable and can be opened on any PC with Outlook, and the steps above show how to convert OST to PST files you can still open.
+
+![OST to PST Converter Tool screenshot 3](https://download.softorbits.com/files/pkg-img/o2p/o2p-v1-dest.png)
+
+## Who it is for
+
+- Help desks moving users to new hardware or new accounts.
+- IT staff closing the mailbox of someone who left.
+- Admins pushing the tool to several PCs with Chocolatey so each mailbox is handled where its file lives.
+
+## Limits
+
+Password-protected or encrypted OST files, live mailboxes, PST repair and other mail formats are outside the scope. The tool runs on Windows only, and it does not connect to a server to fetch mail that never reached the cache.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use needs a license. Lifetime, 1-year and business licenses each remove the trial limits. Read more on the [OST to PST conversion](https://www.softorbits.net/ost-to-pst-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Is an OST file the same as a PST file?
+
+No. Both hold Outlook mail, but an OST is a synced cache tied to an account while a PST is a standalone archive.
+
+### Does Outlook use PST or OST?
+
+Both. Accounts on Exchange or Microsoft 365 keep a local OST cache, and PST is used for archives and for moving mail between machines.
+
+### What are OST and PST files in Outlook?
+
+OST is the offline copy of a server mailbox, and PST is a personal data file you can copy, back up and open anywhere. This program turns the first into the second.
+
+### How to convert OST to PST files without Outlook?
+
+Load the .ost in this program, which reads it on its own, and save the new .pst. Outlook matters only afterwards, to open the result.
+    </description>
+    <releaseNotes>https://www.softorbits.net/ost-to-pst-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
