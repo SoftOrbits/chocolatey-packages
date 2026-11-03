@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ai-photo-culling</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/ai-photo-culling</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Photo Culling Software - AI Photo Culling</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/ai-photo-culling/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/cul.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9pfrt925nm0j?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>photo-culling photo-culling-software culling photo-sorting photo-selection blurry-photos closed-eyes burst-photos raw-photos heic xmp photography-workflow trial license</tags>
+    <summary>Photographers who cull and edit on Windows get photo culling software that scores every frame, explains blur, blink or exposure faults and exports keepers, rejects and XMP marks.</summary>
+    <description>This package installs AI Photo Culling Software, photo culling software for 64-bit Windows 10 and 11 that rates every frame of a shoot for focus, open eyes and exposure and shows why a weak one scored low. Its AI models run on the processor, so studio workstations without a graphics card handle it, and no image is uploaded anywhere during analysis.
+
+![AI Photo Culling screenshot 1](https://download.softorbits.com/files/pkg-img/cul/cul-v1-grid.png)
+
+## How to use AI Photo Culling Software
+
+1. Start the app and pick Open Folder. Frames appear as they are processed, and you can review while the rest loads.
+2. Check the Keep, Reject or Maybe suggestion and the 0 to 100 score on each thumbnail.
+3. Point at a score for the beauty and composition subscores plus the technical reasons behind it.
+4. Press P, X or U to keep, reject or put off the decision on a frame, number keys for stars and S to stack a burst. Ctrl+Z takes back the last mark.
+5. Filter by one problem, such as closed eyes, to reject that group in one action, or open Survey mode to compare frames side by side with synced zoom.
+6. Finish by copying keepers to _Selected, moving rejects to _Rejected and writing XMP sidecars for a Lightroom, Capture One or Bridge workflow.
+
+Trial note: the unregistered version runs the full analysis on any folder and caps export at 15 frames per session, counting copies, XMP files, moves and Recycle Bin deletion together. A license lifts the cap.
+
+![AI Photo Culling screenshot 2](https://download.softorbits.com/files/pkg-img/cul/cul-v1-loupe.png)
+
+## What it flags in a shoot
+
+- A smeared shot or a soft subject, judged on the subject and not on the rest of the scene.
+- Closed eyes and faces in shadow.
+- Underexposed, backlit or blown subjects, with silhouettes kept apart.
+- Scans, screenshots and receipts that are not photos at all.
+- Series of look-alike frames, stacked so you can keep the strongest two to five in your selection.
+
+Reading RAW through the embedded preview keeps the speed up on large folders. RAW support covers 23 formats, alongside HEIC, HEIF, JPEG, PNG and WebP.
+
+## Who uses this photo sorting software
+
+Professional photographers, plus studios and photography schools where several retouchers sort client shoots on their own PCs. Freelancers who cull and edit their own work get an AI pass before importing into editing software. It also works as photo sorting software for a mixed family folder. You stay in control: rejects go to a folder or, after a separate confirmed step, to the Recycle Bin.
+
+![AI Photo Culling screenshot 3](https://download.softorbits.com/files/pkg-img/cul/cul-v1-stacks.png)
+
+## Trial and license
+
+The package installs the free trial of a commercial program. Full use needs a license: lifetime, 1-year, monthly or business. Registering removes the per-session export cap, and the analysis is identical in both versions. Terms are on the [cull photos on Windows](https://www.softorbits.net/ai-photo-culling/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### What does photo culling mean?
+
+It means choosing which frames are worth keeping before photo editing begins. This tool automates the mechanical part by spotting blur, blinks and exposure faults.
+
+### What is the best way to cull photos?
+
+Throw out the technically broken frames first, then make the final choice among the clean ones. The program ranks in that order, so a sharp frame always sits above a pretty but blurred one.
+
+### What do AI culling tools cost?
+
+Here the free version of this photo culling tool already scores whole folders, so a studio can test it on real work first. Taking more than 15 frames per session out of the app needs one of the paid licenses.
+    </description>
+    <releaseNotes>https://www.softorbits.net/ai-photo-culling/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mbox-viewer-tool</id>
+    <version>3.2</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/mbox-viewer-tool</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>MBOX Viewer Tool</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/mbox-viewer/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/mbv.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9pmmf6bvvd6t?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>mbox-viewer mbox-reader open-mbox thunderbird-profile google-takeout gmail-export email-viewer read-only-mail mail-archive-viewer trial license</tags>
+    <summary>Reads .mbox mail archives on a Windows PC without importing them: a read-only MBOX viewer with a folder tree, header search, a date filter and single-message save or print.</summary>
+    <description>This package installs an MBOX viewer for Windows that opens .mbox email archives and Thunderbird profile folders read-only, so help desk and forensic staff can browse a mailbox without importing it into any email client. The file is never modified, which keeps the copy usable as evidence or as a backup.
+
+![MBOX Viewer Tool screenshot 1](https://download.softorbits.com/files/pkg-img/mbv/mbv-v1-menu.png)
+
+## How to use MBOX Viewer Tool
+
+1. Launch the program after Chocolatey completes the install.
+2. Open an .mbox file, such as a Google Takeout export or an Apple Mail MBOX file from a Mac, or choose a Thunderbird profile directory to load every mailbox in it.
+3. Pick a folder in the tree and scan the list of mail.
+4. Filter by Subject, From, To or a date range.
+5. Click a message to read it across the full width of the window. With a license you can also save the open message from MBOX to EML, PDF or HTML.
+
+Trial note: unregistered, the full list is visible and 3 messages a day open freely, then a countdown precedes each new one and a limit page appears after 10. A license removes the limit and enables save, print and attachments.
+
+![MBOX Viewer Tool screenshot 2](https://download.softorbits.com/files/pkg-img/mbv/mbv-v1-file.png)
+
+## How to open MBOX file archives you did not create
+
+Mail from a former employee, a client or an old company PC often arrives as a bare .mbox file. Opening it in the MBOX viewer keeps it out of your own Outlook or any other email client, and nothing goes to a server, since the program does not open a network connection. A Thunderbird profile copied from an old disk opens as the folder tree it represents.
+
+## What the MBOX viewer shows
+
+- The mbox file format as it is on disk: plain text mail stored back to back, split into separate letters at each From line.
+- Folders Mozilla Thunderbird writes without an extension, with .msf indexes and .sbd subfolders read as part of the profile.
+- Gmail exports from Google Takeout, including split parts.
+- HTML formatting and inline pictures of each email.
+- Long email folders that become usable while they are still loading.
+- Menus and dialogs in 16 interface languages.
+
+![MBOX Viewer Tool screenshot 3](https://download.softorbits.com/files/pkg-img/mbv/mbv-v1-read.png)
+
+## Who it is for
+
+- Admins who push it with Chocolatey to help desk PCs that review mailboxes before a mail migration.
+- Investigators who need an MBOX reader that leaves a mail archive unaltered on an offline machine.
+- Users looking up how to open MBOX file exports on Windows who prefer a local program to an upload to someone's server.
+
+## Trial and license
+
+The Chocolatey package installs the free trial of a commercial program, and full use requires a license. A lifetime, 1-year, monthly or business license removes the daily reading limit and enables saving and printing. Details are on the [MBOX Viewer Tool](https://www.softorbits.net/mbox-viewer/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Does Thunderbird open MBOX files?
+
+It does after the file is imported into a profile, which copies the mailbox first. This program opens the same file directly and leaves it untouched.
+
+### How can I get my Gmail as an MBOX file?
+
+Export it with Google Takeout, which returns Gmail mail in .mbox format. Large exports come split into parts, and each part opens here separately.
+
+### Can it convert an MBOX file to PDF?
+
+It saves the email you have open as a PDF, one at a time. Converting a whole mailbox in one run is outside what this viewer does.
+    </description>
+    <releaseNotes>https://www.softorbits.net/mbox-viewer/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

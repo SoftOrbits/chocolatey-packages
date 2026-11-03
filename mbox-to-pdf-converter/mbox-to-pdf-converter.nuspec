@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mbox-to-pdf-converter</id>
+    <version>1.4</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/mbox-to-pdf-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>MBOX to PDF Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/mbox-to-pdf-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/mbox.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9pf20fm89nt7?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>mbox-to-pdf mbox-converter mbox-file thunderbird-mbox apple-mail email-to-pdf mailbox-archive mbox-export merge-emails-pdf trial license</tags>
+    <summary>Lets you convert MBOX to PDF on a Windows PC: an MBOX to PDF converter for Thunderbird and Apple Mail mailboxes, with message preview, filters, attachment names, and merged or per-message output.</summary>
+    <description>This package installs an MBOX to PDF converter for Windows that turns .mbox mailboxes from Thunderbird, Apple Mail and other sources into PDF on the machine where it runs. It suits offices that keep old mail archives on a few PCs and want them exported in PDF format for staff who have no email client set up.
+
+![MBOX to PDF Converter screenshot 1](https://download.softorbits.com/files/pkg-img/mbox/mbox-v4-tree.png)
+
+## How to use MBOX to PDF Converter Software
+
+1. Start the program after the package finishes installing.
+2. Add one or more mailboxes with Add File, add a directory with Add Folder, or drop files onto the window.
+3. Pick a mailbox in the tree and look through its message list, with Subject, From and Date columns, and the preview.
+4. Filter by sender, recipient, subject or body text and select only the messages you need.
+5. Decide between a single merged PDF per mailbox and one PDF per message, pick an output folder and click Start.
+
+Trial note: without a license the program processes 3 messages a day and then shows a reminder. Registering lifts that daily quota.
+
+![MBOX to PDF Converter screenshot 2](https://download.softorbits.com/files/pkg-img/mbox/mbox-v4-preview.png)
+
+## Convert MBOX to PDF for a case file or an audit
+
+HR staff and lawyers often want mailbox contents as pages that nobody edits by accident and that print cleanly. In merged mode the MBOX to PDF converter saves each MBOX file to PDF format as one file named after the mailbox, easy to attach to a case or hand to an auditor. The per-message mode writes every email as its own file inside a subfolder for that mailbox, so records from different people stay apart. To batch convert several mailboxes, tick them in the tree and export every MBOX file to PDF with one press of Start.
+
+## What each exported PDF keeps
+
+- HTML layout, colors and inline CID images, preserved as they looked in Thunderbird or Apple Mail.
+- Mailbox boundaries: each .mbox gets its own subfolder or its own merged file, never mixed.
+- Thunderbird stores such as Inbox that carry no extension, plus nested .sbd directories.
+- Each message's From, Date, To and Subject header and its attachment names.
+- A bundled PDF engine, so the system needs no Adobe Acrobat and no internet connection to convert to PDF.
+
+![MBOX to PDF Converter screenshot 3](https://download.softorbits.com/files/pkg-img/mbox/mbox-v4-progress.png)
+
+## Who it is for
+
+- IT staff rolling the MBOX to PDF converter out through Chocolatey to a records or HR department.
+- Former Thunderbird and Apple Mail users who no longer run an email client and want an archive in PDF format that opens anywhere.
+- Small firms archiving a departing employee's mail.
+
+## Trial and license
+
+The Chocolatey package installs the free trial of a commercial program, and full use requires a license. A lifetime, 1-year or business license removes the daily limit, so you can convert MBOX to PDF without a quota. Terms and prices are on the [MBOX to PDF Converter Software](https://www.softorbits.net/mbox-to-pdf-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do I convert MBOX to PDF?
+
+Add it to the program, choose merged or per-message output and press Start. The MBOX to PDF export lands in the folder you selected, as one file or one subfolder for each mailbox.
+
+### Which software can open an MBOX file on Windows?
+
+This program opens it from disk and lists the contents of the mailbox with a preview, so you can read mail before converting anything. No email client has to be installed for that.
+
+### Can an MBOX file be opened in Gmail?
+
+Not with this program, since it never connects to Gmail. It works with the file on your disk, and the resulting PDF can be sent from Gmail as an ordinary attachment.
+    </description>
+    <releaseNotes>https://www.softorbits.net/mbox-to-pdf-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

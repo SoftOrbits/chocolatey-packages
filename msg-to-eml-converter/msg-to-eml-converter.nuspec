@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>msg-to-eml-converter</id>
+    <version>1.3</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/msg-to-eml-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>MSG to EML Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/msg-to-eml-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/msg2eml.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9n1sxk0n4tns?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>msg-to-eml eml-to-msg msg-converter outlook-msg email-migration thunderbird-import email-headers batch-email-converter rfc822 trial license</tags>
+    <summary>Lets you convert MSG to EML, and .eml back to .msg, on a Windows PC: a batch MSG to EML converter that keeps all recipients and original headers of saved Outlook mail.</summary>
+    <description>This package installs an MSG to EML converter for Windows that turns Outlook .msg files into standard .eml messages, and .eml files into .msg, in batch on the local desktop. It is written for teams that hand mail over for e-discovery, audits or a migration to Mozilla Thunderbird or Apple Mail and have to keep the header trail of every email message intact.
+
+![MSG to EML Converter screenshot 1](https://download.softorbits.com/files/pkg-img/msg2eml/msg2eml-v5-empty.png)
+
+## How to use MSG to EML Converter Software
+
+1. Open the program once the Chocolatey install completes.
+2. Drag and drop .msg and .eml files on the window or load a directory with Add Folder.
+3. Look at the direction column to see which way each file converts.
+4. Set naming and the header and RTF options, then choose the output folder.
+5. Click Start to convert files and follow the counter of converted, copied, skipped and failed items.
+
+Trial note: an unregistered copy still processes the full list, but a countdown screen appears before the run and again during the batch, and it gets longer each time. Registering removes it.
+
+![MSG to EML Converter screenshot 2](https://download.softorbits.com/files/pkg-img/msg2eml/msg2eml-v5-list.png)
+
+## Convert MSG to EML with the delivery trail intact
+
+When a message carries its internet headers, the Received chain, DKIM signature and Authentication-Results are copied into the .eml exactly as the mail system recorded them. If they are missing, the headers are built from the information in the Outlook properties instead. All recipients go across, Bcc included, along with the sender, which matters when an archive must show who got a message.
+
+## What the MSG to EML converter carries over
+
+- Date, Message-ID, References, In-Reply-To and Return-Path.
+- Subjects with non-Latin characters, encoded to RFC 2047.
+- Inline images in their place and attachments without changes.
+- RTF-only bodies, which are decompressed and converted.
+- The reverse route too, since the program can convert EML back to Outlook .msg.
+
+![MSG to EML Converter screenshot 3](https://download.softorbits.com/files/pkg-img/msg2eml/msg2eml-v5-options.png)
+
+## Who it is for
+
+- Admins who install it with Chocolatey on several workstations to convert MSG to EML during a move away from Outlook to another email client.
+- Legal and compliance teams preparing Outlook email for a formal review.
+- Help desks that receive .msg files from Outlook users and need an MSG to EML copy readable on any operating system.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use needs a license. A lifetime or 1-year license removes the countdown screens of the MSG to EML converter. Details are on the [MSG to EML conversion](https://www.softorbits.net/msg-to-eml-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do I convert MSG files to EML in bulk?
+
+Load a folder with Add Folder and press Start, and every Outlook message file in it, subfolders included, is written as an .eml. A counter shows progress during the conversion process.
+
+### Is it better to save emails as MSG or EML?
+
+Save in EML format if the mail may leave Outlook, since most other email clients read that open file format as plain text, Apple Mail on a Mac included. The MSG format stores a message as an Outlook compound file structure and makes sense only when Outlook stays the one program that opens it.
+
+### Why can't Outlook open a .msg file?
+
+One common reason is that the file only has the .msg extension while the content is RFC 822 text or HTML. This program detects such email files and copies or skips them instead of failing.
+    </description>
+    <releaseNotes>https://www.softorbits.net/msg-to-eml-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

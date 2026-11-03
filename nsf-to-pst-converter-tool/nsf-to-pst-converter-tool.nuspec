@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nsf-to-pst-converter-tool</id>
+    <version>1.5</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/nsf-to-pst-converter-tool</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>NSF to PST Converter Tool</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/nsf-to-pst-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/nsf.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9n099vv1n472?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>nsf-to-pst lotus-notes hcl-notes nsf-converter notes-migration outlook-pst domino-mail ntf-file email-migration trial license</tags>
+    <summary>Lets you convert NSF to PST on the local PC and migrate Lotus Notes mail to Outlook: an NSF to PST converter that keeps folders, attachments and addresses with no Notes client.</summary>
+    <description>This package installs an NSF to PST converter for Windows that reads IBM and HCL Lotus Notes databases and lets you export their email into a PST file for Outlook, one mailbox at a time. It is aimed at contractors and forensic staff who work on an isolated machine with a copy of a former company's mail file and no Notes software installed.
+
+![NSF to PST Converter Tool screenshot 1](https://download.softorbits.com/files/pkg-img/nsf/nsf-v1-main.png)
+
+## How to use NSF to PST Converter Software for Lotus Notes
+
+1. Start the program after Chocolatey installs it.
+2. Open the .nsf or .ntf file from a local disk, an external drive or a network share.
+3. Let the reader complete the database scan, then browse the folder structure in the tree.
+4. Set a date window, a text filter or the Trash exclusion if only part of the archive is needed.
+5. Select the output folder and click Start to export the NSF file to Outlook PST.
+
+Trial note: unregistered, the program exports a small database of up to 20 messages completely, and from a larger one only about 10 percent, capped at 100 messages, alongside a reminder.
+
+![NSF to PST Converter Tool screenshot 2](https://download.softorbits.com/files/pkg-img/nsf/nsf-v1-filter.png)
+
+## Convert NSF to PST without a Notes client or Domino server
+
+Many converters rely on the Notes API, so they need the client installed before they can convert Lotus mail. This program parses the file format itself and runs its reader as a separate 64-bit process, which leaves room for archives of one or two gigabytes. A typical job turns one NSF file to PST per user mailbox, and you can convert NSF files from Notes 5 and later. Nothing is uploaded, and no server is contacted while the PST format output is written.
+
+## Export NSF mail: what goes into the PST
+
+- Inbox, Sent, Drafts and named folders, without a split Inbox.
+- Properties of every email item: Subject, body, sender, To, Cc, Bcc, dates, read flag.
+- Attachments of each email, including those squeezed by Domino server compression.
+- Addresses you can reply to, with a count of those built on your fallback domain.
+- Text in LMBCS, decoded correctly into the PST format Outlook expects.
+
+![NSF to PST Converter Tool screenshot 3](https://download.softorbits.com/files/pkg-img/nsf/nsf-v1-done.png)
+
+## Technical requirements
+
+Windows 10 or 11, and Outlook 2016 or newer to open the export. Notes and Domino are not needed.
+
+## Who it is for
+
+- Admins who roll it out with Chocolatey to convert NSF to PST on the machines used for a Notes migration.
+- Forensic staff performing the export on an offline copy.
+- Records teams that need one PST file for a legal hold or an audit.
+
+## Trial and license
+
+The Chocolatey package installs the free trial of a commercial program, and full use requires a license. A lifetime or 1-year license converts every selected message. See the [NSF to PST conversion](https://www.softorbits.net/nsf-to-pst-converter/?utm_source=chocolatey&amp;utm_medium=package) page for terms.
+
+## FAQ
+
+### How is an NSF file converted to a PST file?
+
+The program reads the notes in the database, rebuilds the folders and writes each email from the NSF file to a PST file. You pick the output folder, press Start and open the result in Outlook.
+
+### What should I look for in an NSF to PST converter?
+
+Check first whether a solution needs HCL Notes installed, because that becomes a blocker once the client is gone. This one does not, and it also reads .ntf files, Domino-compressed attachments and LMBCS text.
+
+### What does a PST converter do?
+
+An NSF to PST converter takes mail out of a Notes .nsf and writes it into a PST that Outlook can mount. Here the export covers email only, so contacts, calendar entries and tasks stay behind.
+    </description>
+    <releaseNotes>https://www.softorbits.net/nsf-to-pst-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

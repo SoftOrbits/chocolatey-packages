@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>imap-to-imap-email-migration-tool</id>
+    <version>3.6</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/imap-to-imap-email-migration-tool</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>IMAP to IMAP Email Migration Tool</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/imap-to-imap-email-migration-tool/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/imm.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9npm6fw5p4vw?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>imap-migration migrate-imap-to-imap email-migration mailbox-migration imap gmail-to-outlook microsoft-365 email-transfer imap-sync mail-backup-copy trial license</tags>
+    <summary>Email migration tool for Windows: copies a whole mailbox from one IMAP account to another, folders and flags included. As a desktop IMAP migration tool, it moves mail between providers without scripts.</summary>
+    <description>This package installs IMAP to IMAP Email Migration Tool, an IMAP migration tool that copies mail between two IMAP accounts from a Windows workstation. A small company changing its mail host can push it with Chocolatey to the PC that runs the move, and the software migrates the staff mailboxes one by one.
+
+![IMAP to IMAP Email Migration Tool screenshot 1](https://download.softorbits.com/files/pkg-img/imm/imm-v1-connect.png)
+
+## How to use IMAP to IMAP Email Migration Tool
+
+1. Fill in the source mailbox on the left with a preset or Other IMAP server.
+2. Authenticate with app passwords for Gmail, Yahoo and iCloud, or with the Microsoft login page for Microsoft 365 and personal Outlook accounts.
+3. Set up the destination mailbox on the right the same way.
+4. Check where each folder will go. New ones are marked for creation.
+5. Narrow the move to a date range if you only need to transfer IMAP email from a certain period.
+6. Click Start and keep the report when the run is finished.
+
+Trial note: without a license the free trial transfers the newest 25 messages per folder. A license lets the same pair finish the job, and the messages already moved are skipped.
+
+![IMAP to IMAP Email Migration Tool screenshot 2](https://download.softorbits.com/files/pkg-img/imm/imm-v1-folders.png)
+
+## What is preserved when you migrate IMAP to IMAP
+
+- Folder structure and folder roles are maintained, so Sent lands in Sent.
+- Dates and the read, flagged and answered state.
+- Each message as raw bytes, attachments and headers included.
+- A Message-ID check that skips mail already present.
+- A journal for Continue after a crash or a dropped link.
+- Read-only access to the source mailbox, so there is no data loss on the old side.
+
+## Who needs an email migration tool like this
+
+- Small firms moving domain mail to Microsoft 365 before switching MX records.
+- Offices replacing a hosting provider or email service and moving each employee's mailbox.
+- Admins who need to migrate IMAP to IMAP without writing scripts or a manual method in an email client.
+- Individuals combining an old IMAP account with the current one.
+- Consultants who carry one IMAP migration tool from client to client.
+
+For a program that touches every staff account this matters: passwords are kept in memory only, and the report lists addresses, folder names and message IDs. Google Workspace accounts are not supported in this version.
+
+![IMAP to IMAP Email Migration Tool screenshot 3](https://download.softorbits.com/files/pkg-img/imm/imm-v1-run.png)
+
+## Trial and license
+
+The package installs the free trial of a commercial program. Full use needs a license: lifetime, 1-year, monthly plan or business. With a license the 25-message cap is gone, and the IMAP migration tool can handle any number of mailbox pairs without a per-mailbox fee. Feature details are on the [IMAP mailbox migration](https://www.softorbits.net/imap-to-imap-email-migration-tool/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Does Microsoft offer its own migration tool?
+
+Yes. Exchange Online runs IMAP migration batches, set up by a tenant admin with a CSV of mailboxes and passwords. For a few mailboxes, signing in to both sides here is quicker.
+
+### What is a good IMAP migration tool for Office 365?
+
+For a small team, a desktop IMAP migration tool like this one can copy each mailbox into Microsoft 365 from one PC. Work accounts may need administrator consent for IMAP, and the app shows the exact permission to forward to IT.
+
+### How do I do an email migration step by step?
+
+To migrate IMAP email, connect the old account, connect the new one, confirm the folder map and press Start. When the migration process ends, read the report for anything skipped, such as a message too large for the destination.
+    </description>
+    <releaseNotes>https://www.softorbits.net/imap-to-imap-email-migration-tool/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

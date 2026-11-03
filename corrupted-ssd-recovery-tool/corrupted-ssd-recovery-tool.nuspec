@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>corrupted-ssd-recovery-tool</id>
+    <version>4.5</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/corrupted-ssd-recovery-tool</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Corrupted SSD Recovery Tool</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/ssd-recovery/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/ssd.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9p3qqrkrnbc7?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>corrupted-ssd-recovery ssd-recovery data-recovery nvme raw-drive lost-partition partition-recovery file-recovery trim ntfs exfat trial license</tags>
+    <summary>Get files back from a damaged drive with corrupted SSD recovery that scans RAW volumes, broken file systems and lost partitions, marks what TRIM erased and saves the rest to another disk.</summary>
+    <description>This package installs Corrupted SSD Recovery Tool, a Windows 10 and 11 program for corrupted SSD recovery from RAW volumes, damaged file systems and lost partitions. On a help desk bench it lists internal SATA and NVMe disks next to drives in USB adapters, opens each source for reading only and saves files to a target disk you pick.
+
+![Corrupted SSD Recovery Tool screenshot 1](https://download.softorbits.com/files/pkg-img/ssd/ssd-v1-results.png)
+
+## How to use Corrupted SSD Recovery Tool
+
+1. Attach the SSD, either inside the PC or through a USB enclosure, and open the program.
+2. Choose it from the drive list, which shows fixed and removable disks with size and file system.
+3. Confirm after the summary that reports bus type, TRIM support and delete notifications.
+4. Run a quick scan for a damaged file system or a deep scan to rebuild files by signature.
+5. Check the tree of findings, tick what you need and save it to a separate disk.
+
+Trial note: without registration the program scans and lists everything it can return, so the result is visible before purchase. Writing recovered files to a disk needs a license.
+
+![Corrupted SSD Recovery Tool screenshot 2](https://download.softorbits.com/files/pkg-img/ssd/ssd-v1-saved.png)
+
+## What comes back when you recover data from a corrupted SSD
+
+- RAW volumes and file systems that Windows wants to format.
+- Partitions lost after a failed install, a resize or a stopped clone.
+- NTFS, exFAT and FAT32 data, with names rebuilt from directory indexes.
+- 32 file formats found by content signature and checked for structure.
+- Deleted files from an external SSD, since USB bridges rarely forward TRIM.
+
+Deleted files on an internal SSD with TRIM active are usually beyond corrupted SSD recovery, and the tool marks such entries as wiped instead of offering them as recoverable. Encrypted volumes have to be unlocked in Windows before a scan. If the BIOS cannot detect the drive, it needs a hardware lab. Guides on how to fix corrupted SSD drive errors tend to start with chkdsk, but a repair pass rewrites the records a scan relies on, so save the files first.
+
+![Corrupted SSD Recovery Tool screenshot 3](https://download.softorbits.com/files/pkg-img/ssd/ssd-v1-trim.png)
+
+## Who it is for
+
+Help desk staff who pull data from SSDs of retired laptops, and repair shops that hear "can you fix a corrupted SSD?" and check whether the fault is logical before quoting lab work. It also suits offices asking how to recover data from corrupted SSD drives when client files cannot go to an online service. The support log can be shared without file names or paths.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use needs a lifetime, 1-year or business license. A license unlocks saving the found files. Details are on the [SSD recovery](https://www.softorbits.net/ssd-recovery/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Can you fix a corrupted SSD?
+
+Not with this tool: it leaves the drive as it is and copies the files to another disk. That is also the safer answer to how to fix corrupted SSD drive trouble: rescue the data, then format or replace the SSD.
+
+### How to recover data from a corrupted SSD?
+
+Write nothing to it, run a scan and save the findings to another disk. When the damage is logical, files under a RAW or broken volume stay in the cells, and the pre-scan check says whether TRIM has cleared anything.
+
+### How much does it cost to recover an SSD?
+
+A lab quotes per case because it works on the memory chips. With this program you pay for a license only, after the free scan has shown that the fault is one software can handle.
+    </description>
+    <releaseNotes>https://www.softorbits.net/ssd-recovery/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

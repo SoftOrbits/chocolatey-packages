@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>csv-to-pdf-converter</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/csv-to-pdf-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>CSV to PDF Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/csv-to-pdf-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/csvpdf.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9n2xw0z3pxvx?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>csv-to-pdf csv-to-pdf-converter bank-statement bank-statement-converter csv tsv pdf-report csv-to-qbo quickbooks transactions accounting trial license</tags>
+    <summary>Offline csv to pdf converter for Windows: a bank statement converter that turns bank and broker CSV downloads into printable reports with repeating table heads and page numbers, or into QBO files for QuickBooks.</summary>
+    <description>This package installs CSV to PDF Converter for Bank Statements, a csv to pdf converter for Windows 10 and 11 that turns bank and exchange exports into printable reports in PDF format. Bookkeeping offices can deploy this bank statement converter to each desk and process client files locally, with no need to upload a CSV file with account data to a web service.
+
+![CSV to PDF Converter screenshot 1](https://download.softorbits.com/files/pkg-img/c2p/c2p-v1-main.png)
+
+## How to use the CSV to PDF converter
+
+1. Add exports with Add Files or Add Folder, or drag and drop them into the window. The queue accepts .csv, .tsv and .txt.
+2. Click each CSV file and confirm in the preview that the delimiter, encoding and row count look right.
+3. Set the input date order once, which also decides how dates print.
+4. Leave PDF selected, or choose QBO to use it as a csv to qbo converter and look up the client's bank in the built-in directory.
+5. Choose a target folder and start the batch.
+
+Trial note: the unregistered version writes only the first 20 transactions and labels the report as incomplete. Registration removes that cap.
+
+![CSV to PDF Converter screenshot 2](https://download.softorbits.com/files/pkg-img/c2p/c2p-v1-done.png)
+
+## Convert CSV to PDF for a year of statements
+
+A full year of CSV downloads, January to December, goes through the CSV converter queue in one run and comes back as twelve PDF reports, each named after its source CSV file. The table head repeats on every page, pages are numbered, and negative amounts show in color and in brackets, so a report survives black and white printing.
+
+## What the bank statement converter reads in a client's file
+
+- The delimiter that splits the fields and the encoding, both worked out per file, including CP1251 and UTF-16.
+- Bank text above the header row, skipped, so the table structure starts at the real column names.
+- Column names in English, Russian and German.
+- Debit and credit pairs turned into one signed amount.
+- Several accounts in one export, grouped by account.
+- Figures such as (1 234,56) and amounts with a trailing minus, counted as negative.
+- The day and month order you set, so 03/04/2026 lands in the right month.
+
+![CSV to PDF Converter screenshot 3](https://download.softorbits.com/files/pkg-img/c2p/c2p-v1-bank.png)
+
+## Who it is for
+
+Bookkeepers who receive raw exports and need to convert CSV to PDF for filing, finance teams preparing proof of income for staff, and accountants who also need a csv to qbo converter for QuickBooks clients. Used as a bank statement converter, it keeps every client file on the office PC.
+
+## Trial and license
+
+The package installs the free trial of a commercial program. Full use needs a lifetime, 1-year or business license, which removes the 20 transaction cap. More is on the [CSV to PDF Converter](https://www.softorbits.net/csv-to-pdf-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do I convert a CSV file into a readable file?
+
+Turn CSV exports into PDF with the converter, then open the result in Portable Document Format (PDF), which is universally supported by readers on every system. Numbers align right, alternate rows are shaded, and a row never breaks across two pages.
+
+### How can I open a CSV file without Excel?
+
+The preview in this program already shows the parsed rows, and the finished PDF opens in any reader. Neither step needs a spreadsheet application.
+
+### What does CSV mean?
+
+The letters mean comma-separated values, a plain text file format used to store tabular data, one record per line and fields split by commas. Many European exports use semicolons instead, and the program reads both.
+    </description>
+    <releaseNotes>https://www.softorbits.net/csv-to-pdf-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
