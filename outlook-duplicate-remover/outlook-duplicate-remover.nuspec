@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>outlook-duplicate-remover</id>
+    <version>1.4</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/outlook-duplicate-remover</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Remove Duplicate Emails in Outlook - Outlook Duplicate Remover</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/outlook-duplicate-remover/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/odr.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9nn24mxr5q70?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>remove-duplicate-emails-outlook outlook-duplicates duplicate-emails pst ost pst-cleanup email-deduplication mailbox-cleanup outlook-tools trial license</tags>
+    <summary>Outlook duplicate remover that finds copies of the same message across folders of a PST or OST file and saves one of each to a new archive, so you can remove duplicate emails Outlook collected.</summary>
+    <description>This package installs Outlook Duplicate Remover, a Windows program to remove duplicate emails Outlook data files pick up after double account setups or repeated imports. Working as an Outlook duplicate email remover for mailbox cleanup, it opens .pst and .ost files directly, needs no Outlook installation and saves the unique messages to a new PST in a folder you choose. The input file is never changed.
+
+![Outlook Duplicate Remover screenshot 1](https://download.softorbits.com/files/pkg-img/odr/odr-v1-overview.png)
+
+## How to use Outlook Duplicate Remover
+
+1. Start the program and load a .pst or .ost with Open.
+2. Select the folders to scan. Subfolders are included, so copies split between Inbox and Archive form one group.
+3. Switch match fields on or off: subject, sender, body, recipients, sent date, attachment names.
+4. Leave the RE:/FW: option enabled so a forwarded copy still pairs with its source.
+5. Select the copy to keep per group (first found, oldest, newest), choose the output folder and press Start.
+
+Trial note: before registration only part of the mailbox is processed and a reminder window appears. A license removes that limit.
+
+![Outlook Duplicate Remover screenshot 2](https://download.softorbits.com/files/pkg-img/odr/odr-v1-strict.png)
+
+## How to remove duplicate emails Outlook keeps in several places
+
+Grouping covers every checked folder at once, which the Clean Up command in Outlook cannot do since it stays inside one folder. Duplicate email messages that land in Inbox and in an archive folder after a repeated import are caught in the same pass, so nobody has to manually remove items folder by folder. Each occurrence of a duplicate after the first stays out of the new file, while fixing the account settings will prevent duplicate downloads later.
+
+## What the Outlook duplicate email remover writes
+
+- A new PST that contains one message from each group of copies.
+- An optional backup PST of the removed items, kept beside the result for rollback.
+- A CSV report (UTF-8 with BOM) with folder, subject, sender, date, group key and the kept or removed action.
+
+Scope: email only, one archive per run, no Office 365 or IMAP connection.
+
+![Outlook Duplicate Remover screenshot 3](https://download.softorbits.com/files/pkg-img/odr/odr-v1-search.png)
+
+## Who it is for
+
+IT staff who tidy user mailboxes before a migration, and consultants who receive a swollen PST from a client and need to remove duplicates from PST file copies. Admins who must remove duplicate emails Outlook gathered on several user PCs install the package on each and run the duplicate removal locally, with no upload.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use needs a license: lifetime, 1-year, monthly plan or business. A license lifts the sample limit. Details are on the [Outlook duplicate email remover](https://www.softorbits.net/outlook-duplicate-remover/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Can I remove duplicates from PST file copies safely?
+
+Yes, because the program writes a new PST with one copy per group and opens the source read-only. Nothing is deleted inside the original archive.
+
+### Can the Outlook Clean Up tool remove duplicate emails?
+
+Only in part. Clean Up drops messages whose text is fully quoted in a later reply within one folder and never compares two separate folders. For anyone asking how to remove duplicate emails Outlook spread across folders, the answer is a scan of the whole file.
+
+### How do I get rid of duplicate messages in an Outlook folder?
+
+Tick that folder in the tree, keep subject, sender and body as match fields and run the scan. Tick its neighbours too when they may contain duplicate email copies, and check the CSV report afterwards.
+    </description>
+    <releaseNotes>https://www.softorbits.net/outlook-duplicate-remover/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

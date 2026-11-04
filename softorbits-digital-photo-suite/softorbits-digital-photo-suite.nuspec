@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>softorbits-digital-photo-suite</id>
+    <version>16.0</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/softorbits-digital-photo-suite</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>SoftOrbits Digital Photo Suite</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/digital-photo-suite/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/dps.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
+    <tags>digital-photo-suite photo-editing photo-editor batch-resize watermark photo-retouching background-remover photo-restoration sketch image-tools trial license</tags>
+    <summary>A digital photo suite of ten focused photo editing software tools for Windows that resize, retouch, watermark and restore pictures, priced about 70% below the separate programs.</summary>
+    <description>This package installs SoftOrbits Digital Photo Suite - Photo Editing Bundle, a digital photo suite of ten Windows programs for retouching, resizing, watermarking and restoring photos. Each tool opens in its own window with a short list of options, which makes it easy to hand a single task to a colleague on another office PC.
+
+![SoftOrbits Digital Photo Suite screenshot 1](https://download.softorbits.com/files/pkg-img/dps/dps-v1-resize.png)
+
+## How to use SoftOrbits Digital Photo Suite
+
+1. Install the package and open the program you need from the suite folder in the Start menu.
+2. Add a photo or a whole set of files.
+3. Choose the settings or a preset and look at the preview.
+4. Save the output to a folder of your choice.
+5. Continue in the next tool if the job has more steps.
+
+Trial note: the trial is free and asks for no registration, so every program can be tested on real pictures. Buying a license lifts the trial restrictions.
+
+![SoftOrbits Digital Photo Suite screenshot 2](https://download.softorbits.com/files/pkg-img/dps/dps-v1-watermark.png)
+
+## Ten programs in one photo editing bundle
+
+- AI Photo Editor for edits described in a text prompt.
+- Batch Picture Resizer for folders of photos that need one size or format.
+- Photo Retoucher for old prints with scratches, noise or missing color.
+- SoftSkin Photo Makeup for portraits.
+- Photo Background Remover, which can also place the subject on a white backdrop.
+- Batch Picture Protector for watermarks, and Photo Stamp Remover for removing stamps and logos from your own pictures.
+- Sketch Drawer and Picture to Painting Converter for artistic effects.
+- Flash Drive Recovery for photos lost from a card or stick.
+
+![SoftOrbits Digital Photo Suite screenshot 3](https://download.softorbits.com/files/pkg-img/dps/dps-v1-retouch.png)
+
+## Photo editing software for batch jobs and repairs
+
+This photo editing software set is aimed at repeated, practical tasks rather than layer-based design. A shop can resize a catalog and stamp a logo on it in two passes, and a family archive can be cleaned up print by print.
+
+## Who it is for
+
+Photographers, small offices and home users on Windows 11 or 10 who want several narrow tools under one purchase, bought as a photo editing bundle instead of ten separate orders. A business licence covers use of the digital photo suite on company computers.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use needs a license. Lifetime, 1-year, monthly plan and business options are offered, and a license removes the trial limits in all ten programs.
+
+Pricing and the list of programs are on the [SoftOrbits Digital Photo Suite](https://www.softorbits.net/digital-photo-suite/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### What editing software do photographers rely on?
+
+Most combine a main editor with smaller tools for routine work. This bundle supplies the routine part, such as resizing whole folders, watermarking and fixing old scans.
+
+### How can I edit JPG photos for free without going online?
+
+Install the trial of this suite and open your JPG files in the program you need. Nothing is uploaded, and you can judge the result before paying.
+
+### Is any photo editor fully free?
+
+Free editors exist, but this suite is a paid product with a no-cost trial. You can test each program first and buy a license only if it fits your work.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

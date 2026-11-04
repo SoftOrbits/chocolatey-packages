@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pc-optimizer-software-speed-up</id>
+    <version>1.2</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/pc-optimizer-software-speed-up</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>PC Optimizer Software - Speed Up</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/pc-optimizer/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/tpo.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
+    <tags>pc-optimizer speed-up-pc startup-manager services-manager ram-optimizer game-boost registry-tweaks disk-space-analyzer windows-tweaks system-utilities performance trial license</tags>
+    <summary>Speeds up a slow Windows PC by stopping unneeded services, cutting startup apps and releasing memory, and every pc optimizer tweak is saved so you can revert it.</summary>
+    <description>This package installs Turbo PC Optimizer, a pc optimizer for 64-bit Windows 10 (1607 and later) and Windows 11. To speed up PC response, it targets the background load that slows a machine over time: services nobody uses, a long startup list, memory held by idle apps and default Windows settings. Before each batch of changes it records a snapshot, so the system can be put back as it was.
+
+![PC Optimizer Software - Speed Up screenshot 1](https://download.softorbits.com/files/pkg-img/tpo/tpo-v5-dashboard.png)
+
+## How to use Turbo PC Optimizer
+
+1. Install the package, then open the program. The interface runs as a standard user.
+2. Start a scan and wait a few seconds for the services, startup and disk results.
+3. Read the notes next to each item on the dashboard.
+4. Apply the safe preset with Optimize, or choose tweaks one at a time.
+5. Use the revert option on a single tweak or on the full batch if you change your mind.
+
+Trial note: the free trial runs for 30 days from the first install and includes every feature. Once it ends, optimization needs a license.
+
+## What it changes to speed up PC
+
+![PC Optimizer Software - Speed Up screenshot 2](https://download.softorbits.com/files/pkg-img/tpo/tpo-v5-services.png)
+
+The services view gives a recommendation per service and can stop the chosen ones and switch them to manual start. The startup view also lists scheduled tasks, where updaters and store launchers often hide. Registry tweaks cover System, Explorer and the built-in apps, and anything risky, for example disabling UAC, is marked and left out of the preset.
+
+Boost to the max suspends idle processes and clears RAM and cache before a game or a render, then restores them with one more click. Game Boost switches on Hardware-Accelerated GPU Scheduling and gives the game GPU priority. A privacy group handles DiagTrack telemetry and the Recall timeline, only on request.
+
+![PC Optimizer Software - Speed Up screenshot 3](https://download.softorbits.com/files/pkg-img/tpo/tpo-v5-startup.png)
+
+The disk analyzer reads the NTFS master file table and sorts folders by size. Note that this pc optimizer is not a pc cleaner: it does not delete temp files or browser data, and the program does not stay in memory after you close it.
+
+## Who it is for
+
+- IT staff who look after a few office PCs and want to speed up PC startup on hardware that cannot be upgraded yet.
+- Gamers who want background tasks paused for the length of a session.
+- Owners of laptops that boot slowly after a few years of installed software.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use after 30 days needs a paid license. The site offers a monthly plan, a 1-year license, a lifetime license and business licenses, plus Lite and Pro editions. Details are on the [Turbo PC Optimizer](https://www.softorbits.net/pc-optimizer/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Do PC optimizations really work, or is it placebo?
+
+They work when they reduce what runs in the background. Stopping unused services and startup apps frees CPU time and RAM, and you can check the result by timing boot before and after.
+
+### How can I increase my PC speed before a heavy job?
+
+Press Boost to the max shortly before you start it. Idle background processes are suspended and memory is cleared, and a second click brings everything back.
+
+### How do I make my PC run at full speed for a render or a game?
+
+Combine Boost to the max with Game Boost for games, and trim startup so less is loaded in the first place. Hardware limits stay where they are, so a slow disk remains slow.
+    </description>
+    <releaseNotes>https://www.softorbits.net/pc-optimizer/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

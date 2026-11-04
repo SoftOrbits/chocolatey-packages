@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>usb-drive-encryption</id>
+    <version>3.3</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/usb-drive-encryption</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>USB Drive Encryption</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/usb-drive-encryption/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/ude.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9mxj1k0m3gcr?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>usb-drive-encryption encrypt-usb-drive flash-drive-password usb-password-protect portable-decryptor aes-256 removable-media file-encryption data-protection privacy trial license</tags>
+    <summary>USB drive encryption with AES-256-GCM behind your password, plus a portable decryptor on the stick, so the drive opens on other Windows PCs without setup.</summary>
+    <description>This package installs Encrypt &amp; Password Protect USB Drive, usb drive encryption software for Windows 10 and 11. It fills a gap on Home editions, where BitLocker To Go cannot be turned on, and it behaves identically on Pro. Files are encrypted one at a time with AES-256-GCM, and the key comes from the password you choose.
+
+## How to use Encrypt &amp; Password Protect USB Drive
+
+1. Install the package and plug in the stick. The program shows removable drives only, with their file system and free space.
+2. Select the drive, set a password and save the recovery key when it appears.
+3. Click Protect. Progress is shown per file, with a cancel button.
+4. When the run completes, the root shows a single program file and the rest sits in a hidden storage folder.
+5. To decrypt a drive permanently, open the app on your own PC and choose decrypt.
+
+Trial note: unregistered, the program allows three protect runs and five openings, with no feature disabled. A license lifts the counts, and decryption plus the recovery key keep working regardless.
+
+## How usb drive encryption works on a managed fleet
+
+Nothing on the target PC needs to change. The decryptor on the stick is native code of about 2 MB, it does not install, does not ask for admin rights and loads nothing into the kernel. That makes usb drive encryption usable on locked-down workstations where users run with standard rights.
+
+Can you encrypt a flash drive as is? Yes. Nothing is formatted or partitioned, so the file system stays. Before writing, the program checks capacity and format and reports whether the run can finish. The storage folder is the root of protection, which keeps $RECYCLE.BIN and similar system folders out of scope.
+
+## How to encrypt a USB drive on Windows 11 Home
+
+Windows 11 Home offers Device Encryption for fixed disks only, so a stick stays open unless you add a tool. Here, how to encrypt a USB flash drive is the five steps above, and it opens on Home and Pro.
+
+## Recovery and privacy
+
+Deleted the decryptor by mistake? Reinstall the app, point it at the drive, and the password opens it. No account or cloud copy is involved.
+
+## Who needs usb drive encryption software
+
+- Admins who must satisfy a policy on encrypted removable media for laptops running Windows Home.
+- Employees who carry files between two desks.
+
+## Trial and license
+
+The package installs the free trial of a commercial program. Full use beyond the trial counts needs a license: lifetime, 1-year, monthly or business. Plans are listed on the [USB drive encryption](https://www.softorbits.net/usb-drive-encryption/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Can you encrypt a flash drive that already holds files?
+
+Yes. Existing files are encrypted in place and nothing is reformatted. Each file grows only by a short header, so what fitted before still fits.
+
+### Is BitLocker 100% secure for a USB stick?
+
+BitLocker is a sound option where Windows offers it, which means Pro, Enterprise and Education. On Home, BitLocker usb drive encryption is missing, so sticks need a separate tool.
+
+### Why is my USB encrypted on another PC?
+
+Because the protection travels with the stick. Run the program file at its root and type the password, and nothing has to be installed on that computer.
+
+### How to encrypt a USB flash drive I share with a coworker?
+
+Protect it once, then open it yourself on their PC and let them copy the one file they asked for. The rest of the stick stays closed.
+    </description>
+    <releaseNotes>https://www.softorbits.net/usb-drive-encryption/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

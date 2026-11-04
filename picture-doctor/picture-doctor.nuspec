@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>picture-doctor</id>
+    <version>4.0</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/picture-doctor</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>JPEG Repair Tool - Picture Doctor</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/picdoctor/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/pd.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
+    <tags>jpeg-repair jpg-repair photo-repair repair-corrupted-jpeg psd-repair image-recovery thumbnail-extraction batch-processing photo-tools graphics trial license</tags>
+    <summary>Restores corrupted and truncated JPEG and PSD photos on the local PC, removing stripes, green blocks and holes where the data allows, as a batch jpeg repair tool.</summary>
+    <description>This package installs Picture Doctor, jpeg repair software for Windows that can recover a corrupted photo after an SD card or flash drive error, a torn download or a copy that stopped halfway. Each damaged photo is processed on the local drive and the fixed copy goes to a folder of your choice. Damaged PSD files from Photoshop are supported too, and any number of photos can go into one run.
+
+![Picture Doctor screenshot 1](https://download.softorbits.com/files/pkg-img/pd/pd-v1-files.png)
+
+## How to use Picture Doctor
+
+1. Open the program after installation.
+2. Load the broken photos through Add Files, a folder, or drag and drop.
+3. Set the output directory.
+4. If you want, enable preview before saving and adjust the speed and depth setting.
+5. Press Start and review the repaired files in the output folder.
+
+Trial note: unregistered, the program processes any number of files, but a black rectangle is drawn over the center of every recovered picture. Buying a license removes it.
+
+![Picture Doctor screenshot 2](https://download.softorbits.com/files/pkg-img/pd/pd-v1-progress.png)
+
+## What jpeg image repair covers
+
+The jpeg repair engine deals with corrupted files truncated at the end, sectors on a memory card that came back unreadable and visual damage such as stripes or green blocks. Progressive images are supported. Broken markers are skipped rather than ending the decode, and EXIF data is kept or restored where possible. A fast run can sort a big batch, and a deeper one can follow for the hard cases.
+
+## How to fix a corrupted photo that will not open
+
+For PSD documents the program recovers layers and the flattened composite, and it scans deep inside the file for embedded JPEG data. To fix a corrupted photo whose full frame cannot be rebuilt, it can still extract the thumbnail from the damaged file. Results can be written as BMP to preserve the recovered pixels without a second lossy save, though BMP does not hold EXIF.
+
+![Picture Doctor screenshot 3](https://download.softorbits.com/files/pkg-img/pd/pd-v1-result.png)
+
+## Who needs jpeg file repair
+
+- Help desk staff who receive a folder of photos with corruption issues and need jpeg file repair in one run.
+- Photographers who pulled a card from the camera too early.
+- Users who will not upload private pictures to a website.
+
+## Trial and license
+
+The package installs the free trial of commercial photo fix software. Clean jpeg repair output without the rectangle needs a paid license, available as a lifetime license, a 1-year license or a business license on the [Picture Doctor](https://www.softorbits.net/picdoctor/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do I repair a corrupted JPEG?
+
+Add the corrupted JPEG photo to the list, pick an output folder and press Start. The repaired copy lands in that folder, separate from the damaged file.
+
+### What does jpeg image repair software do when a photo is beyond rebuild?
+
+It falls back to the embedded thumbnail, a smaller copy most cameras store inside the file. That gives you a recognizable picture even when the main frame is lost.
+
+### Is jpeg repair software practical for a whole folder of photos?
+
+Yes, because jpeg repair runs are batch by design. The trial has no limit on file count, so you can fix multiple photos in a test run and see which images come back.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

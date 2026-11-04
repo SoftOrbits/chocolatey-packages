@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pst-repair-tool</id>
+    <version>1.6</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/pst-repair-tool</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>PST Repair Tool</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/pst-repair-tool/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/pstrepair.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9mtnrgz5zrzm?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>pst-repair outlook-repair pst ost ost-repair email-recovery mailbox-repair data-file-repair scanpst-alternative trial license</tags>
+    <summary>Recovers mail from a corrupt PST file or a damaged OST and saves it into a new PST or message files, with this PST repair tool leaving the source file untouched.</summary>
+    <description>This package installs Outlook PST Repair Tool, a third-party PST repair tool for Windows 10 and 11 that pulls mail out of a damaged .pst or .ost and into a new file. On user machines where Outlook reports errors in its data file, it runs without Outlook, never modifies the source and keeps all processing local.
+
+![PST Repair Tool screenshot 1](https://download.softorbits.com/files/pkg-img/prt/prt-v1-main.png)
+
+## How to use Outlook PST Repair Tool
+
+1. Open the program and point it at the broken data file.
+2. Wait while the repair escalates from a plain open to a rebuilt header and, if that fails, a block-by-block scan.
+3. Check the recovered folders and messages in the tree and in the preview.
+4. Keep Automatic scan depth or pick Quick only or Deep scan.
+5. Select an output format, tick folders and press Start.
+
+Trial note: in the unregistered version the program scans and previews all recovered content, while saving stays blocked. A license enables saving in every output format.
+
+![PST Repair Tool screenshot 2](https://download.softorbits.com/files/pkg-img/prt/prt-v1-depth.png)
+
+## How it rebuilds a corrupt PST file
+
+The slow signature scan starts only when the quicker levels fail or damage shows up in the tree. A message whose body or attachment did not survive is still saved and flagged [partial], with a note inside naming what is missing. Mail without a parent folder goes to a Lost &amp; Found branch rather than being dropped, and ownerless attachments are collected in a separate branch.
+
+- A new PST to open in Outlook.
+- MSG or EML files, one per message.
+- MBOX for other mail clients.
+- PDF or HTML for people with no mail client at all.
+
+![PST Repair Tool screenshot 3](https://download.softorbits.com/files/pkg-img/prt/prt-v1-format.png)
+
+## Who needs a PST repair tool for Outlook
+
+Desktop support teams who get the call that Outlook will not start, and admins who need to repair PST file damage on machines where scanpst has already run and mail is still missing. Old ANSI archives from Outlook 2002 and earlier stop at 2 GB and tend to break near that limit, and they are read as well. The run report can be sent to support without file names, subjects or addresses.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use needs a license (lifetime, 1-year or business). A license unlocks saving of the repaired mailbox. Plans are listed on the [PST file repair](https://www.softorbits.net/pst-repair-tool/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do I get a repaired PST file back into Outlook?
+
+Save the result as PST and open it in Outlook as a data file. The recovered mail then shows up as its own mailbox in the folder pane.
+
+### Why does Outlook keep corrupting OST files?
+
+Typical triggers are a full disk, an interrupted sync or a file kept on an unreliable network share. Each of these leaves holes or cut ends in the file, and a block-level scan reads around them.
+
+### How should I back up a PST file before a repair?
+
+Close Outlook and copy the .pst to another drive. With this program the copy is only a precaution, because the source is opened read-only.
+    </description>
+    <releaseNotes>https://www.softorbits.net/pst-repair-tool/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

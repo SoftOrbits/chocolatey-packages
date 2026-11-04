@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>flash-drive-recovery</id>
+    <version>4.8</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/flash-drive-recovery</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Flash Drive Recovery</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/flash-drive-recovery/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/fdr.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
+    <tags>flash-drive-recovery usb-recovery data-recovery file-recovery sd-card-recovery memory-card deleted-files format-recovery fat32 exfat ntfs trial license</tags>
+    <summary>Flash drive recovery that scans USB sticks, memory cards and cameras for deleted or formatted files, shows them in a tree and saves the ones you tick to a folder on another disk.</summary>
+    <description>This package installs SoftOrbits Flash Drive Recovery, a Windows 10 and 11 tool to recover files from flash drive media such as USB sticks, memory cards and cameras. Deployed on a service PC, it opens each attached device read-only, scans for deleted or formatted data and saves the results to a folder on a separate drive.
+
+![Flash Drive Recovery screenshot 1](https://download.softorbits.com/files/pkg-img/fdr/fdr-v1-drive.png)
+
+## How to use the USB flash drive recovery tool
+
+1. Connect the stick or card and open the program.
+2. Select the device and start Quick scan or Deep scan.
+3. Follow the progress line with speed and estimated time, or press Stop to end it.
+4. Tick files in the result tree and choose a target folder.
+5. Click Recover. Files with unreadable sectors arrive marked as partially recovered.
+
+Trial note: the unregistered version scans the device and lists every recoverable file. Saving those files with Recover needs a license.
+
+![Flash Drive Recovery screenshot 2](https://download.softorbits.com/files/pkg-img/fdr/fdr-v1-found.png)
+
+## Recover files from flash drive volumes: what it reads
+
+- FAT12, FAT16, FAT32, exFAT and NTFS volumes, from small camera cards to SDXC.
+- Quick scan from file system metadata, and a deep scan that carves 32 formats with a structure check.
+- Original names and paths for deleted FAT and NTFS entries.
+- A partial mark for any file whose sectors could not be read.
+
+## Corrupted flash drive recovery after a format
+
+When a card was quick formatted or its file system broke, the data area usually still holds the files, and that is what makes corrupted flash drive recovery possible. The deep pass reads free space and skips occupied space, which keeps the time down on large sticks, and carved files get names from their contents or from NTFS indexes.
+
+![Flash Drive Recovery screenshot 3](https://download.softorbits.com/files/pkg-img/fdr/fdr-v1-saved.png)
+
+## Who it is for
+
+IT support teams who handle sticks brought in by staff, photo studios that reuse memory cards, and shops that want a usb flash drive recovery tool on the bench. The support log and crash report leave out file names and paths, so they can be forwarded safely. The window resizes freely and the tree shows a counter of ticked items, which helps when a card holds thousands of photos.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use needs a license (lifetime, 1-year or business). The license unlocks Recover, so found files can be written to disk.
+
+Details on the license and system requirements are on the [flash drive recovery program](https://www.softorbits.net/flash-drive-recovery/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Can data on a formatted flash drive be recovered?
+
+In most cases yes, if nothing new was written to it. A quick format resets the file system records, and a deep scan reads the files back from the data area.
+
+### What does recovering data from a flash drive cost?
+
+The scan is free in the trial, and saving the results costs one license. A lab is only needed when the device is physically broken.
+
+### Can flash drive recovery be done for free?
+
+The trial of this program scans and lists files without charge, but copying them out needs a license. That lets you see what can be saved before paying anything.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>csv-to-vcf-converter</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/csv-to-vcf-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>CSV to VCF Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/csv-to-vcf-converter-software/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/c2v.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9nt8w758xp72?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>csv-to-vcf csv-to-vcard vcf vcard contacts contact-converter excel-to-vcf address-book phone-contacts trial license</tags>
+    <summary>A csv to vcf converter to convert CSV contacts: it reads each CSV file on your own PC, detects separator and encoding, maps the columns and saves one shared VCF file or one card per contact for phones and mail apps.</summary>
+    <description>This package installs CSV to VCF Converter Software, a Windows csv to vcf converter that turns contact spreadsheets on the local disk into one VCF file or a separate vCard per person. Teams that hand out phones or set up mail clients on several PCs can turn one shared CSV list into cards in VCF format for every device without sending names, numbers and email addresses to an outside server. Quoted cells, doubled quotes and line breaks inside a value are parsed by RFC 4180, so a contact never tears across rows.
+
+![CSV to VCF Converter screenshot 3](https://download.softorbits.com/files/pkg-img/c2v/c2v-v1-main.png)
+
+## How to use CSV to VCF Converter Software
+
+1. Open the program and drop in a single CSV file, several .csv files or a folder.
+2. Confirm the detected separator and encoding shown next to each file.
+3. Pick the vCard version and adjust the column mapping.
+4. Choose a single Contacts.vcf or a separate card per contact, named after the full name, the email, the phone or a counter.
+5. Set the output folder and click Start to convert CSV to VCF.
+
+Trial note: without a license each run outputs only the first 10 contacts and the program shows a reminder. Registering removes that cap.
+
+![CSV to VCF Converter screenshot 2](https://download.softorbits.com/files/pkg-img/c2v/c2v-v1-encoding.png)
+
+## Convert CSV to VCF format: input and output
+
+- Tables exported from an Excel sheet, Google Contacts, Outlook or Yahoo, with headers of those layouts matched automatically, and any other layout mapped by hand.
+- Files with semicolon separators or ANSI text without a BOM, detected before conversion starts.
+- Output in the VCF vCard format, version 2.1, 3.0 or 4.0, where 2.1 gets QUOTED-PRINTABLE encoding for non-ASCII characters.
+- Per-contact file names from full name, email address, phone or a counter, with a _2 suffix when names clash.
+- Mapped columns that become vCard fields such as TEL, EMAIL and ADR, so the VCF file opens as proper cards and not as one long text entry.
+- A column with a photo path, whose picture is embedded in the card.
+
+![CSV to VCF Converter screenshot 1](https://download.softorbits.com/files/pkg-img/c2v/c2v-v1-done.png)
+
+## Who needs CSV to vCard conversion
+
+Help desks that prepare contact lists for new handsets, small businesses moving customers out of a CRM export saved as a CSV file, and anyone who needs vCard output for an older phone or car kit that only reads version 2.1. Google and Outlook style phone columns retain the Home and Work tags, and address parts are joined into a single postal field. Because this csv to vcf converter runs offline, the list stays inside the company network.
+
+## Trial and license
+
+The package installs the free trial of a commercial program. Full use needs a license (lifetime, 1-year or business), which removes the 10-contact limit per run. Product page: [CSV to vCard conversion](https://www.softorbits.net/csv-to-vcf-converter-software/?utm_source=chocolatey&amp;utm_medium=package).
+
+## FAQ
+
+### How do I turn CSV to vCard on an iPhone?
+
+Convert the CSV file on a PC first, because iOS imports vCard but not a raw table. Then send the .vcf to the iPhone by email or a cloud drive and open it there.
+
+### How can I create a vCard VCF file out of Excel?
+
+Save the sheet as CSV from Excel, add it to the program and check the mapping. The whole conversion process to get a VCF from a spreadsheet takes a few clicks.
+
+### Can text be converted to VCF with an online converter?
+
+Yes, web converters accept pasted text or files, but your contacts land on their server. Here the conversion stays on your computer.
+    </description>
+    <releaseNotes>https://www.softorbits.net/csv-to-vcf-converter-software/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

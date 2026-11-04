@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>batch-html-to-pdf-converter</id>
+    <version>3.8</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/batch-html-to-pdf-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Batch HTML to PDF Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/batch-html-to-pdf-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/h2p.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9pk8v8zx1fg2?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>html-to-pdf batch-html-to-pdf htm-to-pdf xhtml-to-pdf html-to-txt merge-pdf saved-web-pages document-conversion pdf-converter office-tools trial license</tags>
+    <summary>Converts saved HTML, HTM and XHTML web pages to PDF in batches with their images and styles, optionally merged into one document, as an offline HTML to PDF converter.</summary>
+    <description>This package installs Batch HTML to PDF Converter Software, an HTML to PDF converter that handles whole directories of saved web pages on Windows 10 and 11. It keeps each page together with its assets folder, renders through the Edge engine built into the Windows operating system and writes one PDF document per page or a single merged file. Conversion runs locally, without any upload.
+
+![Batch HTML to PDF Converter screenshot 1](https://download.softorbits.com/files/pkg-img/h2p/h2p-v1-list.png)
+
+## How to use Batch HTML to PDF Converter Software
+
+1. Open the program after installing the package.
+2. Add pages one by one or point Add Folder at a directory.
+3. Leave the resource folders where the browser saved them.
+4. Choose PDF, or TXT for plain text.
+5. Pick an output folder.
+6. Tick Combine all pages into one PDF if you want a single document.
+7. Click Start and open the results in any PDF reader.
+
+Trial note: without a license the program converts three documents a day and displays a reminder, and the output carries no stamp. The allowance returns the next day, and registration removes it.
+
+![Batch HTML to PDF Converter screenshot 2](https://download.softorbits.com/files/pkg-img/h2p/h2p-v1-format.png)
+
+## What the HTML to PDF converter does with a folder
+
+The program looks for assets under the folder names browsers use, localized names included, so pictures and stylesheets appear in the PDF. With merging switched on, pages follow the order of the list. Pages in the .xhtml file format from documentation tools go through the same path.
+
+Deep archive trees often exceed 260 characters, where the layout engine would output a blank sheet. The program copies such a page and its assets to a short working path first and automatically removes the copy afterwards. Folder names in Cyrillic or with a number sign are handled as well.
+
+![Batch HTML to PDF Converter screenshot 3](https://download.softorbits.com/files/pkg-img/h2p/h2p-v1-merge.png)
+
+## Deployment notes
+
+The only outside component is the Microsoft WebView2 runtime. Windows 11 already has it, and on Windows 10 it is installed from Microsoft's signed setup when missing. While a page renders, requests to remote fonts, scripts and trackers are refused, and their number is written to the log. Every document has its own time limit, which prevents one bad file from stopping the queue.
+
+The program works on files on disk only. It does not fetch pages by URL (there is no field to paste a URL), does not run OCR and does not convert PDF back to HTML.
+
+## Who needs to batch convert HTML to PDF
+
+- Teams that receive invoices, test results or audit reports as HTML and file them as PDF.
+- Admins who need to convert HTML to PDF on machines without an internet connection.
+- Researchers who want twenty saved articles as one document.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use beyond three documents per day needs a license: lifetime, 1-year or business. Plans are listed on the [batch convert HTML to PDF](https://www.softorbits.net/batch-html-to-pdf-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do I convert a saved HTML page to PDF with its images?
+
+Keep the page and its assets folder side by side, add the page to the list and press Start. The program finds the folder on its own.
+
+### Can an AI tool convert HTML to PDF?
+
+This program does not use AI for the job. It renders each page with the Edge engine, which already knows how to lay out modern CSS.
+
+### What tool converts a whole folder of HTML pages to PDF?
+
+A batch converter like this one. Point Add Folder at the directory, start once and read the status of each file when the run is done.
+    </description>
+    <releaseNotes>https://www.softorbits.net/batch-html-to-pdf-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
