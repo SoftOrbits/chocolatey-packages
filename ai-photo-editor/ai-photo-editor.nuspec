@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ai-photo-editor</id>
+    <version>11.1</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/ai-photo-editor</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>AI Photo Editor</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/simple-photo-editor/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/edt.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9p4f30vsqpx6?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>ai-photo-editor photo-editor prompt-editing ai-image-editor remove-background object-removal background-replacement portrait-retouching photo-retouch image-editing raw photo-crop trial license</tags>
+    <summary>Lets you outline an area of a photo, type what should change there and export the result, an ai photo editor that runs locally and keeps the original file untouched.</summary>
+    <description>AI Photo Editor with Prompt is an ai photo editor for Windows PCs where a typed sentence drives the retouching of a marked area. Teams that prepare product images, ads and social media posts can remove background clutter, replace a backdrop or transform a portrait without a layer-based workflow. The package installs the desktop program, and pictures are processed locally.
+
+![AI Photo Editor screenshot 1](https://download.softorbits.com/files/pkg-img/edt/edt-v1-remove.png)
+
+## How to use the AI photo editor on a managed PC
+
+1. Install the package, then open the editor once on each machine.
+2. Allow the download of AI models on that first run, which can last up to 10 minutes.
+3. Open a single image through Add File, or a whole set through Add Folder.
+4. Mark the target with the Marker tool, or let hover selection outline an object.
+5. Write the instruction and press Run.
+6. Check the result, then export it with Save As.
+
+Trial note: with the free trial every prompt and classic tool works on company visuals. An unregistered copy opens a purchase window instead of writing the file, and entering a license key turns saving on.
+
+![AI Photo Editor screenshot 2](https://download.softorbits.com/files/pkg-img/edt/edt-v1-correct.png)
+
+## Background, object and portrait edits from a prompt
+
+Background edits cover clearing a busy backdrop, swapping it for a plain white background or changing the light around the subject. Object work goes both ways: a stray bottle or a passer-by can be taken out, and the model can generate new elements you describe. Portrait prompts adjust skin tone, lighting or expression and keep the person recognizable. Creative prompts can transform the style of a whole picture, such as an anime look.
+
+The usual tools sit next to the generation tools: crop with a fixed ratio such as 1:1, rotate, resize, and a correction panel for brightness, temperature and contrast. The editor opens images up to 8K, reads RAW, protects the source through non-destructive editing and exports to several formats. AI preferences are adjustable, and quick presets can be combined with a longer prompt, so staff edit photos with text prompt input.
+
+![AI Photo Editor screenshot 3](https://download.softorbits.com/files/pkg-img/edt/edt-v1-crop.png)
+
+## Who uses a simple photo editor with AI
+
+- Marketing teams producing brand visuals for campaigns and social media.
+- E-commerce staff who clean up catalog shots and set a neutral background for listings.
+- Content creators and digital artists trying creative ideas before a full design pass.
+- Photographers who need a fast first edit, and home users fixing family photos.
+
+## Trial and license
+
+This package installs the free trial of a commercial program from SoftOrbits, and full use requires a paid license. A monthly plan, a 1-year license, a lifetime license and a business license are offered. Plans and details are on the [prompt-based photo editing](https://www.softorbits.net/simple-photo-editor/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Which AI photo editor is completely free?
+
+This one is not free, since it is a commercial program with a free trial. You can edit photos during the trial without an account, and a license is needed for full use afterwards.
+
+### What is the easiest photo editor for beginners to use?
+
+For a beginner, a simple photo editor that accepts plain sentences is the easiest, because no editing experience is needed beyond outlining an area. Type what should change, press Run and look at the preview.
+
+### How can I edit photos in a simple way?
+
+Select the region, describe the change in one line and let the program apply it. For basic photo edits, crop, rotate and the correction sliders are in the same window.
+    </description>
+    <releaseNotes>https://www.softorbits.net/simple-photo-editor/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
