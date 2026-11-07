@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>split-pst-file</id>
+    <version>1.4</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/split-pst-file</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Split PST File</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/split-pst/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/spl.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9nkd3868413q?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>split-pst-file split-pst pst-splitter outlook-pst pst ost outlook-archive mailbox-size email-archive trial license</tags>
+    <summary>Breaks a large Outlook mailbox file into several new PSTs using a size threshold, a year, month or week period, top-level folders or senders. A simple way to split PST file data offline.</summary>
+    <description>This package installs Split PST File Software, a desktop program that can split PST file archives into several smaller Outlook data files while Outlook itself stays closed. Admins reach for it when a user's email store has outgrown its quota or hurts Outlook performance, since splitting by a rule yields new PSTs and the source .pst or .ost is opened read-only.
+
+![Split PST File screenshot 1](https://download.softorbits.com/files/pkg-img/spl/spl-v4-folders.png)
+
+## How to use Split PST File Software
+
+1. Open the program, browse to a .pst or .ost file on disk and load it.
+2. Tick the folders for the run in the tree. Subfolders are included automatically.
+3. Optionally narrow the message list with the Subject, From, To or Body filter.
+4. Choose the split rule: size threshold, date period, top-level folder or sender.
+5. Keep the Deleted Items and Junk exclusion and the CSV report on, pick an output location and press Start.
+
+Trial note: an unregistered copy processes part of the messages, chosen as a sample, and then shows a reminder window. Registering removes this limit, and each part then holds the complete set of its messages.
+
+![Split PST File screenshot 2](https://download.softorbits.com/files/pkg-img/spl/spl-v4-date.png)
+
+## Four ways to split PST mail
+
+- By Size fills each part up to the threshold you enter, 1 GB if you leave the default, and no message is ever cut in two.
+- By Date writes one PST per year, month or week. Items without a date go to an undated part.
+- By Folder turns each top-level folder of the mailbox into its own file.
+- By Sender groups mail by the normalized sender address, and addresses with only a few messages share others.pst.
+
+Whichever method you use to split PST file content, the output gets names like part_1.pst, 2024.pst or 2024-01.pst, and the folder structure is rebuilt inside each part. A CSV report in UTF-8 lists every part with its file name, item count and size, which helps when you check a pst split later.
+
+![Split PST File screenshot 3](https://download.softorbits.com/files/pkg-img/spl/spl-v4-done.png)
+
+## Who it is for
+
+IT staff preparing mailboxes for an Outlook import export job or a move to new hardware, where a large outlook pst file is awkward to copy. Consultants who must split PST file into smaller parts before archiving old years on separate media. Users who see splitting as a way to lower the risk of corruption, since an ANSI outlook data file is capped at 2 GB and a Unicode one at 50 GB. This PST splitter runs the whole job locally, so no mail is uploaded.
+
+## Trial and license
+
+This package installs the free trial of a commercial program. Full use requires a license (lifetime, 1-year, monthly plan or business), which removes the sample limit. Plans and the feature list are on the [split PST file](https://www.softorbits.net/split-pst/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How to split PST file archives from Outlook?
+
+Load the archive in the program, choose one of the four rules and press Start. Outlook can stay closed, and the new parts appear in your destination folder.
+
+### What software can split PST files?
+
+A dedicated pst splitter like this one, which reads Outlook data files directly on Windows 10 and 11. It writes regular PST files that you can attach in Outlook later.
+
+### Can I split a PST file into one archive per year?
+
+Yes, use By Date with the Year preset. Each year of mail becomes its own PST, and the Month or Week presets give smaller slices when a year is still too large.
+    </description>
+    <releaseNotes>https://www.softorbits.net/split-pst/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

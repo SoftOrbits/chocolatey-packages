@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>email-backup-migration-tool-for-microsoft-office-365-and-outlook</id>
+    <version>1.1</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/email-backup-migration-tool-for-microsoft-office-365-and-outlook</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Office 365 Backup - Email Backup Tool for Microsoft 365</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/office-365-backup-software/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/m365.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9mzk08zzj4cx?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>office-365-backup microsoft-365-backup outlook-email-backup export-mailbox-to-pst pst outlook-com email-backup mailbox-archive trial license</tags>
+    <summary>Copies mail from a Microsoft 365 or personal Outlook account into a PST file on the local disk, keeping folders and attachments, as an Office 365 backup you control.</summary>
+    <description>This package installs Email Backup Tool for Microsoft 365 and Outlook, a Windows program for Office 365 backup to a local PST file. It signs in to the mailbox through the Microsoft OAuth 2.0 page with read-only mail access, downloads the selected folders and writes them into an Outlook data file on the PC. No agent, cloud storage or service account is involved, and the sign-in token is never written to disk.
+
+![Email Backup &amp; Migration Tool for Microsoft Office 365 and Outlook screenshot 1](https://download.softorbits.com/files/pkg-img/m365/m365-v1-main.png)
+
+## How to use Email Backup Tool for Microsoft 365 and Outlook
+
+1. Launch the program and read the start screen, which states what is accessed and that nothing goes to our servers.
+2. Press Sign in and approve read access to mail in the Microsoft window.
+3. Tick folders in the mailbox tree and check messages in the preview.
+4. Limit the copy by dates if needed, pick the destination folder and press Start.
+
+Trial note: before registration each selected folder contributes only its 25 newest emails, and the PST name gets a -trial suffix. A license removes the per-folder cap.
+
+![Email Backup &amp; Migration Tool for Microsoft Office 365 and Outlook screenshot 2](https://download.softorbits.com/files/pkg-img/m365/m365-v1-filter.png)
+
+## What the Microsoft 365 backup writes
+
+- A Unicode PST with the mailbox folder tree, HTML bodies, sender and recipients, dates, read state and byte-exact attachments.
+- Progress that survives a dropped connection. Downloaded items wait in a .download folder beside the PST until it is built.
+- A closing summary that counts messages written, skipped, failed or left out by the date filter, so no mail goes missing silently.
+
+Scope: mail only. Gmail, shared mailboxes, contacts, calendar, scheduled runs and a command line are outside this version, so each Office 365 backup is started by hand.
+
+![Email Backup &amp; Migration Tool for Microsoft Office 365 and Outlook screenshot 3](https://download.softorbits.com/files/pkg-img/m365/m365-v1-run.png)
+
+## Export Office 365 mailbox to PST for data protection
+
+When you export Office 365 mailbox to PST, a deleted folder, a closed account or a long outage no longer means data loss on your side. A complete office 365 backup in a PST lowers that risk. You choose its location, keep it offline to protect it, and recover data later by opening the file in Outlook, with no third-party service provider involved.
+
+## Who needs an Outlook email backup
+
+IT teams who manage an organization's mail and need an outlook email backup for a departing employee, or a retention copy of critical mail before an account is closed. On a work tenant the first sign-in may need admin consent, and the start screen tells the admin what access is requested. Plan on free disk space of roughly one mailbox size.
+
+## Trial and license
+
+This package installs the free trial of a commercial program. Full use needs a license (lifetime, 1-year or business), which removes the 25-message limit per folder. Licensing details sit on the [Office 365 backup software](https://www.softorbits.net/office-365-backup-software/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How much does a Microsoft 365 backup cost?
+
+With this tool you pay for one license, lifetime, 1-year or business, and no fee is charged per mailbox. Cloud backup services usually bill for every user instead.
+
+### Which Office 365 backup solution keeps mail on my own PC?
+
+A desktop one such as this program, which backs up the mailbox to a PST file on your disk instead of a vendor's cloud storage. Recovery later means opening that PST in Outlook.
+
+### Where does this tool save an Outlook email backup?
+
+In the destination folder you pick before pressing Start, as a PST file. If that folder syncs to OneDrive, Dropbox or Google Drive, the program warns you first.
+    </description>
+    <releaseNotes>https://www.softorbits.net/office-365-backup-software/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

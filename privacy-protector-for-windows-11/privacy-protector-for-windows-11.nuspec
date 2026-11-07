@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>privacy-protector-for-windows-11</id>
+    <version>14.1</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/privacy-protector-for-windows-11</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>How to Disable Telemetry in Windows 11 - Privacy Protector</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/windows-10-privacy-protector/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/ppw.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://www.softorbits.net/support.html</bugTrackerUrl>
+    <tags>how-to-disable-telemetry-in-windows-11 disable-telemetry windows-11-privacy stop-tracking privacy-tool block-telemetry diagtrack disable-cortana remove-bloatware hosts-file firewall-rules trial license</tags>
+    <summary>Shows how to disable telemetry in Windows 11 and 10 in one pass, switching off tracking services and AI features and blocking Microsoft tracking hosts.</summary>
+    <description>This package covers how to disable telemetry in Windows 11 on every machine you manage, by installing a program that stops the operating system from collecting diagnostic information and blocks the servers it reports to. For an admin with a few office PCs, Privacy Protector for Windows 11 replaces changing each policy manually with one checklist.
+
+![Privacy Protector for Windows 11 screenshot 1](https://www.softorbits.net/assets/img/screenshots/ppw/main-en.1220w.jpg)
+
+## How to use Privacy Protector for Windows 11
+
+1. Run the program once the install is done.
+2. Go through the fixes and select some or all of them.
+3. Apply. A restore point is saved automatically before the system is changed.
+4. Revert individual fixes later if a feature is needed again.
+
+Trial note: with the free trial you can inspect what the program would change on each computer. Buying a license unlocks full use.
+
+## How to stop Windows 11 from tracking you service by service
+
+- Windows telemetry and the DiagTrack log, which is cleared and disabled.
+- More than 37 services and tasks tied to tracking, among them Family Safety Monitor, Office ClickToRun Service Monitor and Windows Search tracking.
+- Keystroke collection, Cortana and Bing results in Start, plus access of third-party software to your contacts, location and account info.
+- Recall, Copilot, Paint AI and other AI components.
+- Telemetry modules in Microsoft Office 2016, with Office updates optionally blocked.
+- Updates that add tracking, rolled back selectively, and Windows Update if you choose to block it.
+
+## How to disable telemetry in Windows 11 at the network level
+
+Known Microsoft tracking hosts are written to the system hosts file, and Windows Firewall rules block the tracking IP addresses that usage information goes to. This part of how to disable telemetry in Windows 11 blocks the traffic itself, apart from the services. Removing the program cleans up those entries and rules, so a machine you hand back is not left with stray blocks.
+
+## Who needs to know how to turn off data collection in Windows 11
+
+- Admins searching how to stop Windows 11 from tracking you on shared or private PCs.
+- Users who would rather remove OneDrive and preinstalled Universal apps.
+- Small firms that ask how to turn off data collection in Windows 11 without writing scripts or changing each setting manually.
+
+Some fixes cannot be reversed even through System Recovery, so when you plan how to disable telemetry in Windows 11 across an office, test the selection on one computer first.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use requires a license (1-year, monthly plan, lifetime or business). The license removes the trial restrictions.
+
+For the full feature list and plans, please refer to [Windows 11 privacy tool](https://www.softorbits.net/windows-10-privacy-protector/?utm_source=chocolatey&amp;utm_medium=package).
+
+## FAQ
+
+### What does it mean to disable telemetry?
+
+It means stopping Windows telemetry from collecting usage and diagnostic information and sending it to Microsoft. In practice, how to disable telemetry in Windows 11 comes down to services, the log, hosts and firewall, and the program handles all four.
+
+### How do I turn off tracking on my computer?
+
+Apply the tracking fixes in this program and leave the hosts and firewall blocks on. System settings toggles alone leave several services running.
+
+### How do I disable Microsoft spyware?
+
+What people call spyware here is the built-in data collection. Disabling telemetry, Cortana and keystroke collection, then blocking the reporting servers, covers it.
+    </description>
+    <releaseNotes>https://www.softorbits.net/windows-10-privacy-protector/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

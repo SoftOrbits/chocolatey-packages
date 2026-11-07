@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>remove-logo-now</id>
+    <version>11.1</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/remove-logo-now</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Remove Watermark from Video - Remove Logo Now</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/remove-watermark-from-video/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/rln.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9n64v3r3brrf?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>remove-watermark-from-video remove-logo-from-video video-logo-remover watermark-remover delogo remove-subtitles video-editing batch-video mp4 video-cleanup trial license</tags>
+    <summary>Helps editors remove watermark from video files on the local PC by detecting logos and captions, in single clips or batches, and saving the result in the format you pick.</summary>
+    <description>This package installs a desktop video logo remover so editors can remove watermark from video files on Windows without sending footage to a web service. A media team running several editing PCs can deploy Remove Logo Now with Chocolatey and keep the same tool across every station. It detects a corner logo, logo text or another overlay, and the watermark remover cleans it from each frame.
+
+![Remove Logo Now! screenshot 1](https://www.softorbits.net/assets/img/screenshots/rln/main-en.1220w.jpg)
+
+## How to use Remove Logo Now to remove watermark from video
+
+1. Launch the program after installation.
+2. Load clips through Add Files or drag and drop.
+3. Run Find Logo, then adjust the box manually if needed.
+4. For a logo that shows up only now and then, define Intervals on the timeline.
+5. Click Start, and switch to batch mode when there are many files.
+
+Trial note: the free trial lets you check the result on real footage before buying. Registering with a license key unlocks full use.
+
+## Video watermark remover engine and formats
+
+In this video watermark remover, decoding and encoding run in a separate FFmpeg 7.1 process. Encoders are tried in order: NVIDIA NVENC, AMD AMF, Intel Quick Sync, Media Foundation and x264, and the first one that encodes test frames wins. HEVC, VP9 and AV1 input is read without a conversion step, and vertical clips from phones keep their rotation, so you can remove logo from video shot upright. Results can be saved as MP4, MKV, MOV, AVI, WMV, FLV, 3GP, MPEG-1 or MPEG-2, DVD, SVCD, SWF or RM, with your own bitrate and frame rate.
+
+## Batch video watermark removal and scripting
+
+A command line mode processes videos with no window open, which fits scheduled jobs and scripts that remove watermark from video in bulk. Batch mode runs detection per file. You can also stamp your own watermark on the output. Interval borders follow frame timestamps, so a logo or overlay that shows for a few seconds is cleared exactly where it appears. Subtitles and other text overlays burned into the picture can often be located by Find Logo and cleaned the same way.
+
+## Who needs a video logo remover
+
+- Editors who need to remove logo from video bought from stock sites.
+- Agencies running video cleanup on archived clips under a new brand.
+- Trainers cleaning recorded lessons of old captions and logo text overlays.
+- Creators who reuse their own older clips on social media.
+
+Only clean footage you have the rights to. Removing marks from copyrighted video without permission can break the law.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use requires a license (lite, lifetime or business). The license removes the trial restrictions. Details are on the [video watermark remover](https://www.softorbits.net/remove-watermark-from-video/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Is there a free way to strip a watermark from a full video?
+
+You can test the whole workflow in the free trial. Full use of the program needs a license.
+
+### What is the best way to remove a watermark from a video?
+
+Let Find Logo locate the overlay, refine the area by hand and limit it with Intervals when the mark is temporary. That way you remove watermark from video while the rest of the frame stays untouched.
+
+### Should I use an online watermark remover for video instead?
+
+An online video watermark remover needs your file uploaded, often with length limits. This program works offline and handles long, multi gigabyte videos.
+    </description>
+    <releaseNotes>https://www.softorbits.net/remove-watermark-from-video/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

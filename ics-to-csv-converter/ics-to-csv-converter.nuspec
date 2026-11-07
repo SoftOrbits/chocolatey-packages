@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ics-to-csv-converter</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/ics-to-csv-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>ICS to CSV Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/ics-to-csv-converter-software/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/ics.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9p3wwv84m9p2?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>ics-to-csv ics-to-excel export-calendar-to-csv ics vcs icalendar calendar-converter google-calendar outlook-calendar csv trial license</tags>
+    <summary>Batch converter that turns .ics and .vcs calendar files into one CSV with a row per event for Excel, Google Calendar or Outlook, doing ICS to CSV with time zones taken from the files.</summary>
+    <description>This package installs ICS to CSV Converter, a Windows tool to batch convert iCalendar files: it reads every ICS file in a folder and writes one CSV file with a row per event. You can convert ICS to CSV for Outlook, Google Calendar or Excel, and the older .vcs file format from early phones and Outlook versions is accepted too. Everything is processed on the PC.
+
+![ICS to CSV Converter screenshot 1](https://download.softorbits.com/files/pkg-img/ics/ics-v1-list.png)
+
+## How to use ICS to CSV Converter
+
+1. Add calendars by drag and drop, Add Files or Add Folder, which scans subfolders.
+2. Choose a template. The Google and Outlook layouts suit re-import, the Outlook one with 19 columns, and Plain keeps every parsed field.
+3. Pick the time zone for output, either the zone of each event, UTC or the local one.
+4. Decide how attendees and categories are written, and adjust columns in the mapper.
+5. Press Start. The whole queue lands in one Calendar.csv in the destination folder.
+
+Trial note: unregistered, the converter writes 10 events per run and then shows a reminder. A license removes the cap and the reminder.
+
+![ICS to CSV Converter screenshot 2](https://download.softorbits.com/files/pkg-img/ics/ics-v1-run.png)
+
+## What the ICS to CSV output preserves
+
+- Real event times, taken from the VTIMEZONE rules inside the file for the date of each event.
+- All-day entries on the correct date despite the exclusive end date of iCalendar.
+- Recurrence as the raw rule and a plain-language description of the repeat pattern.
+- Tasks with due date and progress, journal notes, and reminders read from alarms.
+- One row per UID when two people exported the same meeting.
+- Multiple ICS file input, from one large export or hundreds of small ones, merged into a single CSV format table in UTF-8 with BOM.
+
+![ICS to CSV Converter screenshot 3](https://download.softorbits.com/files/pkg-img/ics/ics-v1-done.png)
+
+## Who it is for
+
+Office managers who need to export calendar to CSV for timesheets and invoices, analysts who load ICS to Excel for pivot tables, and IT staff moving users between calendar systems. If a calendar must go back into Outlook, the Outlook template already matches its import columns. Nothing is uploaded, which matters for meeting titles and attendee addresses.
+
+## Trial and license
+
+This package installs the free trial of a commercial program, and full use requires a license (lifetime, 1-year or business) that removes the 10-event cap. See the [convert ICS to CSV](https://www.softorbits.net/ics-to-csv-converter-software/?utm_source=chocolatey&amp;utm_medium=package) page for details.
+
+## FAQ
+
+### How do I export a complete calendar to a CSV file?
+
+Export ICS from your calendar app and add that file here. Every event, task and note becomes a row, and several calendars added together still end up in one table.
+
+### How do I convert ICS file exports from Google Calendar?
+
+Add the .ics that Google Calendar exports and keep the Google Calendar template. Dates use MM/DD/YYYY and times AM/PM, so the CSV imports back into Google without edits.
+
+### Is there a way to export calendar data to Excel?
+
+Yes, convert the .ics with the Plain template and open the CSV as a sheet in Excel. ISO dates, UID and status fields are kept for sorting and filtering.
+    </description>
+    <releaseNotes>https://www.softorbits.net/ics-to-csv-converter-software/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

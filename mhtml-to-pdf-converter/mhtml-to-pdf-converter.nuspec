@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mhtml-to-pdf-converter</id>
+    <version>3.7</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/mhtml-to-pdf-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>MHTML to PDF Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/mhtml-to-pdf-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/mht.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9pjzhdpk9zr4?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>mhtml-to-pdf mht-to-pdf mhtml mht web-archive html-to-pdf pdf-converter batch-convert offline-converter document-conversion trial license</tags>
+    <summary>MHTML to PDF converter: convert MHTML to PDF or plain text on the local PC, one file per archive or a single merged PDF, without uploading anything.</summary>
+    <description>This package installs an MHTML to PDF converter for Windows that turns saved web archives into PDF files on the machine where they are stored. Offices that collect .mht exports from internal systems can deploy Batch MHTML to PDF Converter Software through Chocolatey and keep every archive off third party servers.
+
+![MHTML to PDF Converter screenshot 1](https://download.softorbits.com/files/pkg-img/mht/mht-v1-list.png)
+
+## How to use the app to convert MHTML to PDF
+
+1. Start the app once the package is installed.
+2. Drag archives in or add a whole directory.
+3. Choose PDF, or TXT for text only output.
+4. Pick a target folder.
+5. To produce one file, enable Combine all pages into one PDF.
+6. Click Start. Every archive gets its own status line.
+
+Trial note: without registration the app converts up to three documents a day and shows a nag screen. The counter resets with the local date, and a license key lifts the cap.
+
+![MHTML to PDF Converter screenshot 2](https://download.softorbits.com/files/pkg-img/mht/mht-v1-merge.png)
+
+## MHTML to PDF converter offline: privacy on a managed network
+
+Conversion happens in a process that is blocked from making network requests, while the Windows proxy configuration is not changed. A reference aimed outside the archive is replaced by a blank pixel and tallied. Paths that lead out of the unpacking folder are rejected, so a crafted archive cannot copy a local document into the output. For legal, audit or HR teams this means web pages can be filed as PDF without sending them anywhere.
+
+## What the MHTML to PDF converter reads correctly
+
+Charsets are taken from each part, and an old page that declares windows-1251 only in its meta tag is still decoded and saved as UTF-8. Styles linked by cid: in Chrome archives keep the layout intact. Frames are resolved relative to their own location. A broken boundary in the header does not stop the job, because the true separator is detected on a reread. Big archives stream instead of loading whole, so a long MHTML to PDF run does not fill the memory.
+
+![MHTML to PDF Converter screenshot 3](https://download.softorbits.com/files/pkg-img/mht/mht-v1-done.png)
+
+## Who it is for
+
+- Help desks and ERP users who receive reports as single file .mht attachments.
+- Records teams that convert mhtml to pdf for a document management system.
+- Anyone with a backlog of saved web pages that no current browser opens well.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use needs a license, sold as lifetime, 1-year or business. A license removes the daily limit and the reminder. Details are on the [MHTML to PDF converter](https://www.softorbits.net/mhtml-to-pdf-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Can I convert MHTML to PDF online instead?
+
+You can, but an online service needs the archive uploaded first, internal links and form contents included. This package does the same work locally.
+
+### How do I open a saved MHTML file without a browser?
+
+Convert them to PDF or TXT here, then open the result in any reader or text editor.
+
+### How do I turn a whole folder of MHTML files into PDF?
+
+Use Add Folder, keep PDF selected and press Start. Each archive becomes a separate PDF unless you merge them into one.
+    </description>
+    <releaseNotes>https://www.softorbits.net/mhtml-to-pdf-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

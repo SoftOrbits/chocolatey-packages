@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>file-shredder-disk-wipe-software</id>
+    <version>3.7</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/file-shredder-disk-wipe-software</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>File Shredder - Disk Wipe Software</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/file-shredder-disk-wipe-software/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/wip.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9p0fl09ftlq0?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>file-shredder disk-wipe secure-erase wipe-free-space delete-files-permanently data-eraser dod-5220 gutmann hard-drive-eraser remote-wipe privacy trial license</tags>
+    <summary>File shredder that destroys selected files, deleted file remains and whole spare drives by overwriting them, with a PDF report per job and an optional remote erase triggered from Telegram.</summary>
+    <description>This package puts a file shredder on Windows workstations and laptops so that confidential files, deleted file leftovers and retired data drives can be overwritten to permanently remove files beyond recovery. An IT person who looks after a handful of PCs can roll out File Shredder &amp; Disk Wipe - Secure Data Eraser with one Chocolatey command and give every user the same erase policy.
+
+![File Shredder - Disk Wipe Software screenshot 2](https://download.softorbits.com/files/pkg-img/wip/wip-v1-home.png)
+
+## How to use the file shredder program
+
+1. Open the file shredder program after the install finishes.
+2. Select a mode: Shred Files, Wipe Free Space or Wipe Drive.
+3. Add the items to destroy or point at the target volume.
+4. Choose the algorithm required by your policy and confirm.
+5. Start the job. It can be cancelled between passes.
+6. Export the PDF certificate for your records.
+
+Trial note: in the free trial, you can remove files and folders with single pass shredding, and there is no time or run limit. Buying a license adds the other algorithms, free space and drive wiping, certificates and Remote Wipe.
+
+![File Shredder - Disk Wipe Software screenshot 3](https://download.softorbits.com/files/pkg-img/wip/wip-v1-shred.png)
+
+## Remote Wipe for laptops that go missing
+
+Each user connects a personal Telegram bot in the Remote Wipe tab and marks the folders it may erase. The bot answers a status command and starts erasing those folders when it receives the wipe command, and a password can be required for that channel. Nothing else on the machine is in scope, and the feature stays off until a bot is connected. Files are never uploaded, and no account is needed.
+
+## Disk wipe software with certificates and SSD checks
+
+Every finished job can be saved as a dated PDF that lists the target, the algorithm and the number of passes, which is handy for a compliance folder or a hardware handover. The program checks whether the target is a hard drive or an SSD. On a hard drive, overwritten data cannot be read back by recovery software. Multi-pass overwriting is meant for spinning disks, and for flash storage it points to the drive's Secure Erase instead.
+
+![File Shredder - Disk Wipe Software screenshot 1](https://download.softorbits.com/files/pkg-img/wip/wip-v1-done.png)
+
+## Who needs secure file deletion
+
+- Offices that must document disk wipe software runs for clients or auditors.
+- Owners of laptops that travel and could be stolen.
+- Users who want secure file deletion for one folder of records without wiping the whole computer.
+- Teams that prefer one file shredder disk wipe package over two separate tools.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use requires a license (lifetime, 1-year, monthly plan or business). A license removes the single pass limit and unlocks every mode. Plans and details are on the [secure data eraser](https://www.softorbits.net/file-shredder-disk-wipe-software/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### Does this computer file shredder run on Windows 11?
+
+Yes. One installer covers Windows 10 and Windows 11, and no separate runtime has to be added.
+
+### Is there a DoD wipe tool in this package?
+
+Yes, DoD 5220.22-M is included in its 3 pass and 7 pass forms. NIST 800-88, Gutmann and other named standards sit in the same list.
+
+### Is there a bootable USB version for wiping a disk?
+
+No, the program runs inside Windows and leaves the system disk alone. To clear the boot drive, use the drive's built-in Secure Erase or a separate boot tool.
+    </description>
+    <releaseNotes>https://www.softorbits.net/file-shredder-disk-wipe-software/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

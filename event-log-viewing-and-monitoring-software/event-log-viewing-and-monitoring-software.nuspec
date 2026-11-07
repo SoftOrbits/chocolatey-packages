@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>event-log-viewing-and-monitoring-software</id>
+    <version>3.2</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/event-log-viewing-and-monitoring-software</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Event Log Viewer - Windows Event Log Viewer</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/windows-event-log-viewer/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/elv.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9nsrg0lc2mfx?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>event-log-viewer evtx-viewer event-log-monitoring windows-event-log evtx event-id security-log log-analysis sysadmin-tools trial license</tags>
+    <summary>Reads Windows event channels and .evtx files, explains each event ID from a built-in reference and alerts on rules, a desktop event log viewer for admins.</summary>
+    <description>This package installs Windows Event Log Viewer, a log reader for admins who look after several PCs and need answers from system and application logs fast. It explains each error or warning it knows from a reference of 181 events, reads journals from remote machines over RPC, and can write results to SQL Server. It runs on Windows 10 and 11 with the WebView2 runtime and needs no server component.
+
+![Event Log Viewing and Monitoring Software screenshot 1](https://download.softorbits.com/files/pkg-img/elv/elv-v5-security.png)
+
+## How to use Windows Event Log Viewer
+
+1. Start the program and select a channel such as System, Security or a software event log, or open an .evtx file copied from another host.
+2. Filter by Event ID, by level such as Error, Warning or Information, by source, user or time, or start from a preset.
+3. Click a record to read its explanation and parameters.
+4. Add a monitoring rule if you want a tray alert when it fires.
+5. Export the filtered list or save the session as a workspace.
+
+Trial note: for 10 days you can read the logs of this machine without limits, while export holds 20 rows and explanations show their first sentence only. A license lifts those caps and enables monitoring, merging, deep scan, damaged-file recovery, SQL export and remote machines.
+
+![Event Log Viewing and Monitoring Software screenshot 2](https://download.softorbits.com/files/pkg-img/elv/elv-v5-system.png)
+
+## Remote logs and event log monitoring
+
+A /24 subnet sweep takes around four seconds and lists the hosts that respond. Connect to them with admin credentials and read their journals over RPC. Monitoring rules match on Event ID, level or message text, thresholds fold repeated hits into one alert, and the last 500 trips are kept in a journal. Windows notifies the app about new records, so nothing is polled and no background service is installed.
+
+## Evtx viewer for damaged and foreign files
+
+Logs from another server often lack message text because the provider DLL is not present on the reading PC. The built-in reference supplies it for known events such as Security 4625, the System event 7031 or Application Error 1000, so this evtx viewer stays readable on any PC. When a file header is destroyed, deep scan walks the file for ElfChnk chunks and recovers the records that remain. System and Application journals can be merged into one sorted timeline to follow a service failure.
+
+![Event Log Viewing and Monitoring Software screenshot 3](https://download.softorbits.com/files/pkg-img/elv/elv-v5-tools.png)
+
+## Who it is for
+
+Admins of small fleets, help desk engineers and incident responders who need an event log viewer with reports. Export goes to CSV, Excel, HTML or PDF for a ticket, or as a direct write into a SQL Server table for later queries. Workspaces and snapshots let an investigation resume days later.
+
+## Trial and license
+
+This package installs the free trial of a commercial program. Full use needs a license (lifetime, 1-year, monthly plan or business). More on the [read Windows event logs](https://www.softorbits.net/windows-event-log-viewer/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do I check event logs in Windows 11?
+
+Open the program and pick a channel in the tree, and the newest records show first. You can also jump to any date in a large log without scrolling.
+
+### How can I view the Windows Logs channels?
+
+Application, System, Security and Setup sit at the top of the tree, as in Windows Event Viewer. Security requires running the program elevated, which is a Windows restriction.
+
+### How do I open an event log viewer and run it?
+
+Once the package is installed, start the program from the Start menu. The .evtx and .evt extensions are also associated with it, so a double click opens a saved log.
+    </description>
+    <releaseNotes>https://www.softorbits.net/windows-event-log-viewer/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
