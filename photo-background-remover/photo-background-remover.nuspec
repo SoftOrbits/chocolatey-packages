@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>photo-background-remover</id>
+    <version>13.0</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/photo-background-remover</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Photo Background Remover</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/photo-background-remover/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/bkg.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9mwlc2nxc7wb?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>background-remover remove-background photo-background transparent-png cutout image-editing white-background batch-photo-editing ai-photo-editor product-photos trial license</tags>
+    <summary>Removes the background from photos on a Windows PC with offline AI and saves a transparent PNG, a white backdrop or a new scene, in a background remover that also runs in batch.</summary>
+    <description>This package installs Photo Background Remover, a background remover for 64-bit Windows that uses AI models stored with the program to separate a subject from its surroundings. Processing runs on the CPU of the local machine and works offline right after the install, so images stay on the PC.
+
+## How to use the background remover
+
+1. Open the program and add images with Add Files or drag and drop.
+2. Press Remove Background for the automatic AI cutout.
+3. For a frame with several objects, use the manual AI mode: a left click marks what to keep, a right click marks background.
+4. Choose whether the Shadow detector removes shadows or leaves them.
+5. Pick a transparent, white or custom background.
+6. Save a PNG with transparency, or process a whole folder in batch.
+
+Trial note: in the free trial you can watch the AI cut out subjects from your own pictures, within the limits of an unregistered copy. Entering a license removes those limits.
+
+![Photo Background Remover screenshot 2](https://download.softorbits.com/files/pkg-img/bkg/bkg-v1-cutout.png)
+
+## Remove background from image files in batch
+
+Many files can go through the same settings in one run, and a command line mode lets scripts or scheduled tasks call the program. Output can be resized, rotated, cropped or watermarked at the export stage. This matters when you remove photo backgrounds for a whole product catalogue.
+
+## Subjects with colors close to the background
+
+The automatic mode looks for the subject even when it has nearly the same color as the background. When it picks the wrong object, the click-based manual mode corrects the mask.
+
+## Replace or clear the background
+
+After the cutout, the subject can sit on transparency, on a plain white backdrop or in front of a background image you choose. Transparent results are saved as PNG with an alpha channel.
+
+## Who needs this background remover software
+
+- Online shops that need product photos on white.
+- Designers who prepare cutouts for layouts and ads.
+- IT teams that deploy background remover software to office PCs through Chocolatey and want to remove background from photo on PC without a cloud service.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use needs a license. Lifetime, 1-year, monthly and business plans remove the trial limits. See the [AI photo cutout](https://www.softorbits.net/photo-background-remover/?utm_source=chocolatey&amp;utm_medium=package) page for details.
+
+## FAQ
+
+### How do I remove a background from an image on Windows?
+
+Add the image, press Remove Background and save the result as a PNG. The manual mode fixes the mask if the automatic pass misses part of the subject.
+
+### Can an AI chatbot remove a photo background?
+
+Some online AI tools can, but the photo has to be uploaded first. This program runs its AI models on your own PC, so the picture stays local.
+
+### Can I remove the background in an iPhone photo on a PC?
+
+Yes. Move the photo from the iPhone to the Windows PC, add it to the program and remove the background there.
+    </description>
+    <releaseNotes>https://www.softorbits.net/photo-background-remover/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

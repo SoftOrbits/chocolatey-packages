@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>transcribeit-audio-video-to-text-transcriber</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/transcribeit-audio-video-to-text-transcriber</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>TranscribeIt - Audio &amp; Video to Text Transcriber</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/audio-video-to-text-transcriber/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/avt.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9nfzv1smndqk?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>transcribeit transcription audio-to-text video-to-text speech-to-text batch-transcription interview-transcription offline-transcription lecture-transcription mp4 mp3 trial license</tags>
+    <summary>TranscribeIt turns interviews, lectures and other recordings from audio or video to text locally, so a whole folder of recordings ends up as .txt files you can read and edit.</summary>
+    <description>TranscribeIt: Audio &amp; Video to Text Transcriber gives a newsroom, a research group or an HR office a way to turn recorded interviews and meetings into text on its own workstations. When Chocolatey rolls it out to several PCs, each machine decodes media with its own copy of ffmpeg and runs the speech model locally, so confidential recordings do not travel to a cloud transcription service.
+
+![TranscribeIt - Audio &amp; Video to Text Transcriber screenshot 1](https://download.softorbits.com/files/pkg-img/avt/avt-v1-queue.png)
+
+## How to use TranscribeIt
+
+1. Install the package, start the program and let it download the speech model once (about 400 MB).
+2. Add audio or video files with drag-and-drop or the folder option.
+3. Pick an output location: beside each source file or a common folder.
+4. Run the batch. Progress is shown for every item in the list.
+5. Open a result to listen to it and fix words in the editor next to the player.
+
+Trial note: without registration, the free trial transcribes three files per day and then asks you to buy. Registering with a license lifts that daily cap.
+
+![TranscribeIt - Audio &amp; Video to Text Transcriber screenshot 2](https://download.softorbits.com/files/pkg-img/avt/avt-v1-progress.png)
+
+## What the package installs
+
+- The desktop application with a files-only studio: the queue on the left, the player and transcript editor on the right.
+- ffmpeg.exe for decoding, which covers containers such as AVI, WMV, TS and VOB and audio tracks like AC3.
+- Its own data folder for settings, model and license, separate from other SoftOrbits speech apps.
+- No dictation features, because this build works with recorded files only.
+
+As an audio video to text transcriber, it writes one .txt per recording, which suits archives where every interview needs a matching document.
+
+![TranscribeIt - Audio &amp; Video to Text Transcriber screenshot 3](https://download.softorbits.com/files/pkg-img/avt/avt-v1-studio.png)
+
+## Who uses this video to text tool
+
+- Newsrooms that quote from long interview recordings.
+- Research groups processing field interviews and focus groups.
+- Universities and training departments with lecture archives.
+- Video teams that want a written version of each episode for show notes.
+
+## Trial and license
+
+This package installs the free trial of TranscribeIt, a commercial program by SoftOrbits. Full use without the daily file limit requires a paid license. Lifetime, 1-year, monthly and business plans are listed on the [audio and video transcription software](https://www.softorbits.net/audio-video-to-text-transcriber/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### What does it mean to transcribe a meeting recording?
+
+It means producing a written version of what people said. Add the recording to the queue and the program saves the spoken words as a .txt file.
+
+### Is there a way to convert videos to transcripts on a PC?
+
+Yes. Drop the clips into the list, and each one gets its speech written out as a .txt transcript without uploading the footage anywhere.
+
+### How much do transcribers cost for a year of recordings?
+
+There is a 1-year license, along with lifetime, monthly and business options. Current prices are on the product site, and the free trial lets you test three files a day first.
+    </description>
+    <releaseNotes>https://www.softorbits.net/audio-video-to-text-transcriber/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>voice-silence-remover-for-audio-video</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/voice-silence-remover-for-audio-video</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Remove Silence from Audio and Video - AI Voice Silence Remover</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/voice-silence-remover/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/vsr.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9n9dmg5q01mk?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>remove-silence-from-audio remove-silence-from-video silence-remover cut-silence trim-pauses dead-air podcast-editing voice-activity-detection lecture-recording audio-editing video-editing batch-audio trial license</tags>
+    <summary>A silence remover for spoken recordings that cuts dead air out of podcasts, lectures and interviews. It can remove silence from audio and video in one batch while the original files stay as they were.</summary>
+    <description>AI Voice Silence Remover from Audio &amp; Video helps a training department or a small media team remove silence from audio of recorded lectures, webinars, interviews and voice memos on their own Windows PCs. Installed through Chocolatey, it brings its own speech model and ffmpeg, so each workstation can trim common formats like MP3, WAV, M4A, FLAC, OGG or AAC right after setup, with nothing sent to a server.
+
+![Voice Silence Remover for Audio &amp; Video screenshot 1](https://download.softorbits.com/files/pkg-img/vsr/vsr-v5-queue.png)
+
+## How to use the silence remover
+
+1. Install the package and launch the program.
+2. Put recordings into the queue one at a time, as a batch or as a folder scanned with its subfolders.
+3. Select Gentle, Balanced or Aggressive, or switch to Custom and adjust the values.
+4. Play the preview: detected silent gaps are marked on a track under the player, and clicking that track jumps instantly to the spot.
+5. Press Start to remove silence from audio in the queue, then open the report to see how much each file lost.
+
+Trial note: an unregistered copy trims only the beginning of each recording, the first 3 minutes for files of 4 minutes or more and half the length for shorter ones, and marks the file line with a demo badge. A license lets it process every file completely.
+
+![Voice Silence Remover for Audio &amp; Video screenshot 2](https://download.softorbits.com/files/pkg-img/vsr/vsr-v5-preview.png)
+
+## How the silence detection works
+
+Each file is read at 16 kHz mono for analysis only, and a speech-detection model scans it in 30 ms steps. Speech spans are joined with the padding you set, gaps shorter than your minimum pause stay, and each remaining section is cut from the original at full quality. Silence removal ignores room hiss and a computer fan as non-speech, so a quiet talker is kept where a volume threshold would drop the words. It removes long pauses and dead air between answers, while the keep-from-pause value leaves a short natural pause so the voice recording does not sound clipped.
+
+### Remove silence from video recordings
+
+Picture and sound are cut at the same points and re-encoded to MP4 with H.264 and AAC, so lips stay matched to the words. Audio-only files are saved in the output format chosen in the settings, so an MP3 or WAV source can keep its type.
+
+## Never uploaded: remove silence from audio on the PC
+
+Every step runs on the workstation. The trimmed copy is written to a temporary file and then moved into place, so a source file is never overwritten.
+
+![Voice Silence Remover for Audio &amp; Video screenshot 3](https://download.softorbits.com/files/pkg-img/vsr/vsr-v5-custom.png)
+
+## Who uses a silence remover
+
+- Course teams that remove silence from audio of lectures and webinars before publishing.
+- Podcast producers trimming a season of episodes.
+- Video creators who record talking-head clips.
+- Researchers shortening interviews before transcription.
+
+## Trial and license
+
+This package installs the free trial of a commercial program by SoftOrbits. Full use requires a license. Lifetime, 1-year, monthly and business plans are listed on the [voice silence remover](https://www.softorbits.net/voice-silence-remover/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do I remove silence from a video?
+
+Add the video to the queue and run it with a preset. The result is an MP4 copy without the pauses, with sound and picture still in sync.
+
+### How can I remove silences from my audio in bulk?
+
+Add a whole folder to remove silence from audio in one pass. Every file in it and in its subfolders is trimmed, and each gets its own line in the report.
+
+### Do I need to remove silence in an editing app?
+
+No. The pauses are cut before the files reach an editor, so the timeline you open is already tight.
+    </description>
+    <releaseNotes>https://www.softorbits.net/voice-silence-remover/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

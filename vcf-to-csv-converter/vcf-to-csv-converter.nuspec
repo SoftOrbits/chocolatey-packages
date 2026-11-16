@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vcf-to-csv-converter</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/vcf-to-csv-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>VCF to CSV Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/vcf-to-csv-converter-software/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/vcf.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9p55xrdprgv9?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>vcf-to-csv vcard-to-csv vcf-converter contacts-to-csv vcard csv-export contact-import crm-import address-book contact-management trial license</tags>
+    <summary>Merges vCard contacts from a folder into one CSV for Excel or a CRM and decodes old encodings, so vcf to csv and vcard to csv output stays readable.</summary>
+    <description>This package installs VCF to CSV Converter for CRM Import, a desktop tool that changes VCF to CSV on Windows 10 and 11 by gathering every vCard file in a folder into one CSV for Excel or a CRM import. Contact data is parsed locally and saved in the standard CSV file format.
+
+## How to use VCF to CSV Converter for CRM Import
+
+1. Run the program after the install and add each VCF file, or a folder with subfolders.
+2. Select a VCF file to read its contacts in the text preview.
+3. Choose the template that matches the import target: Google Contacts, Outlook, Yahoo or plain CSV.
+4. Set the multi-value policy for phones and emails: numbered columns or values joined by a separator.
+5. In the column mapper, tick the columns to keep and arrange their order with Up and Down.
+6. Review the grid, resolve the duplicates it flags and export.
+
+Trial note: in the free trial each run stops after 10 contacts, enough for a test import. Registering a license lifts the cap.
+
+## Change VCF to CSV for files with old encodings
+
+A VCF file exported by an old phone often stores names in QUOTED-PRINTABLE or in a legacy code page such as Windows-1251. The vCard to CSV converter decodes each property by its own CHARSET and ENCODING and guesses the encoding when a file declares none. Versions 2.1, 3.0 and 4.0 of the vCard standard are read, and a single vCard file may contain many cards. That is why a VCF to CSV pass here keeps accented and non-Latin names intact.
+
+## What the vCard to CSV file contains
+
+- Columns laid out for the chosen template, with TYPE labels mapped to the right phone, email address and postal address fields.
+- Unknown X- properties as additional columns.
+- Contact photos extracted to a neighbouring folder and referenced by path.
+- Birthdays in YYYY-MM-DD.
+
+For a CRM import, the plain layout gives one row per person and lets the CRM importer match the columns by name. The CSV file format follows RFC 4180 and is saved in UTF-8 with a BOM.
+
+## Convert VCF to CSV in batch for Excel
+
+To batch convert contacts, a VCF to CSV run loads many VCF files exported from mobile phones, subfolders included, and the duplicates found across them can be merged before export. Thanks to the BOM, Excel opens the result with the right letters on a double click.
+
+## Who it is for
+
+- CRM admins who import VCF files from many sources and need a vcard to csv step first.
+- IT staff who deploy the tool to several PCs with Chocolatey to convert VCF files while contacts stay off the internet.
+- Small offices that transfer address books from many phones into one shared list.
+
+## Trial and license
+
+The package installs the free trial of a commercial program. Full use requires a license: lifetime, 1-year or business. The license removes the 10-contact limit per run. Details are on the [vCard contacts to CSV](https://www.softorbits.net/vcf-to-csv-converter-software/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do you convert a VCF file to a CSV file?
+
+Add the folder that holds the .vcf files and run one VCF to CSV export. Every card from every file lands in a single CSV, with duplicates merged if you choose.
+
+### How can I export iCloud contacts to CSV?
+
+Choose Export vCard in iCloud Contacts, then open that vCard file here and pick a CSV template.
+
+### Can you convert VCF to Excel?
+
+Yes, through CSV. The output carries a UTF-8 BOM, so Excel opens it with the correct letters, and you can save it as a workbook from there.
+    </description>
+    <releaseNotes>https://www.softorbits.net/vcf-to-csv-converter-software/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

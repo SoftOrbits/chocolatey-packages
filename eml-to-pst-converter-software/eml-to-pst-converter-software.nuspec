@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>eml-to-pst-converter-software</id>
+    <version>1.4</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/eml-to-pst-converter-software</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>EML to PST Converter Software</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/eml-to-pst-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/eml2pst.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9pbqpzr8k9zn?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>eml-to-pst eml-converter pst outlook-import email-migration thunderbird-to-outlook windows-mail email-converter mail-archive unicode-pst trial license</tags>
+    <summary>Packs separate .eml email files into a single Outlook PST archive offline, so you can convert EML to PST with a local eml to pst converter when leaving another mail client.</summary>
+    <description>This package installs EML to PST Converter Software for Migration, an EML to PST converter for Windows that writes multiple EML files into one Outlook archive. It runs on the local machine while Outlook stays closed, and the mail is kept safe on the PC, which suits messages that fall under privacy rules.
+
+![EML to PST Converter Software screenshot 2](https://download.softorbits.com/files/pkg-img/el2p/el2p-v5-added.png)
+
+## How to use EML to PST Converter Software for Migration
+
+1. Launch the program and add the .eml messages, one or many.
+2. Choose the location for the resulting PST.
+3. Start the job. The whole list always goes into one PST file.
+4. Open the PST in Outlook as a data file, or import it into a mailbox.
+
+Trial note: the free trial converts every message of a set of 20 or fewer, and for bigger sets every tenth message, 100 at most. Buying a license ends this limit.
+
+![EML to PST Converter Software screenshot 1](https://download.softorbits.com/files/pkg-img/el2p/el2p-v5-done.png)
+
+## Convert EML to PST in bulk from other email clients
+
+Thunderbird, Windows Mail and many web clients export each message as a separate .eml file, and Apple Mail on a Mac does the same. To batch convert multiple EML files from these sources, copy them to the Windows PC, and the EML to PST converter reads every one of them as a MIME message. The output follows the Unicode PST file format, which Microsoft Outlook opens as a data file.
+
+## Features of the EML to PST converter
+
+- Subject lines in any script, emoji included.
+- The HTML body with its formatting maintained, or plain text.
+- From, To, Cc and the sent date of each item.
+- The read or unread flag.
+- Attachments, kept bit-identical to avoid data loss.
+
+The PST it generates was opened and checked in Outlook 2016. An .eml file stores a single message without its folder hierarchy, so all messages land in the Inbox, with no folder structure.
+
+![EML to PST Converter Software screenshot 3](https://download.softorbits.com/files/pkg-img/el2p/el2p-v5-output.png)
+
+## Technical specifications and limits
+
+The EML to PST converter does not log in to IMAP or Exchange. It reads only .eml, not .emlx, and cannot be driven from a command line. Password protected sources are not supported. For a migration of several users, run one job per person so that each mailbox ends up in its own PST.
+
+## EML file to PST for Mac users
+
+Someone who leaves a Mac for a Windows PC can export messages from Apple Mail as .eml files, copy them over and convert EML files to PST format for Outlook. The program itself runs only on Windows.
+
+## Who it is for
+
+- Admins migrating staff from an old mail program to Outlook, with installation per workstation through Chocolatey.
+- Consultants who convert EML to PST for clients and need each EML file in a PST.
+- Help desks that rebuild a mailbox for a user who changed mail clients.
+
+## Trial and license
+
+The package installs a free trial of commercial software, and full use needs a license. Lifetime, 1-year and business licenses remove the message limit of the EML to PST converter. Read more on the [EML to PST migration](https://www.softorbits.net/eml-to-pst-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do I convert an email to a PST file?
+
+Save the email as an .eml file, add it here and start. Every added message is packed into one PST file that Outlook opens.
+
+### What is the difference between EML and PST?
+
+An EML file is one message in standard MIME format that many mail apps read. A PST is the Outlook container for a whole mailbox, with folders.
+
+### How do I convert an EML file to Outlook format?
+
+Run it through this EML to PST tool and open the resulting PST file in Outlook. The message appears in the Inbox folder of that file.
+    </description>
+    <releaseNotes>https://www.softorbits.net/eml-to-pst-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

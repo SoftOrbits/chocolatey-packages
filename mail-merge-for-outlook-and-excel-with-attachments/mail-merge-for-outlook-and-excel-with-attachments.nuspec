@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mail-merge-for-outlook-and-excel-with-attachments</id>
+    <version>3.2</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/mail-merge-for-outlook-and-excel-with-attachments</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Outlook Mail Merge - Mail Merge with Attachments for Outlook</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/mail-merge-for-outlook-and-excel/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/omm.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9nhp21tbs0b0?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>outlook-mail-merge mail-merge bulk-email email-attachments personalized-email excel-to-email csv-mailing smtp mass-mailing payslip-email trial license</tags>
+    <summary>An Outlook mail merge from Excel or CSV: every row gets a personal email with its own attachment, sent from your mailbox or an SMTP server.</summary>
+    <description>This package installs Mail Merge with Attachments for Outlook, a Windows program for an Outlook mail merge in which each recipient gets a separate message with personal fields and an optional personal file. It works outside Outlook, so there is no add-in to deploy, and the .NET runtime is included in the installer.
+
+![Mail Merge for Outlook and Excel with Attachments screenshot 1](https://download.softorbits.com/files/pkg-img/omm/omm-v1-list.png)
+
+## How to use Mail Merge with Attachments for Outlook
+
+1. Load the recipients from an Excel or CSV file, or from Outlook contacts, and confirm which columns hold the address and the name.
+2. Choose the rows to mail, or set a row range.
+3. Compose the subject and body with {{Field}} placeholders, or import HTML.
+4. Add common attachments and a column of file paths for personal ones.
+5. Review every merged letter on the Check step and send yourself a test.
+6. Connect a mailbox or an SMTP server, set the pace and start.
+
+Trial note: without a license the program mails 25 recipients per run, with all functions available. A license removes that limit.
+
+![Mail Merge for Outlook and Excel with Attachments screenshot 2](https://download.softorbits.com/files/pkg-img/omm/omm-v1-message.png)
+
+## How to do an Outlook mail merge from Excel
+
+The mailbox sign-in uses Microsoft Graph and covers the new Outlook, Outlook Classic, personal Outlook accounts and Microsoft 365. A copy of each letter stays in your sent mail folder. The SMTP tab handles on-premises Exchange, domain mailboxes and Gmail with an app password. You can limit letters per minute, schedule a start time while the program stays open, pause, and resume after a broken connection without sending anyone the same letter twice.
+
+![Mail Merge for Outlook and Excel with Attachments screenshot 3](https://download.softorbits.com/files/pkg-img/omm/omm-v1-review.png)
+
+## Outlook mail merge attachment checks
+
+The Check step counts missing attachment files, empty or invalid addresses, duplicates and unknown placeholders, each with its row number. After the run, refused letters are listed with reasons, and Retry the errors resends only those. A saved report keeps the record of who received what in each run.
+
+## Mail merge for Outlook and Excel with attachments
+
+Excel is read directly, several sheets included, and non-Latin names and leading zeros such as 007 stay as written. A personal attachment column turns a payroll sheet into individual letters. Saved as a project, a mail merge for Outlook and Excel comes back next month with the whole setup, so nothing has to be rebuilt.
+
+## Who it is for
+
+- Payroll and accounting teams sending payslips and invoices.
+- Schools and clubs mailing personal notices.
+- Offices that install software on several PCs through Chocolatey and want a merge tool that needs no server.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use needs a license. Lifetime, 1-year, monthly and business plans remove the 25-recipient limit. See [Outlook mail merge with attachments](https://www.softorbits.net/mail-merge-for-outlook-and-excel/?utm_source=chocolatey&amp;utm_medium=package) for details.
+
+## FAQ
+
+### How do I stop a mail merge in Outlook?
+
+Press Pause during the Send step. You can resume later, and letters already sent are not repeated.
+
+### Where is the mail merge option in Outlook?
+
+Outlook has no merge screen of its own and hands the job to Word. This program offers the merge as a separate app that signs in to your mailbox.
+
+### What is the easiest way to do an Outlook mail merge with attachments?
+
+Put each file path in a list column and pick it as the attachment column. Every recipient then gets a separate letter with the right file, sent from your Outlook account.
+    </description>
+    <releaseNotes>https://www.softorbits.net/mail-merge-for-outlook-and-excel/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

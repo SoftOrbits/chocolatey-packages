@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>spreadsheet-compare-merge-tool-for-excel-combine-excel-files-into-one</id>
+    <version>3.2</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/spreadsheet-compare-merge-tool-for-excel-combine-excel-files-into-one</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Merge Excel Files - Compare and Merge Excel Spreadsheets</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/spreadsheet-compare-merge-tool-for-excel/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/xmc.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9n0x4122h4vn?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>merge-excel-files compare-excel-files combine-excel-files excel-merge excel-compare spreadsheet-compare csv-merge csv-splitter xlsx csv spreadsheet-diff trial license</tags>
+    <summary>Helps merge Excel files and CSV exports into a single sheet or a tabbed workbook, and marks the cells, formulas and rows that differ between two versions of a table, all on the local PC.</summary>
+    <description>Spreadsheet Compare &amp; Merge Tool for Excel is a Windows program for teams that merge Excel files from branches and check revised tables, deployed here as a Chocolatey package. Finance departments often run it on PCs without Office, because the program reads and writes workbooks itself, and tables with salaries or client prices never go to an online converter.
+
+![Spreadsheet Compare &amp; Merge Tool for Excel - Combine Excel Files into One screenshot 1](https://download.softorbits.com/files/pkg-img/xmc/xmc-v1-compare.png)
+
+## How to use it to merge Excel files
+
+1. Install the package and start the program, which opens on a screen with a button for each task.
+2. Add workbooks or a whole folder and arrange them in the order the result should follow.
+3. Decide whether to merge Excel files in one sheet or keep a tab per source.
+4. Align columns by order or by header, then name the output .xlsx or .csv and run it.
+5. For a comparison, load the earlier version first, then the later one, step through the differences and export them.
+
+Trial note: until it is registered, the free trial puts only the first 50 rows into a merged file and displays or exports only the first 25 differences. A license lifts both limits.
+
+![Spreadsheet Compare &amp; Merge Tool for Excel - Combine Excel Files into One screenshot 2](https://download.softorbits.com/files/pkg-img/xmc/xmc-v1-only.png)
+
+## How to compare Excel files and read the result
+
+Two grids scroll in sync and color each kind of change: edited values, edited formulas, formatting changes, and rows, columns or sheets that appeared or disappeared. Settings can ignore case, surrounding spaces or formatting, look at formulas rather than results, accept small numeric differences and pair rows through a key column. Results go out as a marked-up .xlsx with a legend, a CSV list with a fixed English header, or an HTML or PDF report. Teams compare Excel files from two runs of the same export this way.
+
+## What is installed
+
+- The desktop program, which reads .xlsx, .xlsm, .csv and .tsv and writes .xlsx and .csv.
+- A CSV splitter that divides a table by row count or by the value in a column.
+- No add-in for Excel, so the existing Office setup is left alone.
+
+Source files are never overwritten when you merge workbooks or split a table, since every job writes a new file that you name.
+
+![Spreadsheet Compare &amp; Merge Tool for Excel - Combine Excel Files into One screenshot 3](https://download.softorbits.com/files/pkg-img/xmc/xmc-v1-combine.png)
+
+## Who needs to merge Excel files in one workbook
+
+- Finance teams that combine Excel files into one report from regional offices each month.
+- Auditors reviewing formulas someone else changed.
+- Sales operations checking which customers or product codes were added or removed.
+
+## Trial and license
+
+This package installs the free trial of a commercial spreadsheet program by SoftOrbits. Full use without the row and difference limits requires a license. Lifetime, 1-year, monthly and business plans are listed for the [Excel merge and compare tool](https://www.softorbits.net/spreadsheet-compare-merge-tool-for-excel/?utm_source=chocolatey&amp;utm_medium=package).
+
+## FAQ
+
+### How to merge Excel files into one file without an online service?
+
+Here is how to merge Excel files locally: add them to the merge list and run the job. Nothing is uploaded, so tables of any sensitivity stay on the machine.
+
+### How do I combine two Excel files and remove duplicates?
+
+Compare the two files first. Rows present in only one of them are marked as added or deleted, and the rest are shared, so you know what will repeat before you merge.
+
+### How do I merge an Excel file into another Excel file?
+
+Put both files in the merge list and pick the tab-per-file layout. Each workbook then becomes its own sheet in a new combined file.
+    </description>
+    <releaseNotes>https://www.softorbits.net/spreadsheet-compare-merge-tool-for-excel/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

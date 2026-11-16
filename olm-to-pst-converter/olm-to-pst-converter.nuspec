@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>olm-to-pst-converter</id>
+    <version>1.6</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/olm-to-pst-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>OLM to PST Converter - Convert OLM File to PST File</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/olm-to-pst-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/olm2pst.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9p559dwrb0mt?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>olm-to-pst olm-converter outlook-for-mac mac-to-windows pst email-migration outlook-import mailbox-converter email-converter mail-archive trial license</tags>
+    <summary>Converts the OLM export of Mac Outlook into a single Unicode PST file with its folder tree on Windows, an olm to pst converter that works offline while Outlook stays closed.</summary>
+    <description>This package installs Convert OLM File to PST, an OLM to PST converter that carries mail exported from Mac Outlook to Windows as a PST file. Processing stays on the workstation, Outlook can remain shut, and nothing is uploaded, which matters for client or staff correspondence.
+
+![OLM to PST Converter screenshot 1](https://download.softorbits.com/files/pkg-img/ol2p/ol2p-v1-main.png)
+
+## How to use Convert OLM File to PST
+
+1. Export OLM from Outlook on the Mac and bring the .olm file to the Windows computer.
+2. Launch the app and load the export.
+3. Set an output path for the new PST.
+4. Press Start and wait for the done status.
+5. Attach the PST in Outlook for Windows, or pull its content into a profile with the import wizard.
+
+Trial note: an unregistered copy works as a free trial version, so the result on a real archive can be checked before buying. Registering a license lifts the trial limits.
+
+![OLM to PST Converter screenshot 2](https://download.softorbits.com/files/pkg-img/ol2p/ol2p-v1-exists.png)
+
+## Export OLM from Mac Outlook 2011 to 365
+
+Technically, OLM is a ZIP package holding an XML record per email plus binary attachment files. The OLM to PST converter extracts that package, parses every record and recreates the folder hierarchy inside a Unicode PST. Whether you export OLM from Outlook for Mac 2011, 2016, 2019 or Microsoft 365 for Mac, the archive is supported, and paths with non-Latin characters open as well. To convert OLM file data, the program writes a single PST file per export.
+
+## What the OLM to PST converter keeps
+
+- Folder nesting, minus any wrapper level on top. Empty branches are trimmed.
+- Subject and body, in HTML or plain text.
+- From, To, Cc and the sent date.
+- The read flag.
+- Attached files, identical to the originals.
+
+The PST was tested in Outlook 2016.
+
+![OLM to PST Converter screenshot 3](https://download.softorbits.com/files/pkg-img/ol2p/ol2p-v1-done.png)
+
+## PST file format and limits
+
+Each run of the OLM to PST converter turns one OLM file into one PST, and the whole mailbox goes in, since the current version cannot pick specific folders or preview messages. Apple Mail mailboxes use a different file format and are not read. Password protected or encrypted archives are not supported. The program does not connect to IMAP or Exchange and cannot be scripted from a command line.
+
+## Who needs a PST file from Mac Outlook
+
+- Professionals switching from macOS to Windows who need old correspondence in Outlook.
+- Help desks that run these migrations and roll the tool out to workstations through Chocolatey.
+- Consultants who receive exports from clients and need an olm to pst step.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use needs a license. A lifetime, 1-year or business license removes the trial limits. More details are on the [OLM to PST converter](https://www.softorbits.net/olm-to-pst-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### What kind of file is .olm?
+
+It is the export archive of Outlook for Mac. Inside is a ZIP structure with the messages as XML files and their attachments.
+
+### How do I bring an OLM file into Outlook for Windows?
+
+Convert the archive to PST with this program, then open the PST file in Outlook. The Mac folder structure appears inside that data file.
+
+### How can I open an OLM file on a PC?
+
+Outlook for Windows does not open OLM archives itself. After the OLM to PST converter writes a PST, the messages can be read in Outlook on the PC.
+    </description>
+    <releaseNotes>https://www.softorbits.net/olm-to-pst-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
