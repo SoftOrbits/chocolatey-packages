@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>apple-mail-to-pst-converter-software</id>
+    <version>1.4</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/apple-mail-to-pst-converter-software</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Apple Mail to PST Converter Software</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/apple-mail-to-pst-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/applemail2pst.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9ncnk735mn0g?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>apple-mail-to-pst apple-mail-converter emlx-to-pst mbox-to-pst apple-mail mac-to-outlook emlx email-migration outlook-import unicode-pst mail-archive trial license</tags>
+    <summary>Apple Mail to PST converter that turns .mbox and .emlx exports from a Mac into Outlook PST archives on a Windows PC, with a merge switch for one combined file or one PST per source.</summary>
+    <description>This package installs an Apple Mail to PST converter for Windows that takes mail exported from a Mac and writes it into Outlook data files. Apple Mail gives you .mbox mailboxes and native .emlx messages, and the program reads either kind and builds a PST on the local machine. It fits a help desk or admin moving someone off a Mac onto Outlook on Windows, since the work stays on the PC and no message leaves it.
+
+![Apple Mail to PST Converter Software screenshot 1](https://download.softorbits.com/files/pkg-img/am2p/am2p-v1-main.png)
+
+## How to use Apple Mail to PST Converter Software
+
+1. Open the program after the package installs.
+2. Add the .mbox or .emlx files copied over from the Mac, in any mix.
+3. Set the Merge into one PST option, described below.
+4. Choose the destination folder.
+5. Run the job and load the PST into Outlook.
+
+Trial note: the free trial converts a set of 20 emails or fewer completely, and for a bigger set it keeps every tenth message up to 100. A license ends that limit.
+
+![Apple Mail to PST Converter Software screenshot 2](https://download.softorbits.com/files/pkg-img/am2p/am2p-v1-done.png)
+
+## What an .mbox or EMLX to PST conversion keeps
+
+- Message subjects in Cyrillic, Latin and further alphabets, plus the From line and the timestamp.
+- Both rich HTML layout and plain readings of each body.
+- Every attachment, carried over bit for bit so nothing drops.
+- One Unicode PST per output, which mounted cleanly in a 2016 build of Outlook.
+
+## One PST per file, or a single combined archive
+
+How the output is shaped depends on the Merge into one PST checkbox. Clear it and every file you load becomes a standalone PST. Tick it and the run joins the full list into one PST, with each source parked under its own top-level folder. Admins who run an apple mail to pst job over a batch of Apple Mail exports in a single pass pick whichever layout suits the handover, split or combined.
+
+![Apple Mail to PST Converter Software screenshot 3](https://download.softorbits.com/files/pkg-img/am2p/am2p-v1-convert.png)
+
+## Who needs an EMLX to PST converter
+
+- Admins who push the converter to workstations through Chocolatey while migrating a team from Mac to Outlook.
+- Help desks handed a folder of .mbox and .emlx from a Mac that is being retired.
+- People who keep old Apple Mail and want an emlx to pst copy they can read in Outlook on Windows.
+
+## Trial and license
+
+This is commercial software, and the package delivers its free trial, so full use needs a license. The trial caps how many messages convert, and a lifetime, 1-year or business license removes that cap. Terms are on the [Apple Mail to PST Converter Software](https://www.softorbits.net/apple-mail-to-pst-converter/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do I export Apple Mail messages to a PST file?
+
+Copy the .mbox or .emlx out of Apple Mail onto the Windows PC, add them and start. The apple mail to pst converter writes a PST that Outlook mounts as a data file.
+
+### How do I convert an email to PST format?
+
+Keep it inside an .mbox or save it as an .emlx. Load the file, and the Apple Mail to PST converter packs the message into a PST together with its attachments.
+
+### Is a free EML to PST converter available for Apple Mail?
+
+Yes. The package installs the free trial of the paid program, so you can test the .emlx and .mbox conversion on your own mail before paying for a license.
+    </description>
+    <releaseNotes>https://www.softorbits.net/apple-mail-to-pst-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

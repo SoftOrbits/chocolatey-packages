@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>edb-to-pst-converter-tool</id>
+    <version>1.3</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/edb-to-pst-converter-tool</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>EDB to PST Converter Tool</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/edb-to-pst-converter/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/edb.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9nb00r6665d8?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>edb-to-pst edb-converter exchange-edb exchange-mailbox-export exchange-database mailbox-to-pst pst-converter outlook-pst email-migration mail-recovery trial license</tags>
+    <summary>Writes selected mailboxes from a Microsoft Exchange .edb database into Outlook PST files on the local PC, keeping folder trees, attachments and dates, with this edb to pst converter.</summary>
+    <description>This package installs an edb to pst converter for Windows PCs that extracts mail from a Microsoft Exchange mailbox database file and saves it for Outlook. It fits a contractor or admin who deploys tools with Chocolatey to a recovery PC, receives a copy of the .edb after a server failure and must recover mailbox data for each user without bringing Exchange online again.
+
+![EDB to PST Converter Tool screenshot 1](https://download.softorbits.com/files/pkg-img/edb/edb-v1-main.png)
+
+## How to use EDB to PST Converter Software
+
+1. Load the .edb file. The program scans it offline, and a tree of mailboxes and their folders appears in the interface.
+2. Check the mailboxes and folders you want. Select a folder to list its messages and select a message to preview it before export.
+3. Open the Convert page to enter a date range, leave out Deleted Items or Junk, and decide on images.
+4. Choose an output location for the PST and click Start. Progress is shown while it runs, and Stop cancels the job.
+
+Trial note: until it is registered, the program works as a free trial and exports a limited sample of messages. A license lifts the sample limit.
+
+![EDB to PST Converter Tool screenshot 2](https://download.softorbits.com/files/pkg-img/edb/edb-v1-filter.png)
+
+## Convert EDB to PST by mailbox, folder and date
+
+Each mailbox in the database gets its own checkbox, and so does each folder under it. That lets you recover mail for one person, a single project folder or many accounts in one pass. With From and To dates set through the drop-down calendar, only items from that window are written, which keeps a PST for an audit or a litigation request small. Leaving out the trash and spam folders trims it further.
+
+## What an Exchange EDB to PST export keeps
+
+- The folder structure of each mailbox, maintained as on the server.
+- Subject, HTML body, sender and recipients including Cc, and message dates.
+- Email attachments in their exact original form, and inline pictures inside HTML mail.
+- Read and unread flags.
+
+The software converts mail to the Unicode PST file format that Outlook opens. The database is parsed by its own x64 helper, and databases over 2 GB show a warning before the run.
+
+![EDB to PST Converter Tool screenshot 3](https://download.softorbits.com/files/pkg-img/edb/edb-v1-run.png)
+
+## Who it is for
+
+- Exchange admins left with a dismounted database after a crash, or who migrate users and want mail kept private.
+- IT contractors and forensic examiners who receive an .edb copy and must export EDB mail as mailbox PST files.
+- Teams that install the edb to pst converter tool on several PCs through Chocolatey and work where neither Exchange nor Outlook is present.
+
+One database opens at a time, so multiple EDB files are processed in turn. Exchange 2010 and older, public folders, live servers, Microsoft 365, repair of corrupt files, PST split and MSG output are out of scope.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use requires a license. A lifetime, 1-year or business license removes the sample limit, and the [EDB file to PST export](https://www.softorbits.net/edb-to-pst-converter/?utm_source=chocolatey&amp;utm_medium=package) page lists the options.
+
+## FAQ
+
+### How do I convert EDB to PST?
+
+Open the .edb file, tick the mailboxes and folders, set any filters and click Start.
+
+### Is there an Exchange EDB to PST converter for Windows?
+
+Yes. This program reads Exchange 2013, 2016 and 2019 databases on a local Windows PC and writes PST files from them.
+
+### What does a PST converter do?
+
+It takes mail stored in another format and writes it into a PST, the data file Outlook opens. Here the source is an Exchange mailbox database, and folders, attachments and dates carry over.
+    </description>
+    <releaseNotes>https://www.softorbits.net/edb-to-pst-converter/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>email-to-pdf-converter</id>
+    <version>1.3</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/email-to-pdf-converter</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Email to PDF Converter</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/email-to-pdf-converter-software/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/email.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9n3dv9tdr0hc?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>email-to-pdf email-to-pdf-converter convert-email-to-pdf eml-to-pdf msg-to-pdf pst-to-pdf ost-to-pdf mbox-to-pdf email-to-html email-to-txt batch-email-converter email-attachments mail-archive-to-pdf pdf-export email-converter trial license</tags>
+    <summary>Any Email to PDF Converter Software reads .eml, Outlook .msg, .pst, .ost and .mbox files and can convert email to PDF, HTML or TXT. The email to pdf converter runs in batch on a local Windows PC with no mail client installed.</summary>
+    <description>The email to pdf converter in this package, Any Email to PDF Converter Software, deploys through Chocolatey to one PC or a fleet and writes saved mail to documents. It reads messages and mailboxes from disk and renders each as a PDF document, turning email to pdf locally.
+
+![Email to PDF Converter screenshot 1](https://download.softorbits.com/files/pkg-img/e2p/e2p-v1-main.png)
+
+## How to use the package to convert email to PDF
+
+1. Deploy the package to the target machine and open it.
+2. Load mail by dropping files in, using Add Files, or picking a folder. One list can hold .eml, .msg, .pst, .ost and .mbox items.
+3. Wait while each archive expands and queues its messages.
+4. Set the output to PDF, HTML or plain text.
+5. Keep each message as an individual document, or merge the list into one file.
+6. Choose how attachments ride along: inside the PDF, in a side folder with links, or listed by name and total size.
+7. Set the destination, start the run, and review the files when it ends.
+
+Trial note: the program ships as a free trial. An unregistered copy converts up to 10 emails in full, then halts a larger job after 10 documents. A paid license clears the limit.
+
+## What the email to pdf converter installs
+
+![Email to PDF Converter screenshot 2](https://download.softorbits.com/files/pkg-img/e2p/e2p-v1-convert.png)
+
+One program covers the common mail formats and writes each message in pdf format, so a team needs just one tool.
+
+- .eml files in the RFC 822 standard, the common eml format kept on disk.
+- Outlook .msg items, plus RFC 822 text that other programs store with the .msg extension.
+- Outlook .pst and .ost archives read as a multiple email file, no live account.
+- .mbox mailboxes produced by Thunderbird and by a Gmail export.
+- A From, Date, To and Subject header placed before every body.
+
+### Email to PDF output formats
+
+Each message can leave as its own file in pdf format, or many can join one combined document. A multiple email batch becomes print-ready pages in pdf format, web files or searchable text. Turning inline images off yields compact copies in plain text.
+
+### Convert PDF with attachment handling
+
+An email attachment can be embedded in the PDF output, saved beside it in a linked folder, or listed by name.
+
+## Who it is for
+
+Teams that look after a few PCs or a fleet and want a repeatable local workflow. It fits legal and HR archives and audit records. Because each attachment and message stays on the machine, patient, client and corporate mail is never uploaded to a convert service.
+
+## Trial and license
+
+This package installs the free trial of a commercial program, and full use needs a paid license. The trial converts the first ten messages of any job, and the license clears the limit. See [email to pdf converter license options](https://www.softorbits.net/email-to-pdf-converter-software/?utm_source=chocolatey&amp;utm_medium=package) for the details.
+
+![Email to PDF Converter screenshot 3](https://download.softorbits.com/files/pkg-img/e2p/e2p-v1-done.png)
+
+## FAQ
+
+### How can I convert email to PDF without printing it?
+
+Load the saved messages or the archive and it writes the whole multiple email list to PDF in one pass, no print dialog.
+
+### How do I get a PDF from an email?
+
+Point the program at the .eml, .msg, .pst or .ost file and start it, and each message becomes a PDF document on disk.
+
+### Why can't I save my Outlook email as a PDF?
+
+Classic Outlook has no PDF type in its Save As dialog, so this outlook email to pdf converter reads the saved message or .pst archive and writes the PDF for you.
+
+### How do I convert Gmail to PDF?
+
+Export Gmail with Google Takeout as an .mbox file, then load that mailbox and the tool converts every message in plain text or its full format file layout.
+    </description>
+    <releaseNotes>https://www.softorbits.net/email-to-pdf-converter-software/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

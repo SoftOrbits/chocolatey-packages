@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>gmail-backup-export-software-to-pst-and-mbox</id>
+    <version>3.4</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/gmail-backup-export-software-to-pst-and-mbox</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Gmail Backup &amp; Export Software to PST and MBOX</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/gmail-backup-software/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/gmb.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9pphbht537lt?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>gmail-backup email-backup export-to-pst gmail-to-pst gmail-to-mbox gmail-to-eml mbox pst eml imap-backup email-archive mailbox-download trial license</tags>
+    <summary>A Gmail backup program that writes chosen Gmail folders and labels to PST, MBOX or EML on the PC, and on each later run adds only the messages that are new.</summary>
+    <description>This package installs Gmail Backup &amp; Export Software to PST and MBOX, a desktop tool that saves a Gmail backup to local files on Windows. The installer is a self-contained .NET 8 build, so the target PC does not need a separate .NET runtime, and the window is drawn with WebView2. Messages are downloaded straight from Google to a folder on that machine.
+
+![Gmail Backup &amp; Export Software to PST and MBOX screenshot 1](https://download.softorbits.com/files/pkg-img/gmb/gmb-v1-folders.png)
+
+## How to use Gmail Backup &amp; Export Software to PST and MBOX
+
+1. Open the program and select Connect Gmail account.
+2. Sign in with the mailbox address and a Google app password. Turn on 2-Step Verification in the Google account before creating it.
+3. Pick folders and labels from the list. A message count is shown beside each.
+4. Choose an output format and a target folder on any drive.
+5. Click Start backup. For later updates, select the mailbox again and press Download new emails.
+
+Trial note: in the unregistered version each folder is limited to its 25 newest messages, with no expiry date. Registering a license key lifts that limit.
+
+![Gmail Backup &amp; Export Software to PST and MBOX screenshot 2](https://download.softorbits.com/files/pkg-img/gmb/gmb-v1-format.png)
+
+## What the Gmail backup program writes
+
+- **PST**: one Outlook data file that holds the folder tree, created without Outlook on the PC. Pick it when you need to export to PST for an Outlook user. Read and unread status is carried over here.
+- **MBOX**: a file per folder in the structure Thunderbird reads.
+- **EML**: a file per message, sorted into folders that match the account.
+- **Journal**: a hidden .gmb folder inside the mailbox directory, used to resume a broken run and to skip messages already saved.
+
+Labels become folders, so a message with two labels appears twice. All Mail starts unticked for that reason. Before a run the program checks free disk space, and it retries when the connection drops.
+
+![Gmail Backup &amp; Export Software to PST and MBOX screenshot 3](https://download.softorbits.com/files/pkg-img/gmb/gmb-v1-run.png)
+
+## Who needs to export to PST with it
+
+- Whoever maintains the PCs of a family or a small office and runs the backup for each personal mailbox in turn.
+- People moving to Outlook who want years of Gmail mail as a PST they can open there.
+- Users who keep an offline archive that does not depend on any cloud service.
+
+Google Workspace accounts cannot sign in with this version, because Google does not issue app passwords for them. Yahoo Mail, iCloud Mail and other IMAP servers work through ready profiles or manual settings, which makes Gmail backup export to PST and MBOX one of several jobs it covers.
+
+## Trial and license
+
+This package installs the free trial of a commercial program, and full use requires a paid license. Options are a lifetime license, a 1-year license, a monthly plan and a business license. A license removes the 25-message limit per folder, so whole mailboxes are saved.
+
+Formats, screenshots and license details are on the [Gmail backup software](https://www.softorbits.net/gmail-backup-software/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### How do I get my Gmail backup files?
+
+Gmail backup emails are written to the target folder chosen in step 4, inside a subfolder named after the mailbox. Run Download new emails later to keep them current.
+
+### How do I open and view Gmail backup emails?
+
+Use the mail client that matches the format: Outlook for PST, Thunderbird for MBOX, and any mail app that opens EML for single messages. You do not need this program to read them.
+
+### How can I retrieve my old Gmail emails?
+
+Any message still stored in the account can be downloaded, however old it is. Archived mail with no label sits only in All Mail, so tick that folder too. Mail permanently deleted from the account is not available.
+    </description>
+    <releaseNotes>https://www.softorbits.net/gmail-backup-software/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

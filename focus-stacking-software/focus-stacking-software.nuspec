@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>focus-stacking-software</id>
+    <version>1.1</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/focus-stacking-software</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Focus Stacking Software</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/focus-stacking-software/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/fst.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9pnrcbm75ddg?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>focus-stacking focus-stack macro-photography depth-of-field image-stacking photo-merge raw-photos coin-photography microscopy product-photography background-blur trial license</tags>
+    <summary>Aligns a macro series shot at stepped focus distances and merges it into one image with full depth of field, offline focus stacking software with RAW input and 16-bit TIFF output.</summary>
+    <description>This package installs Focus Stacking Software for Macro Photography, focus stacking software for 64-bit Windows that builds one sharp image from frames shot at different focus distances. Load 20 to 100 frames of a stack, and the program lines them up, picks the crispest detail at each point and writes the composite on the local machine. Nothing leaves the PC.
+
+![Focus Stacking Software screenshot 1](https://download.softorbits.com/files/pkg-img/fst/fst-v1-series.png)
+
+## How to use Focus Stacking Software for Macro Photography
+
+1. Run the program after Chocolatey has installed it.
+2. Use Open series for the frames of one stack, or choose to treat each subfolder as a series.
+3. Leave Align frames on for a tripod or rail sequence.
+4. Select the Detail or Smooth merge method, then tune Radius and Smoothing if needed.
+5. Press Stack. The stage line reports progress, and Stop cancels the run.
+6. Add Background blur if the backdrop looks too busy.
+7. Click Save result and pick 16-bit TIFF, JPEG or PNG.
+
+Trial note: an unregistered copy aligns and merges the series and previews the finished picture, but it cannot save, and the subfolder mode computes only the first series. Registering enables saving.
+
+![Focus Stacking Software screenshot 2](https://download.softorbits.com/files/pkg-img/fst/fst-v1-result.png)
+
+## Focus stacking with two merge methods
+
+Detail compares wavelet coefficients and keeps the sharpest source pixel, which suits textured subjects. Smooth estimates a depth map and blends along it, which helps with gradients and plain backgrounds.
+
+## What the focus stacking software reads and writes
+
+- RAW from CR2, CR3, NEF, ARW, DNG, ORF and RAF cameras through LibRaw, so no TIFF conversion comes first.
+- JPEG and TIFF frames.
+- Results as 16-bit TIFF for editing, or JPEG and PNG for a listing.
+
+Memory use grows with resolution only. A stack of 100 frames costs the same RAM as 20 frames from the same camera, about 200 MB per megapixel.
+
+![Focus Stacking Software screenshot 3](https://download.softorbits.com/files/pkg-img/fst/fst-v1-blur.png)
+
+## Background blur after the merge
+
+The merge already knows how far each pixel sits, so a slider can push the backdrop out of focus while the subject keeps its original pixels. Lens gives round bokeh highlights and Soft gives a plain blur.
+
+## Requirements and limits
+
+Windows 10 or 11, 64-bit, and 8 GB of RAM for 24 to 45 megapixel frames. There is no 32-bit build. Handheld sequences are out of scope, because alignment corrects scale and shift, not parallax.
+
+## Who it is for
+
+- Numismatists and coin dealers photographing lots for grading or auction.
+- Museums and entomology collections digitizing specimens.
+- Studios that focus stack photos of small products on several workstations set up with Chocolatey.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use needs a license. A lifetime, 1-year, monthly or business license unlocks saving. Learn more about [focus stacking for macro photos](https://www.softorbits.net/focus-stacking-software/?utm_source=chocolatey&amp;utm_medium=package).
+
+## FAQ
+
+### What is the point of focus stacking software?
+
+It gives a close-up photo more depth of field than one exposure can hold. The program merges frames focused at different depths into a single sharp image.
+
+### How much does focus stacking software cost?
+
+The price depends on the license you pick: lifetime, 1-year, monthly or business. Trying it on your own frames is free.
+
+### Is focus stacking worth the extra shots?
+
+For macro subjects it usually is, since at high magnification a single frame keeps only a thin slice in focus. The stack recovers the rest of the subject.
+    </description>
+    <releaseNotes>https://www.softorbits.net/focus-stacking-software/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

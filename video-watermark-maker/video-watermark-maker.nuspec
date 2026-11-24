@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>video-watermark-maker</id>
+    <version>2.8</version>
+    <packageSourceUrl>https://github.com/SoftOrbits/chocolatey-packages/tree/main/video-watermark-maker</packageSourceUrl>
+    <owners>softorbits</owners>
+    <title>Video Watermark Maker</title>
+    <authors>SoftOrbits</authors>
+    <projectUrl>https://www.softorbits.net/video-watermark-software/</projectUrl>
+    <iconUrl>https://www.softorbits.net/assets/img/icons/vwm.png</iconUrl>
+    <copyright>Copyright (c) SoftOrbits</copyright>
+    <licenseUrl>https://www.softorbits.net/terms.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://apps.microsoft.com/detail/9n3zth9tnhxb?hl=en-US&amp;gl=US</bugTrackerUrl>
+    <tags>video-watermark add-watermark-to-video add-logo-to-video add-text-to-video batch-video-watermark video-branding logo-overlay text-overlay video-editing hevc av1 vp9 trial license</tags>
+    <summary>Lets you add watermark to video clips in one batch on your PC, stamping a text caption or logo image so every exported file carries a video watermark that shows who made it.</summary>
+    <description>This package installs a desktop video watermark program for Windows that lays your caption or logo over many clips in one batch, with all processing kept on the local machine. Teams that brand footage on several editing PCs can roll out SoftOrbits Video Watermark Maker through Chocolatey and run an identical version on each station, so marks look the same no matter who exported the file.
+
+![Video Watermark Maker screenshot 1](https://download.softorbits.com/files/pkg-img/vwm/vwm-v1-main.png)
+
+## How to use the program to add watermark to video
+
+1. Start the application once the package has installed.
+2. Add the clips to the queue by drag and drop or from the file dialog.
+3. Enter a caption, or select an image file with your logo.
+4. Limit the mark to a time segment when it should show only for part of the clip.
+5. Set the output folder and run the batch.
+
+Trial note: the free trial is there to test the output on real footage before you buy. The unregistered version has restrictions, and registering a license key removes them.
+
+## Add logo to video files in batches
+
+One configuration is applied to the whole queue, which suits a department that has to add text to video exports for a campaign or stamp a studio logo on dozens of preview cuts. A mark assigned to a segment appears and vanishes exactly at the segment borders, since timing is taken from frame timestamps. Intros and end cards stay clean when the mark belongs only to the middle.
+
+![Video Watermark Maker screenshot 2](https://download.softorbits.com/files/pkg-img/vwm/vwm-v1-text.png)
+
+## Engine behind each video watermark
+
+Video is read and written by FFmpeg 7.1 running as a separate process. On every PC the program tries hardware encoders in turn (NVENC, AMF, Quick Sync), then Media Foundation, then x264 in software, and keeps the first one that works. Recordings in HEVC, VP9 or AV1 are opened without converting them first, and upright clips from phones are not turned on their side. FFmpeg ships under GPL v3, with a link to its sources in the licenses folder and a line in the About window.
+
+![Video Watermark Maker screenshot 3](https://download.softorbits.com/files/pkg-img/vwm/vwm-v1-options.png)
+
+## Who it is for
+
+- Creators who publish across social media and want one consistent mark.
+- Studios that add logo to video previews before sending them to clients.
+- Training teams that add text to video courses before release.
+- Marketing departments that add watermark to video clips for products on several workstations.
+
+## Trial and license
+
+The package installs the free trial of a commercial program, and full use requires a license. Options are a lifetime license, a business license, a 1-year license and a monthly plan. A license removes the limits of the unregistered version. If you need a free video watermark tool for ongoing work, the trial covers evaluation only. Plans and details are on the [Video Watermark Maker](https://www.softorbits.net/video-watermark-software/?utm_source=chocolatey&amp;utm_medium=package) page.
+
+## FAQ
+
+### What is a video watermark used for?
+
+It marks a clip with text or a logo so viewers can tell who produced or owns it. It also keeps previews from being reused unbranded.
+
+### Can any video be watermarked?
+
+Yes, any clip the program opens can be marked after it was recorded. That includes MP4 clips, AV1, VP9 and HEVC sources and vertical phone recordings.
+
+### Is it illegal to remove video watermark text or logos?
+
+It can be, when the footage is copyrighted and you lack permission from the owner. This program only adds marks and has no removal feature.
+
+### How do I watermark a video without paying?
+
+Install the package and use the free trial to mark your own clips and check the result. Ongoing use needs a license.
+    </description>
+    <releaseNotes>https://www.softorbits.net/video-watermark-software/ver.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
